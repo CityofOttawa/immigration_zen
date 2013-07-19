@@ -76,11 +76,40 @@ $courier:         "Courier New", "DejaVu Sans Mono", monospace, sans-serif;
 // Now create some variables for the font stacks we want to use on this site.
 $base-font-family: $verdana; // The font family set on the html element.
 $font-body:        $verdana;
+$font-heading:     $century-gothic;
 $font-monospace:   $courier;
 
 
+
 //
-// Colors, etc.
+// Main Colors, etc.
+$logo-green: #00a290;
+$city-blue: #004990;
+$city-green: #036f63; //from mockups, slightly darker than logo green
+$link-green: #3f8000; //used in search results
+
+//Greys
+$light-grey: #f5f5f5;
+$med-grey: #666;
+$dark-grey: #333;
+$line-grey: #ccc;
+
+
+
+//Overall Color Variables (Those used on the site)
+$main-spot: $city-blue;
+$button-spot: $med-grey;
+$link-spot: $link-green;
+
+
+$color-1: #cc9f33;
+$color-2: #5e963b;
+$color-3: #1d2747;
+$color-4: #990000;
+$color-5: $mid-grey;
+$color-6: #4f6fa3;
+
+
 //
 
 // The amount lists, blockquotes and comments are indented.

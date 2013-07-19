@@ -8,6 +8,14 @@
  *
  * This layout uses the Zen Grids plugin for Compass: http://zengrids.com
  */
+/*creates subtle dropshadow on text */
+/* easy-ease-in transition animation*/
+/* Mixin for REM with fallback (Karl Merkli)
+
+For formatting and usage see:
+http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
+
+*/
 /*
  * Center the page.
  */
