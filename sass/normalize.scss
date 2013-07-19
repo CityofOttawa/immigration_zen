@@ -117,7 +117,8 @@ audio:not([controls]) {
  */
 
 html {
-  font-size: 100% * ($base-font-size / 16px); /* 1 */
+  //!!!!! 14px as the base (87.5)
+  font-size: 87.5% * ($base-font-size / 16px); /* 1 */ 
   -webkit-text-size-adjust: 100%; /* 2 */
   -ms-text-size-adjust: 100%; /* 2 */
   /* Establishes a vertical rhythm unit using $base-line-height. */
@@ -134,6 +135,7 @@ input,
 select,
 textarea {
   font-family: $base-font-family;
+  color: #222;
 }
 
 /*
@@ -154,18 +156,21 @@ body {
  * http://meyerweb.com/eric/thoughts/2007/06/11/who-ordered-the-link-states
  */
 
-a:link {
-}
-
+a:link, 
 a:visited {
+  color: $city-blue;
+  text-decoration: none;
+  @include ease-all;
+  
 }
 
 a:hover,
-a:focus {
+a:focus,
+a:active {
+  //color: $city-blue;
+  text-decoration: underline;
 }
 
-a:active {
-}
 
 /*
  * Addresses outline displayed oddly in Chrome
@@ -208,18 +213,30 @@ h1 {
   /* Sets 1 unit of vertical rhythm on the top and bottom margins. */
   @include leader(1, $h1-font-size);
   @include trailer(1, $h1-font-size);
+  
+  font-family: $font-heading; //century gothic
+  @include rem-fallback(font-size, 1.714); //24px
+  color: $city-green;
 }
 
 h2 {
   @include adjust-font-size-to( $h2-font-size );
   @include leader(1, $h2-font-size);
   @include trailer(1, $h2-font-size);
+  
+  
+  font-family: $font-heading; //century gothic
+  @include rem-fallback(font-size, 1.286); // 18px
+  font-weight: normal;
+  
 }
 
 h3 {
   @include adjust-font-size-to( $h3-font-size );
   @include leader(1, $h3-font-size);
   @include trailer(1, $h3-font-size);
+  
+  font-family: $font-heading; //century gothic
 }
 
 h4 {
@@ -238,6 +255,8 @@ h6 {
   @include adjust-font-size-to( $h6-font-size );
   @include leader(1, $h6-font-size);
   @include trailer(1, $h6-font-size);
+  
+  text-transform: uppercase;
 }
 
 /* Thematic break */

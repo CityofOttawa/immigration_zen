@@ -1,104 +1,172 @@
-/*
-Syntax error: Undefined variable: "$mid-grey".
-        on line 109 of /var/www/html/drupal/sites/all/themes/immigration_zen/sass/_base.scss
-        from line 6 of /var/www/html/drupal/sites/all/themes/immigration_zen/sass/blocks.scss
+/**
+ * @file
+ * Block Styling
+ */
+/*creates subtle dropshadow on text */
+/* easy-ease-in transition animation*/
+/* Mixin for REM with fallback (Karl Merkli)
 
-Backtrace:
-/var/www/html/drupal/sites/all/themes/immigration_zen/sass/_base.scss:109
-/var/www/html/drupal/sites/all/themes/immigration_zen/sass/blocks.scss:6
-/usr/lib/ruby/gems/1.8/gems/sass-3.2.9/lib/sass/../sass/script/variable.rb:49:in `_perform'
-/usr/lib/ruby/gems/1.8/gems/sass-3.2.9/lib/sass/../sass/script/node.rb:40:in `perform'
-/usr/lib/ruby/gems/1.8/gems/sass-3.2.9/lib/sass/../sass/tree/visitors/perform.rb:327:in `visit_variable'
-/usr/lib/ruby/gems/1.8/gems/sass-3.2.9/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
-/usr/lib/ruby/gems/1.8/gems/sass-3.2.9/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-/usr/lib/ruby/gems/1.8/gems/sass-3.2.9/lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
-/usr/lib/ruby/gems/1.8/gems/sass-3.2.9/lib/sass/../sass/tree/visitors/perform.rb:227:in `visit_import'
-/usr/lib/ruby/gems/1.8/gems/sass-3.2.9/lib/sass/../sass/tree/visitors/perform.rb:227:in `map'
-/usr/lib/ruby/gems/1.8/gems/sass-3.2.9/lib/sass/../sass/tree/visitors/perform.rb:227:in `visit_import'
-/usr/lib/ruby/gems/1.8/gems/sass-3.2.9/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
-/usr/lib/ruby/gems/1.8/gems/sass-3.2.9/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-/usr/lib/ruby/gems/1.8/gems/sass-3.2.9/lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
-/usr/lib/ruby/gems/1.8/gems/sass-3.2.9/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-/usr/lib/ruby/gems/1.8/gems/sass-3.2.9/lib/sass/../sass/tree/visitors/base.rb:53:in `map'
-/usr/lib/ruby/gems/1.8/gems/sass-3.2.9/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-/usr/lib/ruby/gems/1.8/gems/sass-3.2.9/lib/sass/../sass/tree/visitors/perform.rb:109:in `visit_children'
-/usr/lib/ruby/gems/1.8/gems/sass-3.2.9/lib/sass/../sass/tree/visitors/perform.rb:121:in `with_environment'
-/usr/lib/ruby/gems/1.8/gems/sass-3.2.9/lib/sass/../sass/tree/visitors/perform.rb:108:in `visit_children'
-/usr/lib/ruby/gems/1.8/gems/sass-3.2.9/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-/usr/lib/ruby/gems/1.8/gems/sass-3.2.9/lib/sass/../sass/tree/visitors/perform.rb:128:in `visit_root'
-/usr/lib/ruby/gems/1.8/gems/sass-3.2.9/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
-/usr/lib/ruby/gems/1.8/gems/sass-3.2.9/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-/usr/lib/ruby/gems/1.8/gems/sass-3.2.9/lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
-/usr/lib/ruby/gems/1.8/gems/sass-3.2.9/lib/sass/../sass/tree/visitors/perform.rb:7:in `send'
-/usr/lib/ruby/gems/1.8/gems/sass-3.2.9/lib/sass/../sass/tree/visitors/perform.rb:7:in `visit'
-/usr/lib/ruby/gems/1.8/gems/sass-3.2.9/lib/sass/../sass/tree/root_node.rb:20:in `render'
-/usr/lib/ruby/gems/1.8/gems/sass-3.2.9/lib/sass/../sass/engine.rb:315:in `_render'
-/usr/lib/ruby/gems/1.8/gems/sass-3.2.9/lib/sass/../sass/engine.rb:262:in `render'
-/usr/lib/ruby/gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `compile'
-/usr/lib/ruby/gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-/usr/lib/ruby/gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `compile'
-/usr/lib/ruby/gems/1.8/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
-/usr/lib/ruby/gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
-/usr/lib/ruby/gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
-/usr/lib/ruby/gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `run'
-/usr/lib/ruby/gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `each'
-/usr/lib/ruby/gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `run'
-/usr/lib/ruby/gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-/usr/lib/ruby/gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
-/usr/lib/ruby/gems/1.8/gems/compass-0.12.2/lib/compass/commands/update_project.rb:45:in `perform'
-/usr/lib/ruby/gems/1.8/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
-/usr/lib/ruby/gems/1.8/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
-/usr/lib/ruby/gems/1.8/gems/guard-compass-0.0.8/lib/guard/compass.rb:136:in `perform'
-/usr/lib/ruby/gems/1.8/gems/guard-compass-0.0.8/lib/guard/compass.rb:119:in `run_on_change'
-/usr/lib/ruby/gems/1.8/gems/guard-1.8.1/lib/guard/runner.rb:99:in `send'
-/usr/lib/ruby/gems/1.8/gems/guard-1.8.1/lib/guard/runner.rb:99:in `run_supervised_task'
-/usr/lib/ruby/gems/1.8/gems/guard-1.8.1/lib/guard/runner.rb:97:in `catch'
-/usr/lib/ruby/gems/1.8/gems/guard-1.8.1/lib/guard/runner.rb:97:in `run_supervised_task'
-/usr/lib/ruby/gems/1.8/gems/guard-1.8.1/lib/guard/runner.rb:144:in `run_first_task_found'
-/usr/lib/ruby/gems/1.8/gems/guard-1.8.1/lib/guard/runner.rb:142:in `each'
-/usr/lib/ruby/gems/1.8/gems/guard-1.8.1/lib/guard/runner.rb:142:in `run_first_task_found'
-/usr/lib/ruby/gems/1.8/gems/guard-1.8.1/lib/guard/runner.rb:79:in `run_on_changes'
-/usr/lib/ruby/gems/1.8/gems/guard-1.8.1/lib/guard/runner.rb:175:in `scoped_guards'
-/usr/lib/ruby/gems/1.8/gems/guard-1.8.1/lib/guard/runner.rb:173:in `each'
-/usr/lib/ruby/gems/1.8/gems/guard-1.8.1/lib/guard/runner.rb:173:in `scoped_guards'
-/usr/lib/ruby/gems/1.8/gems/guard-1.8.1/lib/guard/runner.rb:172:in `catch'
-/usr/lib/ruby/gems/1.8/gems/guard-1.8.1/lib/guard/runner.rb:172:in `scoped_guards'
-/usr/lib/ruby/gems/1.8/gems/guard-1.8.1/lib/guard/runner.rb:170:in `each'
-/usr/lib/ruby/gems/1.8/gems/guard-1.8.1/lib/guard/runner.rb:170:in `scoped_guards'
-/usr/lib/ruby/gems/1.8/gems/guard-1.8.1/lib/guard/runner.rb:72:in `run_on_changes'
-/usr/lib/ruby/gems/1.8/gems/guard-1.8.1/lib/guard.rb:105:in `setup_listener'
-/usr/lib/ruby/gems/1.8/gems/guard-1.8.1/lib/guard.rb:368:in `within_preserved_state'
-/usr/lib/ruby/gems/1.8/gems/guard-1.8.1/lib/guard.rb:365:in `synchronize'
-/usr/lib/ruby/gems/1.8/gems/guard-1.8.1/lib/guard.rb:365:in `within_preserved_state'
-/usr/lib/ruby/gems/1.8/gems/guard-1.8.1/lib/guard.rb:104:in `setup_listener'
-/usr/lib/ruby/gems/1.8/gems/listen-1.2.2/lib/listen/listener.rb:252:in `call'
-/usr/lib/ruby/gems/1.8/gems/listen-1.2.2/lib/listen/listener.rb:252:in `on_change'
-/usr/lib/ruby/gems/1.8/gems/listen-1.2.2/lib/listen/listener.rb:287:in `initialize_adapter'
-/usr/lib/ruby/gems/1.8/gems/listen-1.2.2/lib/listen/adapter.rb:252:in `call'
-/usr/lib/ruby/gems/1.8/gems/listen-1.2.2/lib/listen/adapter.rb:252:in `report_changes'
-/usr/lib/ruby/gems/1.8/gems/listen-1.2.2/lib/listen/adapter.rb:321:in `poll_changed_directories'
-/usr/lib/ruby/gems/1.8/gems/listen-1.2.2/lib/listen/adapter.rb:297:in `start_poller'
-/usr/lib/ruby/gems/1.8/gems/listen-1.2.2/lib/listen/adapter.rb:297:in `initialize'
-/usr/lib/ruby/gems/1.8/gems/listen-1.2.2/lib/listen/adapter.rb:297:in `new'
-/usr/lib/ruby/gems/1.8/gems/listen-1.2.2/lib/listen/adapter.rb:297:in `start_poller'
-/usr/lib/ruby/gems/1.8/gems/listen-1.2.2/lib/listen/adapter.rb:101:in `start'
-/usr/lib/ruby/gems/1.8/gems/listen-1.2.2/lib/listen/listener.rb:53:in `start'
-/usr/lib/ruby/gems/1.8/gems/guard-1.8.1/lib/guard.rb:194:in `start'
-/usr/lib/ruby/gems/1.8/gems/guard-1.8.1/lib/guard.rb:368:in `within_preserved_state'
-/usr/lib/ruby/gems/1.8/gems/guard-1.8.1/lib/guard.rb:365:in `synchronize'
-/usr/lib/ruby/gems/1.8/gems/guard-1.8.1/lib/guard.rb:365:in `within_preserved_state'
-/usr/lib/ruby/gems/1.8/gems/guard-1.8.1/lib/guard.rb:190:in `start'
-/usr/lib/ruby/gems/1.8/gems/guard-1.8.1/lib/guard/cli.rb:110:in `start'
-/usr/lib/ruby/gems/1.8/gems/thor-0.18.1/lib/thor/command.rb:27:in `__send__'
-/usr/lib/ruby/gems/1.8/gems/thor-0.18.1/lib/thor/command.rb:27:in `run'
-/usr/lib/ruby/gems/1.8/gems/thor-0.18.1/lib/thor/invocation.rb:120:in `invoke_command'
-/usr/lib/ruby/gems/1.8/gems/thor-0.18.1/lib/thor.rb:363:in `dispatch'
-/usr/lib/ruby/gems/1.8/gems/thor-0.18.1/lib/thor/base.rb:439:in `start'
-/usr/lib/ruby/gems/1.8/gems/guard-1.8.1/bin/guard:6
-/usr/bin/guard:19:in `load'
-/usr/bin/guard:19
+For formatting and usage see:
+http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
+
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$mid-grey\".\A         on line 109 of /var/www/html/drupal/sites/all/themes/immigration_zen/sass/_base.scss\A         from line 6 of /var/www/html/drupal/sites/all/themes/immigration_zen/sass/blocks.scss"; }
+/* line 9, ../sass/blocks.scss */
+.block {
+  /* Block wrapper */
+  margin-bottom: 1.5em;
+}
+/* line 12, ../sass/blocks.scss */
+.block.first {
+  /* The first block in the region */
+}
+/* line 15, ../sass/blocks.scss */
+.block.last {
+  /* The last block in the region */
+}
+/* line 18, ../sass/blocks.scss */
+.block.odd {
+  /* Zebra striping for each block in the region */
+}
+/* line 21, ../sass/blocks.scss */
+.block.even {
+  /* Zebra striping for each block in the region */
+}
+/* line 24, ../sass/blocks.scss */
+.block h2.block-title {
+  /* Block title */
+}
+
+/* line 29, ../sass/blocks.scss */
+#block-aggregator-category-1 {
+  /* Block for the latest news items in the first category */
+}
+
+/* line 32, ../sass/blocks.scss */
+#block-aggregator-feed-1 {
+  /* Block for the latest news items in the first feed */
+}
+
+/* line 35, ../sass/blocks.scss */
+#block-block-1 {
+  /* First block created with "Add block" link */
+}
+
+/* line 38, ../sass/blocks.scss */
+#block-blog-recent {
+  /* "Recent blog posts" block */
+}
+
+/* line 41, ../sass/blocks.scss */
+#block-book-navigation {
+  /* "Book navigation" block for the current book's table of contents */
+}
+
+/* line 44, ../sass/blocks.scss */
+#block-comment-recent {
+  /* "Recent comments" block */
+}
+
+/* line 47, ../sass/blocks.scss */
+#block-forum-active {
+  /* "Active forum topics" block */
+}
+
+/* line 50, ../sass/blocks.scss */
+#block-forum-new {
+  /* "New forum topics" block */
+}
+
+/* line 53, ../sass/blocks.scss */
+#block-locale-language {
+  /* Language switcher block */
+}
+
+/* line 56, ../sass/blocks.scss */
+#block-menu-menu-NAME {
+  /* Custom menu block */
+}
+
+/* line 59, ../sass/blocks.scss */
+#block-node-recent {
+  /* "Recent content" block */
+}
+
+/* line 62, ../sass/blocks.scss */
+#block-node-syndicate {
+  /* "Syndicate" block for primary RSS feed; see also page.css's .feed-icon */
+}
+
+/* line 65, ../sass/blocks.scss */
+#block-poll-recent {
+  /* "Most recent poll" block */
+}
+
+/* line 68, ../sass/blocks.scss */
+#block-profile-author-information {
+  /* "Author information" block for the profile of the page's author */
+}
+
+/* line 71, ../sass/blocks.scss */
+#block-search-form {
+  /* "Search form" block */
+}
+
+/* line 74, ../sass/blocks.scss */
+#block-shortcut-shortcuts {
+  /* "Shortcuts" block */
+}
+
+/* line 77, ../sass/blocks.scss */
+#block-statistics-popular {
+  /* "Popular content" block */
+}
+
+/* line 80, ../sass/blocks.scss */
+#block-system-main-menu {
+  /* "Main menu" block */
+}
+
+/* line 83, ../sass/blocks.scss */
+#block-system-management {
+  /* "Management" block for Drupal management menu */
+}
+
+/* line 86, ../sass/blocks.scss */
+#block-system-navigation {
+  /* "Navigation" block for Drupal navigation menu */
+}
+
+/* line 89, ../sass/blocks.scss */
+#block-system-user-menu {
+  /* "User menu" block for Drupal user menu */
+}
+
+/* line 92, ../sass/blocks.scss */
+#block-system-help {
+  /* "System help" block */
+}
+
+/* line 95, ../sass/blocks.scss */
+#block-system-main {
+  /* "Main page content" block */
+}
+
+/* line 98, ../sass/blocks.scss */
+#block-system-powered-by {
+  /* "Powered by Drupal" block */
+}
+
+/* line 101, ../sass/blocks.scss */
+#block-user-login {
+  /* "User login form" block */
+}
+
+/* line 104, ../sass/blocks.scss */
+#block-user-new {
+  /* "Who's new" block for a list of the newest users */
+}
+
+/* line 107, ../sass/blocks.scss */
+#block-user-online {
+  /* "Who's online" block for a list of the online users */
+}
