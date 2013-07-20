@@ -224,3 +224,27 @@ function immigration_zen_preprocess_block(&$variables, $hook) {
   //}
 }
 // */
+
+/**
+ * Implements hook_js_alter().
+ */
+function immigration_zen_js_alter(&$javascript) {
+
+  // Remove all the wetkit junk we don't need/want
+  unset($javascript['profiles/wetkit/modules/apps/wetkit_wetboew/wetkit-wetboew.js']);
+  unset($javascript['profiles/wetkit/modules/apps/wetkit_widgets/wetkit-tabbed-interface.js']);
+}
+
+/**
+ * Implements hook_js_alter().
+ */
+function immigration_zen_css_alter(&$css) {
+
+  // Remove all the wetkit junk we don't need/want
+  unset($css['sites/all/themes/cityott_adaptivetheme/css/cityott-adaptivetheme-mobile.css']);
+  unset($css['profiles/wetkit/modules/apps/wetkit_wetboew/css/wetkit_wetboew.css']);
+  unset($css['profiles/wetkit/css/wetkit.css']);
+  unset($css['profiles/wetkit/modules/apps/wetkit_wysiwyg/wetkit-wysiwyg.css']);
+  unset($css['profiles/wetkit/modules/apps/wetkit_widgets/wetkit-tabbed-interface.css']);
+}
+

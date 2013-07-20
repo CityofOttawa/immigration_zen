@@ -155,9 +155,13 @@ body {
  */
 
 a:link {
+  color: #111;
+  text-decoration: underline;
 }
 
 a:visited {
+  color: #111;
+  text-decoration: underline;
 }
 
 a:hover,
@@ -208,6 +212,7 @@ h1 {
   /* Sets 1 unit of vertical rhythm on the top and bottom margins. */
   @include leader(1, $h1-font-size);
   @include trailer(1, $h1-font-size);
+  text-transform: uppercase;
 }
 
 h2 {
@@ -404,6 +409,11 @@ ul, ol, .item-list ul, .item-list ol {
   }
 }
 
+ul {
+  list-style: square;
+}
+
+
 /*
  * Addresses paddings set differently in IE6/7
  */
@@ -424,7 +434,6 @@ nav ol {
   list-style: none;
   list-style-image: none;
 }
-
 
 /* =============================================================================
    Embedded content
@@ -590,6 +599,9 @@ input[type="radio"] {
 input[type="search"] {
   -webkit-appearance: textfield; /* 1 */
   @include box-sizing(content-box); /* 2 */
+  
+  // @todo fix the blue here
+  border: 1px solid blue;
 }
 
 /*
