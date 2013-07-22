@@ -287,8 +287,26 @@ strong {
 }
 
 blockquote {
-  /* Sets 1 unit of vertical rhythm on the top and bottom margin. */
-  margin: rhythm(1) $indent-amount;
+  /* Sets 1 unit of vertical rhythm on the top and bottom padding. */
+  padding: rhythm(1) $indent-amount;
+  
+  
+  /*immigration zen styles*/
+  font-family: $century-gothic;
+  background-color: $color-1;
+  margin: 0;
+  color: #fff;
+  h1{
+    color: #fff;
+    font-weight: 100;
+  }
+  p{
+    @include rem-fallback(font-size, 1.286); // 18px
+    line-height: 1.5;
+    font-weight: 100;
+    font-style: italic;
+    
+  }
 }
 
 /*
@@ -428,8 +446,9 @@ ul,
   margin: rhythm(1) 0;
 }
 
-.item-list ul li { /* Drupal override */
+.item-list ul li, .links li { /* Drupal override */
   margin: 0;
+  list-style-image: url(../images/icons/bullet.png);
 }
 
 dd {
