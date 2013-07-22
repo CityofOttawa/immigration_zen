@@ -561,6 +561,20 @@ legend {
   //@include rem-fallback(font-size, 1);
 }
 
+
+  fieldset.collapsible .fieldset-legend{
+  padding-left: 20px !important;
+}
+
+.vertical-tabs{
+  padding: 1em;
+    ul.vertical-tabs-list {
+      width: 15em;
+      margin: -15px 0 -1px -16em;
+      float: left;
+    }
+}
+
 /*
  * 1. Corrects font size not being inherited in all browsers
  * 2. Addresses margins set differently in IE6/7, FF3+, S5, Chrome
