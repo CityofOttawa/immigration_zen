@@ -435,7 +435,7 @@ figcaption {
 }
 
 /* line 423, ../sass/normalize.scss */
-.pager {
+.pager, .breadcrumb {
   font-size: 13.712px;
   font-size: 0.857rem;
 }
@@ -654,12 +654,13 @@ input, textarea {
 /* line 630, ../sass/normalize.scss */
 text-area, .form-item textarea {
   padding: 0 0 0 1.5em;
+  min-height: 125px;
 }
 
 /*
  * Addresses FF3/4 setting line-height on 'input' using !important in the UA stylesheet
  */
-/* line 639, ../sass/normalize.scss */
+/* line 641, ../sass/normalize.scss */
 button,
 input {
   line-height: normal;
@@ -672,8 +673,9 @@ input {
  * 3. Removes inner spacing in IE7 without affecting normal text inputs
  *    Known issue: inner spacing remains in IE6
  */
-/* line 653, ../sass/normalize.scss */
+/* line 656, ../sass/normalize.scss */
 button,
+.button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
@@ -702,7 +704,7 @@ input[type="submit"] {
   font-size: 18.288px;
   font-size: 1.143rem;
   color: #fff;
-  padding: .5em 1em 2em;
+  padding: .25em 1em 1.65em;
   border: 0;
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0icmdiYSgwLCAwLCAwLCAwLjA1KSIvPjxzdG9wIG9mZnNldD0iNDklIiBzdG9wLWNvbG9yPSJyZ2JhKDAsIDAsIDAsIDAuMDUpIi8+PHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9InJnYmEoMCwgMCwgMCwgMC4xNSkiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9InJnYmEoMCwgMCwgMCwgMC4xNSkiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
   background-size: 100%;
@@ -711,10 +713,12 @@ input[type="submit"] {
   background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.05) 49%, rgba(0, 0, 0, 0.15) 50%, rgba(0, 0, 0, 0.15) 100%);
   background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.05) 49%, rgba(0, 0, 0, 0.15) 50%, rgba(0, 0, 0, 0.15) 100%);
   background-image: linear-gradient(top, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.05) 49%, rgba(0, 0, 0, 0.15) 50%, rgba(0, 0, 0, 0.15) 100%);
-  background-color: #bbb;
+  background-color: red;
+  margin-right: 1em;
 }
 /* line 37, ../sass/_custom.scss */
 button:active,
+.button:active,
 input[type="button"]:active,
 input[type="reset"]:active,
 input[type="submit"]:active {
@@ -722,8 +726,9 @@ input[type="submit"]:active {
   top: 1px;
 }
 
-/* line 672, ../sass/normalize.scss */
+/* line 678, ../sass/normalize.scss */
 button:hover,
+.button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover,
@@ -749,7 +754,7 @@ input[type="submit"]:hover,
   font-size: 18.288px;
   font-size: 1.143rem;
   color: #fff;
-  padding: .5em 1em 2em;
+  padding: .25em 1em 1.65em;
   border: 0;
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0icmdiYSgwLCAwLCAwLCAwLjA1KSIvPjxzdG9wIG9mZnNldD0iNDklIiBzdG9wLWNvbG9yPSJyZ2JhKDAsIDAsIDAsIDAuMDUpIi8+PHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9InJnYmEoMCwgMCwgMCwgMC4xNSkiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9InJnYmEoMCwgMCwgMCwgMC4xNSkiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
   background-size: 100%;
@@ -758,10 +763,11 @@ input[type="submit"]:hover,
   background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.05) 49%, rgba(0, 0, 0, 0.15) 50%, rgba(0, 0, 0, 0.15) 100%);
   background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.05) 49%, rgba(0, 0, 0, 0.15) 50%, rgba(0, 0, 0, 0.15) 100%);
   background-image: linear-gradient(top, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.05) 49%, rgba(0, 0, 0, 0.15) 50%, rgba(0, 0, 0, 0.15) 100%);
-  background-color: #999;
+  background-color: blue;
 }
 /* line 37, ../sass/_custom.scss */
 button:hover:active,
+.button:hover:active,
 input[type="button"]:hover:active,
 input[type="reset"]:hover:active,
 input[type="submit"]:hover:active,
@@ -771,17 +777,9 @@ input[type="submit"]:hover:active,
   top: 1px;
 }
 
-/* line 679, ../sass/normalize.scss */
+/* line 685, ../sass/normalize.scss */
 #edit-image-button {
   border: 0;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  padding: 0.5em 1em 0.5em;
-}
-
-/* line 686, ../sass/normalize.scss */
-#edit-image-button:hover {
   text-shadow: rgba(0, 0, 0, 0.4) 1px 1px 1px;
   color: #fff;
   -webkit-transition-property: all;
@@ -802,7 +800,7 @@ input[type="submit"]:hover:active,
   font-size: 18.288px;
   font-size: 1.143rem;
   color: #fff;
-  padding: .5em 1em 2em;
+  padding: .25em 1em 1.65em;
   border: 0;
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0icmdiYSgwLCAwLCAwLCAwLjA1KSIvPjxzdG9wIG9mZnNldD0iNDklIiBzdG9wLWNvbG9yPSJyZ2JhKDAsIDAsIDAsIDAuMDUpIi8+PHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9InJnYmEoMCwgMCwgMCwgMC4xNSkiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9InJnYmEoMCwgMCwgMCwgMC4xNSkiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
   background-size: 100%;
@@ -811,31 +809,64 @@ input[type="submit"]:hover:active,
   background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.05) 49%, rgba(0, 0, 0, 0.15) 50%, rgba(0, 0, 0, 0.15) 100%);
   background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.05) 49%, rgba(0, 0, 0, 0.15) 50%, rgba(0, 0, 0, 0.15) 100%);
   background-image: linear-gradient(top, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.05) 49%, rgba(0, 0, 0, 0.15) 50%, rgba(0, 0, 0, 0.15) 100%);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
   padding: 0.5em 1em 0.5em;
-  color: #f2f2f2;
-  -webkit-transition-property: all;
-  -moz-transition-property: all;
-  -o-transition-property: all;
-  transition-property: all;
-  -webkit-transition-duration: 250ms;
-  -moz-transition-duration: 250ms;
-  -o-transition-duration: 250ms;
-  transition-duration: 250ms;
-  -webkit-transition-timing-function: ease-in-out;
-  -moz-transition-timing-function: ease-in-out;
-  -o-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
+  background-color: #bbb;
 }
 /* line 37, ../sass/_custom.scss */
-#edit-image-button:hover:active {
+#edit-image-button:active {
   position: relative;
   top: 1px;
+}
+
+/* line 695, ../sass/normalize.scss */
+#edit-image-button:hover {
+  padding: 0.5em 1em 0.5em;
+}
+
+/* line 699, ../sass/normalize.scss */
+#edit-cancel {
+  color: #666666;
+}
+
+/*Status Messages */
+/* line 704, ../sass/normalize.scss */
+.messages {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  padding: 0.5em 1em 0.6em !important;
+  background-image: none !important;
+}
+
+/* line 710, ../sass/normalize.scss */
+.status {
+  border-color: #26aa5e !important;
+  background-color: #c4f2d7 !important;
+}
+
+/* line 715, ../sass/normalize.scss */
+.warning {
+  border-color: #edd207 !important;
+  background-color: #fefadc !important;
+  color: #8a7a04 !important;
+}
+
+/* line 722, ../sass/normalize.scss */
+.error {
+  border-color: #e74c3c !important;
+  color: #e74c3c;
+  background-color: #fbdedb !important;
 }
 
 /*
  * Re-set default cursor for disabled elements
  */
-/* line 700, ../sass/normalize.scss */
+/* line 733, ../sass/normalize.scss */
 button[disabled],
 input[disabled] {
   cursor: default;
@@ -847,7 +878,7 @@ input[disabled] {
  * 3. Removes excess padding in IE7
       Known issue: excess padding remains in IE6
  */
-/* line 712, ../sass/normalize.scss */
+/* line 745, ../sass/normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   -webkit-box-sizing: border-box;
@@ -864,7 +895,7 @@ input[type="radio"] {
  * 1. Addresses appearance set to searchfield in S5, Chrome
  * 2. Addresses box-sizing set to border-box in S5, Chrome (include -moz to future-proof)
  */
-/* line 729, ../sass/normalize.scss */
+/* line 762, ../sass/normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -877,7 +908,7 @@ input[type="search"] {
 /*
  * Removes inner padding and search cancel button in S5, Chrome on OS X
  */
-/* line 739, ../sass/normalize.scss */
+/* line 772, ../sass/normalize.scss */
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
@@ -887,7 +918,7 @@ input[type="search"]::-webkit-search-cancel-button {
  * Removes inner padding and border in FF3+
  * www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
  */
-/* line 749, ../sass/normalize.scss */
+/* line 782, ../sass/normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -898,7 +929,7 @@ input::-moz-focus-inner {
  * 1. Removes default vertical scrollbar in IE6/7/8/9
  * 2. Improves readability and alignment in all browsers
  */
-/* line 759, ../sass/normalize.scss */
+/* line 792, ../sass/normalize.scss */
 textarea {
   overflow: auto;
   /* 1 */
@@ -906,7 +937,7 @@ textarea {
   /* 2 */
 }
 
-/* line 765, ../sass/normalize.scss */
+/* line 798, ../sass/normalize.scss */
 label {
   display: block;
   font-weight: bold;
@@ -914,7 +945,7 @@ label {
 }
 
 /* Styles input for file upload and managed file submit button */
-/* line 774, ../sass/normalize.scss */
+/* line 807, ../sass/normalize.scss */
 input[type="file"] {
   border: 0;
   -webkit-box-shadow: none;
@@ -923,13 +954,13 @@ input[type="file"] {
   padding: 0;
 }
 
-/* line 780, ../sass/normalize.scss */
+/* line 813, ../sass/normalize.scss */
 #edit-managed-file-upload-button {
   margin: 0 1em;
 }
 
 /* Styles password 'Fair', 'Poor' ajax text */
-/* line 790, ../sass/normalize.scss */
+/* line 823, ../sass/normalize.scss */
 .filter-guidelines {
   margin-left: 0;
   padding-left: 0;
@@ -941,7 +972,7 @@ input[type="file"] {
 /*
  * Remove most spacing between table cells
  */
-/* line 803, ../sass/normalize.scss */
+/* line 836, ../sass/normalize.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -956,14 +987,40 @@ table {
  * Drupal provides table styling which is only useful for its admin section
  * forms, so we override this default CSS. (We set it back in forms.css.)
  */
-/* line 817, ../sass/normalize.scss */
+/* line 850, ../sass/normalize.scss */
 th {
   text-align: left;
   padding: 0;
   border-bottom: none;
 }
 
-/* line 823, ../sass/normalize.scss */
+/* line 856, ../sass/normalize.scss */
 tbody {
   border-top: none;
+  border-bottom: 1px solid #cccccc;
+}
+
+/* line 862, ../sass/normalize.scss */
+thead {
+  border-bottom: 2px solid #cccccc;
+  background-color: whitesmoke;
+  color: #036f63;
+}
+
+/* line 868, ../sass/normalize.scss */
+td, th {
+  padding: .7em 1em .5em 1em;
+}
+
+/* line 872, ../sass/normalize.scss */
+th {
+  font-weight: normal;
+}
+
+/* line 877, ../sass/normalize.scss */
+tr.even, tr.odd {
+  font-size: 13.712px;
+  font-size: 0.857rem;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
 }

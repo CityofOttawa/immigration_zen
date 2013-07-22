@@ -420,7 +420,7 @@ figcaption{
   color: $med-grey;
 }
 
-.pager{
+.pager, .breadcrumb{
   @include rem-fallback(font-size, 0.857); //12px
 }
 
@@ -629,6 +629,8 @@ input, textarea{
 
 text-area, .form-item textarea{
   padding: 0 0 0 1.5em;
+  min-height: 125px;
+  
 }
 
 /*
@@ -648,6 +650,7 @@ input {
  */
 
 button,
+.button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
@@ -660,11 +663,14 @@ input[type="submit"] {
   text-transform: capitalize;
   
   @include button; //include bg color below to change color of button
-  background-color: #bbb;
+  background-color: red;
+  margin-right: 1em;
+  
 }
 
 
 button:hover,
+.button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover, 
@@ -672,24 +678,51 @@ input[type="submit"]:hover,
 #edit-image-button:hover{
   
   @include button; //include bg color below to change color of button
-  background-color: #999;
+  background-color: blue;
   
   
 }
 #edit-image-button{
   //background-color: $med-grey;
   border: 0;
+  @include button;
   @include box-shadow(none);
   padding: 0.5em 1em 0.5em;
+  background-color: #bbb;
+  
 }
 
 #edit-image-button:hover{
-  @include button;
   padding: 0.5em 1em 0.5em;
-  //background-color: shade($med-grey, 25%);
-  color: shade(#fff, 5%);
-  @include ease-all;
+}
+
+#edit-cancel{
+  color: $med-grey;
+}
+
+/*Status Messages */
+.messages{
+  @include border-radius(4px);
+  padding: 0.5em 1em 0.6em !important;
+  background-image: none !important;
+}
+
+.status{
+  border-color: $success-green !important;
+  background-color: lighten($success-green, 45%) !important;
+}
+
+.warning{
+  border-color: $warning-yellow !important;
+  background-color: lighten($warning-yellow, 45%) !important;
+  color: darken($warning-yellow, 20%) !important;
   
+}
+
+.error{
+  border-color: $error-red !important;
+  color: $error-red;
+  background-color: lighten($error-red, 35%) !important;
 }
 
 /*
@@ -822,4 +855,38 @@ th {
 
 tbody {
   border-top: none;
+  border-bottom: 1px solid $line-grey;
+  
 }
+
+thead{
+  border-bottom: 2px solid $line-grey;
+  background-color: $light-grey;
+  color: $city-green;
+}
+
+td, th{
+  padding: .7em 1em .5em 1em;
+}
+
+th{
+  font-weight: normal;
+  
+}
+
+tr.even, tr.odd {
+    @include rem-fallback(font-size, 0.857); // 12px
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+tr.even{
+  //background-color: #f5f5f5;
+}
+
+
+
+
+
+
+
