@@ -612,6 +612,25 @@ textarea {
   }
 }
 
+input, textarea{
+  //@include rem-fallback(font-size, 0.875);  
+  
+  @include border-radius(3px);
+  line-height: 1.5em;
+  height: 25px;
+  margin-top: .1em;
+  padding-left: 10px;
+  padding-top: .1em;
+  padding-bottom: .1em;
+  padding-right: 25px;
+  border: 1px solid #ccc;
+  @include box-shadow(rgba(black, 0.1) 1px 1px 3px 0 inset);
+}
+
+text-area, .form-item textarea{
+  padding: 0 0 0 1.5em;
+}
+
 /*
  * Addresses FF3/4 setting line-height on 'input' using !important in the UA stylesheet
  */
@@ -663,6 +682,9 @@ input[type="radio"] {
     *height: 13px; /* 3 */
     *width: 13px; /* 3 */
   }
+  
+  margin-right: 5px;
+  margin-bottom: 3px;
 }
 
 /*
@@ -703,6 +725,15 @@ input::-moz-focus-inner {
 textarea {
   overflow: auto; /* 1 */
   vertical-align: top; /* 2 */
+}
+
+
+label{
+  display: block;
+  font-weight: bold;
+  //margin-bottom: 0;
+  line-height: 1.5em;
+  //@include rem-fallback(font-size, 0.875);
 }
 
 
