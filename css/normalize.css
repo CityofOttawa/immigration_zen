@@ -10,6 +10,41 @@
          @see http://snook.ca/archives/html_and_css/no_css_reset/
    ========================================================================== */
 /*creates subtle dropshadow on text */
+/*
+.myButton {
+    
+    -moz-box-shadow:inset 0px 39px 0px -24px #e67a73;
+    -webkit-box-shadow:inset 0px 39px 0px -24px #e67a73;
+    box-shadow:inset 0px 39px 0px -24px #e67a73;
+    
+    background-color:#e4685d;
+    
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    border-radius:4px;
+    
+    border:1px solid #ffffff;
+    
+    display:inline-block;
+    color:#ffffff;
+    font-family:arial;
+    font-size:15px;
+    font-weight:normal;
+    padding:6px 15px;
+    text-decoration:none;
+    
+    text-shadow:0px 1px 0px #b23e35;
+    
+}
+.myButton:hover {
+    
+    background-color:#eb675e;
+}
+.myButton:active {
+    position:relative;
+    top:1px;
+}
+*/
 /* easy-ease-in transition animation*/
 /* Mixin for REM with fallback (Karl Merkli)
 
@@ -681,12 +716,82 @@ input[type="submit"] {
   /* 1 */
   -webkit-appearance: button;
   /* 2 */
+  text-shadow: rgba(0, 0, 0, 0.4) 1px 1px 1px;
+  color: #fff;
+  padding: .2em 1em 1.5em;
+  background-color: #666666;
+  border: 0;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-size: 1rem;
+}
+
+/* line 671, ../sass/normalize.scss */
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover,
+#edit-managed-file-upload-button:hover,
+#edit-image-button:hover {
+  text-shadow: rgba(0, 0, 0, 0.4) 1px 1px 1px;
+  color: #fff;
+  padding: .2em 1em 1.5em;
+  background-color: #666666;
+  border: 0;
+  background-color: #4c4c4c;
+  color: #f2f2f2;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 250ms;
+  -moz-transition-duration: 250ms;
+  -o-transition-duration: 250ms;
+  transition-duration: 250ms;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+
+/* line 678, ../sass/normalize.scss */
+#edit-image-button {
+  background-color: #666666;
+  border: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  padding: 0.5em 1em 0.5em;
+}
+
+/* line 685, ../sass/normalize.scss */
+#edit-image-button:hover {
+  text-shadow: rgba(0, 0, 0, 0.4) 1px 1px 1px;
+  color: #fff;
+  padding: .2em 1em 1.5em;
+  background-color: #666666;
+  border: 0;
+  padding: 0.5em 1em 0.5em;
+  background-color: #4c4c4c;
+  color: #f2f2f2;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 250ms;
+  -moz-transition-duration: 250ms;
+  -o-transition-duration: 250ms;
+  transition-duration: 250ms;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
 }
 
 /*
  * Re-set default cursor for disabled elements
  */
-/* line 666, ../sass/normalize.scss */
+/* line 699, ../sass/normalize.scss */
 button[disabled],
 input[disabled] {
   cursor: default;
@@ -698,7 +803,7 @@ input[disabled] {
  * 3. Removes excess padding in IE7
       Known issue: excess padding remains in IE6
  */
-/* line 678, ../sass/normalize.scss */
+/* line 711, ../sass/normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   -webkit-box-sizing: border-box;
@@ -715,7 +820,7 @@ input[type="radio"] {
  * 1. Addresses appearance set to searchfield in S5, Chrome
  * 2. Addresses box-sizing set to border-box in S5, Chrome (include -moz to future-proof)
  */
-/* line 695, ../sass/normalize.scss */
+/* line 728, ../sass/normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -728,7 +833,7 @@ input[type="search"] {
 /*
  * Removes inner padding and search cancel button in S5, Chrome on OS X
  */
-/* line 705, ../sass/normalize.scss */
+/* line 738, ../sass/normalize.scss */
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
@@ -738,7 +843,7 @@ input[type="search"]::-webkit-search-cancel-button {
  * Removes inner padding and border in FF3+
  * www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
  */
-/* line 715, ../sass/normalize.scss */
+/* line 748, ../sass/normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -749,7 +854,7 @@ input::-moz-focus-inner {
  * 1. Removes default vertical scrollbar in IE6/7/8/9
  * 2. Improves readability and alignment in all browsers
  */
-/* line 725, ../sass/normalize.scss */
+/* line 758, ../sass/normalize.scss */
 textarea {
   overflow: auto;
   /* 1 */
@@ -757,20 +862,36 @@ textarea {
   /* 2 */
 }
 
-/* line 731, ../sass/normalize.scss */
+/* line 764, ../sass/normalize.scss */
 label {
   display: block;
   font-weight: bold;
   line-height: 1.5em;
 }
 
+/* Styles input for file upload and managed file submit button */
+/* line 773, ../sass/normalize.scss */
+input[type="file"] {
+  border: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  padding: 0;
+}
+
+/* line 779, ../sass/normalize.scss */
+#edit-managed-file-upload-button {
+  margin: 0 1em;
+}
+
+/* Styles password 'Fair', 'Poor' ajax text */
 /* =============================================================================
    Tables
    ========================================================================== */
 /*
  * Remove most spacing between table cells
  */
-/* line 748, ../sass/normalize.scss */
+/* line 797, ../sass/normalize.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -785,14 +906,14 @@ table {
  * Drupal provides table styling which is only useful for its admin section
  * forms, so we override this default CSS. (We set it back in forms.css.)
  */
-/* line 762, ../sass/normalize.scss */
+/* line 811, ../sass/normalize.scss */
 th {
   text-align: left;
   padding: 0;
   border-bottom: none;
 }
 
-/* line 768, ../sass/normalize.scss */
+/* line 817, ../sass/normalize.scss */
 tbody {
   border-top: none;
 }

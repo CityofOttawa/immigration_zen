@@ -7,6 +7,41 @@
  * ul.links, .pager, .more-link, etc.
  */
 /*creates subtle dropshadow on text */
+/*
+.myButton {
+    
+    -moz-box-shadow:inset 0px 39px 0px -24px #e67a73;
+    -webkit-box-shadow:inset 0px 39px 0px -24px #e67a73;
+    box-shadow:inset 0px 39px 0px -24px #e67a73;
+    
+    background-color:#e4685d;
+    
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    border-radius:4px;
+    
+    border:1px solid #ffffff;
+    
+    display:inline-block;
+    color:#ffffff;
+    font-family:arial;
+    font-size:15px;
+    font-weight:normal;
+    padding:6px 15px;
+    text-decoration:none;
+    
+    text-shadow:0px 1px 0px #b23e35;
+    
+}
+.myButton:hover {
+    
+    background-color:#eb675e;
+}
+.myButton:active {
+    position:relative;
+    top:1px;
+}
+*/
 /* easy-ease-in transition animation*/
 /* Mixin for REM with fallback (Karl Merkli)
 

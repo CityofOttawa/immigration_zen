@@ -656,6 +656,39 @@ input[type="submit"] {
   @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
     *overflow: visible;  /* 3 */
   }
+  
+  @include button;
+  text-transform: capitalize;
+  @include rem-fallback(font-size, 1);
+}
+
+
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover, 
+#edit-managed-file-upload-button:hover, 
+#edit-image-button:hover{
+  @include button;
+  background-color: shade($med-grey, 25%);
+  color: shade(#fff, 5%);
+  @include ease-all;
+  
+}
+#edit-image-button{
+  background-color: $med-grey;
+  border: 0;
+  @include box-shadow(none);
+  padding: 0.5em 1em 0.5em;
+}
+
+#edit-image-button:hover{
+  @include button;
+  padding: 0.5em 1em 0.5em;
+  background-color: shade($med-grey, 25%);
+  color: shade(#fff, 5%);
+  @include ease-all;
+  
 }
 
 /*
@@ -731,9 +764,25 @@ textarea {
 label{
   display: block;
   font-weight: bold;
-  //margin-bottom: 0;
   line-height: 1.5em;
-  //@include rem-fallback(font-size, 0.875);
+}
+
+/* Styles input for file upload and managed file submit button */
+
+
+input[type="file"]{
+  border: 0;
+  @include box-shadow(none);
+  padding: 0;
+}
+
+#edit-managed-file-upload-button{
+  margin: 0 1em;
+}
+
+/* Styles password 'Fair', 'Poor' ajax text */
+.password-strength-text, .password-strength-title{
+  //@include rem-fallback(font-size, 0.857); //12px
 }
 
 
