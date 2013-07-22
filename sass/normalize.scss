@@ -657,9 +657,10 @@ input[type="submit"] {
     *overflow: visible;  /* 3 */
   }
   
-  @include button;
   text-transform: capitalize;
-  @include rem-fallback(font-size, 1);
+  
+  @include button; //include bg color below to change color of button
+  background-color: #bbb;
 }
 
 
@@ -669,14 +670,14 @@ input[type="reset"]:hover,
 input[type="submit"]:hover, 
 #edit-managed-file-upload-button:hover, 
 #edit-image-button:hover{
-  @include button;
-  background-color: shade($med-grey, 25%);
-  color: shade(#fff, 5%);
-  @include ease-all;
+  
+  @include button; //include bg color below to change color of button
+  background-color: #999;
+  
   
 }
 #edit-image-button{
-  background-color: $med-grey;
+  //background-color: $med-grey;
   border: 0;
   @include box-shadow(none);
   padding: 0.5em 1em 0.5em;
@@ -685,7 +686,7 @@ input[type="submit"]:hover,
 #edit-image-button:hover{
   @include button;
   padding: 0.5em 1em 0.5em;
-  background-color: shade($med-grey, 25%);
+  //background-color: shade($med-grey, 25%);
   color: shade(#fff, 5%);
   @include ease-all;
   
@@ -785,6 +786,11 @@ input[type="file"]{
   //@include rem-fallback(font-size, 0.857); //12px
 }
 
+
+.filter-guidelines{
+  margin-left: 0;
+  padding-left: 0;
+}
 
 /* =============================================================================
    Tables

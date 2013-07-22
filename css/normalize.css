@@ -10,41 +10,6 @@
          @see http://snook.ca/archives/html_and_css/no_css_reset/
    ========================================================================== */
 /*creates subtle dropshadow on text */
-/*
-.myButton {
-    
-    -moz-box-shadow:inset 0px 39px 0px -24px #e67a73;
-    -webkit-box-shadow:inset 0px 39px 0px -24px #e67a73;
-    box-shadow:inset 0px 39px 0px -24px #e67a73;
-    
-    background-color:#e4685d;
-    
-    -moz-border-radius:4px;
-    -webkit-border-radius:4px;
-    border-radius:4px;
-    
-    border:1px solid #ffffff;
-    
-    display:inline-block;
-    color:#ffffff;
-    font-family:arial;
-    font-size:15px;
-    font-weight:normal;
-    padding:6px 15px;
-    text-decoration:none;
-    
-    text-shadow:0px 1px 0px #b23e35;
-    
-}
-.myButton:hover {
-    
-    background-color:#eb675e;
-}
-.myButton:active {
-    position:relative;
-    top:1px;
-}
-*/
 /* easy-ease-in transition animation*/
 /* Mixin for REM with fallback (Karl Merkli)
 
@@ -716,17 +681,48 @@ input[type="submit"] {
   /* 1 */
   -webkit-appearance: button;
   /* 2 */
+  text-transform: capitalize;
   text-shadow: rgba(0, 0, 0, 0.4) 1px 1px 1px;
   color: #fff;
-  padding: .2em 1em 1.5em;
-  background-color: #666666;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 250ms;
+  -moz-transition-duration: 250ms;
+  -o-transition-duration: 250ms;
+  transition-duration: 250ms;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  font-size: 18.288px;
+  font-size: 1.143rem;
+  color: #fff;
+  padding: .5em 1em 2em;
   border: 0;
-  text-transform: capitalize;
-  font-size: 16px;
-  font-size: 1rem;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0icmdiYSgwLCAwLCAwLCAwLjA1KSIvPjxzdG9wIG9mZnNldD0iNDklIiBzdG9wLWNvbG9yPSJyZ2JhKDAsIDAsIDAsIDAuMDUpIi8+PHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9InJnYmEoMCwgMCwgMCwgMC4xNSkiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9InJnYmEoMCwgMCwgMCwgMC4xNSkiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0.05)), color-stop(49%, rgba(0, 0, 0, 0.05)), color-stop(50%, rgba(0, 0, 0, 0.15)), color-stop(100%, rgba(0, 0, 0, 0.15)));
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.05) 49%, rgba(0, 0, 0, 0.15) 50%, rgba(0, 0, 0, 0.15) 100%);
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.05) 49%, rgba(0, 0, 0, 0.15) 50%, rgba(0, 0, 0, 0.15) 100%);
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.05) 49%, rgba(0, 0, 0, 0.15) 50%, rgba(0, 0, 0, 0.15) 100%);
+  background-image: linear-gradient(top, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.05) 49%, rgba(0, 0, 0, 0.15) 50%, rgba(0, 0, 0, 0.15) 100%);
+  background-color: #bbb;
+}
+/* line 37, ../sass/_custom.scss */
+button:active,
+input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active {
+  position: relative;
+  top: 1px;
 }
 
-/* line 671, ../sass/normalize.scss */
+/* line 672, ../sass/normalize.scss */
 button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
@@ -735,11 +731,6 @@ input[type="submit"]:hover,
 #edit-image-button:hover {
   text-shadow: rgba(0, 0, 0, 0.4) 1px 1px 1px;
   color: #fff;
-  padding: .2em 1em 1.5em;
-  background-color: #666666;
-  border: 0;
-  background-color: #4c4c4c;
-  color: #f2f2f2;
   -webkit-transition-property: all;
   -moz-transition-property: all;
   -o-transition-property: all;
@@ -752,11 +743,36 @@ input[type="submit"]:hover,
   -moz-transition-timing-function: ease-in-out;
   -o-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  font-size: 18.288px;
+  font-size: 1.143rem;
+  color: #fff;
+  padding: .5em 1em 2em;
+  border: 0;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0icmdiYSgwLCAwLCAwLCAwLjA1KSIvPjxzdG9wIG9mZnNldD0iNDklIiBzdG9wLWNvbG9yPSJyZ2JhKDAsIDAsIDAsIDAuMDUpIi8+PHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9InJnYmEoMCwgMCwgMCwgMC4xNSkiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9InJnYmEoMCwgMCwgMCwgMC4xNSkiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0.05)), color-stop(49%, rgba(0, 0, 0, 0.05)), color-stop(50%, rgba(0, 0, 0, 0.15)), color-stop(100%, rgba(0, 0, 0, 0.15)));
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.05) 49%, rgba(0, 0, 0, 0.15) 50%, rgba(0, 0, 0, 0.15) 100%);
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.05) 49%, rgba(0, 0, 0, 0.15) 50%, rgba(0, 0, 0, 0.15) 100%);
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.05) 49%, rgba(0, 0, 0, 0.15) 50%, rgba(0, 0, 0, 0.15) 100%);
+  background-image: linear-gradient(top, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.05) 49%, rgba(0, 0, 0, 0.15) 50%, rgba(0, 0, 0, 0.15) 100%);
+  background-color: #999;
+}
+/* line 37, ../sass/_custom.scss */
+button:hover:active,
+input[type="button"]:hover:active,
+input[type="reset"]:hover:active,
+input[type="submit"]:hover:active,
+#edit-managed-file-upload-button:hover:active,
+#edit-image-button:hover:active {
+  position: relative;
+  top: 1px;
 }
 
-/* line 678, ../sass/normalize.scss */
+/* line 679, ../sass/normalize.scss */
 #edit-image-button {
-  background-color: #666666;
   border: 0;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -764,15 +780,38 @@ input[type="submit"]:hover,
   padding: 0.5em 1em 0.5em;
 }
 
-/* line 685, ../sass/normalize.scss */
+/* line 686, ../sass/normalize.scss */
 #edit-image-button:hover {
   text-shadow: rgba(0, 0, 0, 0.4) 1px 1px 1px;
   color: #fff;
-  padding: .2em 1em 1.5em;
-  background-color: #666666;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 250ms;
+  -moz-transition-duration: 250ms;
+  -o-transition-duration: 250ms;
+  transition-duration: 250ms;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  font-size: 18.288px;
+  font-size: 1.143rem;
+  color: #fff;
+  padding: .5em 1em 2em;
   border: 0;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0icmdiYSgwLCAwLCAwLCAwLjA1KSIvPjxzdG9wIG9mZnNldD0iNDklIiBzdG9wLWNvbG9yPSJyZ2JhKDAsIDAsIDAsIDAuMDUpIi8+PHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9InJnYmEoMCwgMCwgMCwgMC4xNSkiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9InJnYmEoMCwgMCwgMCwgMC4xNSkiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0.05)), color-stop(49%, rgba(0, 0, 0, 0.05)), color-stop(50%, rgba(0, 0, 0, 0.15)), color-stop(100%, rgba(0, 0, 0, 0.15)));
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.05) 49%, rgba(0, 0, 0, 0.15) 50%, rgba(0, 0, 0, 0.15) 100%);
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.05) 49%, rgba(0, 0, 0, 0.15) 50%, rgba(0, 0, 0, 0.15) 100%);
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.05) 49%, rgba(0, 0, 0, 0.15) 50%, rgba(0, 0, 0, 0.15) 100%);
+  background-image: linear-gradient(top, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.05) 49%, rgba(0, 0, 0, 0.15) 50%, rgba(0, 0, 0, 0.15) 100%);
   padding: 0.5em 1em 0.5em;
-  background-color: #4c4c4c;
   color: #f2f2f2;
   -webkit-transition-property: all;
   -moz-transition-property: all;
@@ -787,11 +826,16 @@ input[type="submit"]:hover,
   -o-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
 }
+/* line 37, ../sass/_custom.scss */
+#edit-image-button:hover:active {
+  position: relative;
+  top: 1px;
+}
 
 /*
  * Re-set default cursor for disabled elements
  */
-/* line 699, ../sass/normalize.scss */
+/* line 700, ../sass/normalize.scss */
 button[disabled],
 input[disabled] {
   cursor: default;
@@ -803,7 +847,7 @@ input[disabled] {
  * 3. Removes excess padding in IE7
       Known issue: excess padding remains in IE6
  */
-/* line 711, ../sass/normalize.scss */
+/* line 712, ../sass/normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   -webkit-box-sizing: border-box;
@@ -820,7 +864,7 @@ input[type="radio"] {
  * 1. Addresses appearance set to searchfield in S5, Chrome
  * 2. Addresses box-sizing set to border-box in S5, Chrome (include -moz to future-proof)
  */
-/* line 728, ../sass/normalize.scss */
+/* line 729, ../sass/normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -833,7 +877,7 @@ input[type="search"] {
 /*
  * Removes inner padding and search cancel button in S5, Chrome on OS X
  */
-/* line 738, ../sass/normalize.scss */
+/* line 739, ../sass/normalize.scss */
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
@@ -843,7 +887,7 @@ input[type="search"]::-webkit-search-cancel-button {
  * Removes inner padding and border in FF3+
  * www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
  */
-/* line 748, ../sass/normalize.scss */
+/* line 749, ../sass/normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -854,7 +898,7 @@ input::-moz-focus-inner {
  * 1. Removes default vertical scrollbar in IE6/7/8/9
  * 2. Improves readability and alignment in all browsers
  */
-/* line 758, ../sass/normalize.scss */
+/* line 759, ../sass/normalize.scss */
 textarea {
   overflow: auto;
   /* 1 */
@@ -862,7 +906,7 @@ textarea {
   /* 2 */
 }
 
-/* line 764, ../sass/normalize.scss */
+/* line 765, ../sass/normalize.scss */
 label {
   display: block;
   font-weight: bold;
@@ -870,7 +914,7 @@ label {
 }
 
 /* Styles input for file upload and managed file submit button */
-/* line 773, ../sass/normalize.scss */
+/* line 774, ../sass/normalize.scss */
 input[type="file"] {
   border: 0;
   -webkit-box-shadow: none;
@@ -879,19 +923,25 @@ input[type="file"] {
   padding: 0;
 }
 
-/* line 779, ../sass/normalize.scss */
+/* line 780, ../sass/normalize.scss */
 #edit-managed-file-upload-button {
   margin: 0 1em;
 }
 
 /* Styles password 'Fair', 'Poor' ajax text */
+/* line 790, ../sass/normalize.scss */
+.filter-guidelines {
+  margin-left: 0;
+  padding-left: 0;
+}
+
 /* =============================================================================
    Tables
    ========================================================================== */
 /*
  * Remove most spacing between table cells
  */
-/* line 797, ../sass/normalize.scss */
+/* line 803, ../sass/normalize.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -906,14 +956,14 @@ table {
  * Drupal provides table styling which is only useful for its admin section
  * forms, so we override this default CSS. (We set it back in forms.css.)
  */
-/* line 811, ../sass/normalize.scss */
+/* line 817, ../sass/normalize.scss */
 th {
   text-align: left;
   padding: 0;
   border-bottom: none;
 }
 
-/* line 817, ../sass/normalize.scss */
+/* line 823, ../sass/normalize.scss */
 tbody {
   border-top: none;
 }
