@@ -7,6 +7,14 @@
  * Compare this with default CSS found in the system module's stylesheet (a copy
  * of which is in drupal7-reference.css.)
  */
+/*creates subtle dropshadow on text */
+/* easy-ease-in transition animation*/
+/* Mixin for REM with fallback (Karl Merkli)
+
+For formatting and usage see:
+http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
+
+*/
 /*
  * Basic positioning styles shared by primary and secondary tabs.
  */

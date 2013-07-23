@@ -4,6 +4,14 @@
  *
  * We provide some sane print styling for Drupal using Zen's layout method.
  */
+/*creates subtle dropshadow on text */
+/* easy-ease-in transition animation*/
+/* Mixin for REM with fallback (Karl Merkli)
+
+For formatting and usage see:
+http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
+
+*/
 @media print {
   /* line 14, ../sass/print.scss */
   a:link,

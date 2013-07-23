@@ -30,7 +30,9 @@
   }
 
   .description { /* The descriptive help text (separate from the label) */
-    font-size: 0.85em;
+    color: $med-grey;
+    @include rem-fallback(font-size, 0.857); //12px
+  
   }
 
   .form-checkboxes & ,

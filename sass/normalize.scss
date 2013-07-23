@@ -117,7 +117,8 @@ audio:not([controls]) {
  */
 
 html {
-  font-size: 100% * ($base-font-size / 16px); /* 1 */
+  //!!!!! 14px as the base (87.5)
+  font-size: 87.5% * ($base-font-size / 16px); /* 1 */ 
   -webkit-text-size-adjust: 100%; /* 2 */
   -ms-text-size-adjust: 100%; /* 2 */
   /* Establishes a vertical rhythm unit using $base-line-height. */
@@ -134,6 +135,7 @@ input,
 select,
 textarea {
   font-family: $base-font-family;
+  color: #222;
 }
 
 /*
@@ -154,22 +156,21 @@ body {
  * http://meyerweb.com/eric/thoughts/2007/06/11/who-ordered-the-link-states
  */
 
-a:link {
-  color: #111;
-  text-decoration: underline;
-}
-
+a:link, 
 a:visited {
-  color: #111;
-  text-decoration: underline;
+  color: $city-blue;
+  text-decoration: none;
+  @include ease-all;
+  
 }
 
 a:hover,
-a:focus {
+a:focus,
+a:active {
+  //color: $city-blue;
+  text-decoration: underline;
 }
 
-a:active {
-}
 
 /*
  * Addresses outline displayed oddly in Chrome
@@ -212,19 +213,30 @@ h1 {
   /* Sets 1 unit of vertical rhythm on the top and bottom margins. */
   @include leader(1, $h1-font-size);
   @include trailer(1, $h1-font-size);
-  text-transform: uppercase;
+  
+  font-family: $font-heading; //century gothic
+  @include rem-fallback(font-size, 1.714); //24px
+  color: $city-green;
 }
 
 h2 {
   @include adjust-font-size-to( $h2-font-size );
   @include leader(1, $h2-font-size);
   @include trailer(1, $h2-font-size);
+  
+  
+  font-family: $font-heading; //century gothic
+  @include rem-fallback(font-size, 1.286); // 18px
+  font-weight: normal;
+  
 }
 
 h3 {
   @include adjust-font-size-to( $h3-font-size );
   @include leader(1, $h3-font-size);
   @include trailer(1, $h3-font-size);
+  
+  font-family: $font-heading; //century gothic
 }
 
 h4 {
@@ -243,6 +255,8 @@ h6 {
   @include adjust-font-size-to( $h6-font-size );
   @include leader(1, $h6-font-size);
   @include trailer(1, $h6-font-size);
+  
+  text-transform: uppercase;
 }
 
 /* Thematic break */
@@ -273,8 +287,26 @@ strong {
 }
 
 blockquote {
-  /* Sets 1 unit of vertical rhythm on the top and bottom margin. */
-  margin: rhythm(1) $indent-amount;
+  /* Sets 1 unit of vertical rhythm on the top and bottom padding. */
+  padding: rhythm(1) $indent-amount;
+  
+  
+  /*immigration zen styles*/
+  font-family: $century-gothic;
+  background-color: $color-1;
+  margin: 0;
+  color: #fff;
+  h1{
+    color: #fff;
+    font-weight: 100;
+  }
+  p{
+    @include rem-fallback(font-size, 1.286); // 18px
+    line-height: 1.5;
+    font-weight: 100;
+    font-style: italic;
+    
+  }
 }
 
 /*
@@ -292,6 +324,12 @@ dfn {
 mark {
   background: #ff0;
   color: #000;
+}
+
+.marker{
+  @include rem-fallback(font-size, 0.857); //12px
+  color: $error-red;
+
 }
 
 /*
@@ -377,6 +415,19 @@ sub {
   bottom: -0.25em;
 }
 
+figcaption{
+  @include rem-fallback(font-size, 0.857); //12px
+  color: $med-grey;
+}
+
+.pager, .breadcrumb{
+  @include rem-fallback(font-size, 0.857); //12px
+}
+
+footer img{
+  @include box-shadow(none);
+}
+
 
 /* =============================================================================
    Lists
@@ -395,8 +446,9 @@ ul,
   margin: rhythm(1) 0;
 }
 
-.item-list ul li { /* Drupal override */
+.item-list ul li, .links li { /* Drupal override */
   margin: 0;
+  list-style-image: url(../images/icons/bullet.png);
 }
 
 dd {
@@ -496,13 +548,18 @@ form {
  */
 
 fieldset {
-  border-color: #c0c0c0;
   margin: 0 2px;
   /* Apply borders and padding that keep the vertical rhythm. */
   @include apply-side-rhythm-border(top,    $width: 1px, $lines: 0.35);
   @include apply-side-rhythm-border(bottom, $width: 1px, $lines: 0.65);
   @include apply-side-rhythm-border(left,  $width: 1px, $lines: 0.65);
   @include apply-side-rhythm-border(right, $width: 1px, $lines: 0.65);
+  
+  
+  border: 0;
+  border-top: 1px solid $med-grey;
+  position: relative;
+  margin-top: 25px;
 }
 
 /*
@@ -518,6 +575,27 @@ legend {
   @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
     *margin-left: -7px; /* 3 */
   }
+  
+  
+  position: absolute;
+  top: -25px;
+  left: 0;
+  margin: 0;
+  //@include rem-fallback(font-size, 1);
+}
+
+
+  fieldset.collapsible .fieldset-legend{
+  padding-left: 20px !important;
+}
+
+.vertical-tabs{
+  padding: 1em;
+    ul.vertical-tabs-list {
+      width: 15em;
+      margin: -15px 0 -1px -16em;
+      float: left;
+    }
 }
 
 /*
@@ -538,6 +616,27 @@ textarea {
   }
 }
 
+input, textarea{
+  //@include rem-fallback(font-size, 0.875);  
+  
+  @include border-radius(3px);
+  line-height: 1.5em;
+  height: 25px;
+  margin-top: .1em;
+  padding-left: 10px;
+  padding-top: .1em;
+  padding-bottom: .1em;
+  padding-right: 25px;
+  border: 1px solid #ccc;
+  @include box-shadow(rgba(black, 0.1) 1px 1px 3px 0 inset);
+}
+
+text-area, .form-item textarea{
+  padding: 0 0 0 1.5em;
+  min-height: 125px;
+  
+}
+
 /*
  * Addresses FF3/4 setting line-height on 'input' using !important in the UA stylesheet
  */
@@ -555,6 +654,7 @@ input {
  */
 
 button,
+.button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
@@ -563,6 +663,70 @@ input[type="submit"] {
   @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
     *overflow: visible;  /* 3 */
   }
+  
+  text-transform: capitalize;
+  
+  @include button; //include bg color below to change color of button
+  background-color: red;
+  margin-right: 1em;
+  
+}
+
+
+button:hover,
+.button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover, 
+#edit-managed-file-upload-button:hover, 
+#edit-image-button:hover{
+  
+  @include button; //include bg color below to change color of button
+  background-color: blue;
+  
+  
+}
+#edit-image-button{
+  //background-color: $med-grey;
+  border: 0;
+  @include button;
+  @include box-shadow(none);
+  padding: 0.5em 1em 0.5em;
+  background-color: #bbb;
+  
+}
+
+#edit-image-button:hover{
+  padding: 0.5em 1em 0.5em;
+}
+
+#edit-cancel{
+  color: $med-grey;
+}
+
+/*Status Messages */
+.messages{
+  @include border-radius(4px);
+  padding: 0.5em 1em 0.6em !important;
+  background-image: none !important;
+}
+
+.status{
+  border-color: $success-green !important;
+  background-color: lighten($success-green, 45%) !important;
+}
+
+.warning{
+  border-color: $warning-yellow !important;
+  background-color: lighten($warning-yellow, 45%) !important;
+  color: darken($warning-yellow, 20%) !important;
+  
+}
+
+.error{
+  border-color: $error-red !important;
+  color: $error-red;
+  background-color: lighten($error-red, 35%) !important;
 }
 
 /*
@@ -589,6 +753,9 @@ input[type="radio"] {
     *height: 13px; /* 3 */
     *width: 13px; /* 3 */
   }
+  
+  margin-right: 5px;
+  margin-bottom: 3px;
 }
 
 /*
@@ -635,6 +802,36 @@ textarea {
 }
 
 
+label{
+  display: block;
+  font-weight: bold;
+  line-height: 1.5em;
+}
+
+/* Styles input for file upload and managed file submit button */
+
+
+input[type="file"]{
+  border: 0;
+  @include box-shadow(none);
+  padding: 0;
+}
+
+#edit-managed-file-upload-button{
+  margin: 0 1em;
+}
+
+/* Styles password 'Fair', 'Poor' ajax text */
+.password-strength-text, .password-strength-title{
+  //@include rem-fallback(font-size, 0.857); //12px
+}
+
+
+.filter-guidelines{
+  margin-left: 0;
+  padding-left: 0;
+}
+
 /* =============================================================================
    Tables
    ========================================================================== */
@@ -665,4 +862,38 @@ th {
 
 tbody {
   border-top: none;
+  border-bottom: 1px solid $line-grey;
+  
 }
+
+thead{
+  border-bottom: 2px solid $line-grey;
+  background-color: $light-grey;
+  color: $city-green;
+}
+
+td, th{
+  padding: .7em 1em .5em 1em;
+}
+
+th{
+  font-weight: normal;
+  
+}
+
+tr.even, tr.odd {
+    @include rem-fallback(font-size, 0.857); // 12px
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+tr.even{
+  //background-color: #f5f5f5;
+}
+
+
+
+
+
+
+

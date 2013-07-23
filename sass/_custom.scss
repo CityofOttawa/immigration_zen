@@ -7,6 +7,79 @@
 // curly brackets:
 //   @include mix-in-name;
 
+/*creates subtle dropshadow on text */
+@mixin text-shading{
+  @include text-shadow(rgba(black, 0.4) 1px 1px 1px);
+  color: #fff; 
+}
+
+@mixin ease-all{
+    @include transition-property(all);
+    @include transition-duration(250ms);
+    @include transition-timing-function(ease-in-out);
+}
+
+@mixin button{
+  @include text-shading;
+  @include ease-all;
+  @include box-shadow(none);
+  @include rem-fallback(font-size, 1.143);
+  
+  color: #fff;
+  padding: .25em 1em 1.65em;
+  border: 0;
+  
+  //@include filter-gradient(#0d000000, #26000000, vertical); // IE6-8
+  // IE9 SVG, needs conditional override of 'filter' to 'none'
+  $experimental-support-for-svg: true;
+  @include background-image(linear-gradient(top, rgba(0,0,0,0.05) 0%,rgba(0,0,0,0.05) 49%,rgba(0,0,0,0.15) 50%,rgba(0,0,0,0.15) 100%));
+
+  &:active{
+    position: relative;
+    top: 1px;
+  }
+}
+
+
+/* easy-ease-in transition animation*/
+
+
+/* Mixin for REM with fallback (Karl Merkli)
+
+For formatting and usage see:
+http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
+
+*/
+
+@function strip-unit($num) {
+  @return $num / ($num * 0 + 1);
+}
+@mixin rem-fallback($property, $values...) {
+  $max: length($values);
+  $pxValues: '';
+  $remValues: '';
+
+  @for $i from 1 through $max {
+    $value: strip-unit(nth($values, $i));
+    $pxValues: #{$pxValues + $value*16}px;
+
+    @if $i < $max {
+      $pxValues: #{$pxValues + " "};
+    }
+  } 
+
+  @for $i from 1 through $max {
+    $value: strip-unit(nth($values, $i));
+    $remValues: #{$remValues + $value}rem;
+
+    @if $i < $max {
+      $remValues: #{$remValues + " "};
+    }
+  } 
+  
+  #{$property}: $pxValues; 
+  #{$property}: $remValues; 
+}
 
 // element-invisible as defined by http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
 @mixin element-invisible {

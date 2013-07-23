@@ -2,6 +2,14 @@
  * @file
  * Comment Styling
  */
+/*creates subtle dropshadow on text */
+/* easy-ease-in transition animation*/
+/* Mixin for REM with fallback (Karl Merkli)
+
+For formatting and usage see:
+http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
+
+*/
 /* line 9, ../sass/comments.scss */
 .comments {
   /* Wrapper for the list of comments and its title */
