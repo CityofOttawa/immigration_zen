@@ -663,7 +663,7 @@ input[type="submit"] {
   text-transform: capitalize;
   
   @include button; //include bg color below to change color of button
-  background-color: red;
+  background-color: #bbb;
   margin-right: 1em;
   
 }
@@ -678,7 +678,7 @@ input[type="submit"]:hover,
 #edit-image-button:hover{
   
   @include button; //include bg color below to change color of button
-  background-color: blue;
+  background-color: #999;
   
   
 }

@@ -40,6 +40,9 @@
   }
 }
 
+$mysprite-layout:diagonal;
+@import "../images/icons/*.png";
+@include all-icons-sprites;
 
 /* easy-ease-in transition animation*/
 

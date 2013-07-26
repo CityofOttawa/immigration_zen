@@ -77,6 +77,20 @@ li a.active {
 /*
  * Main menu and Secondary menu links
  */
+ 
+.search-btn{
+  display: inline;
+  @extend .icons-search;
+  background-color: $city-green;
+  height: 35px;
+  width: 35px;
+  @include hide-text;
+
+  	
+  &:hover{
+    
+  }
+}
 
 #main-menu {
 }
