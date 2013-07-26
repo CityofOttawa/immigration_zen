@@ -78,6 +78,62 @@ li a.active {
  * Main menu and Secondary menu links
  */
 
+header{
+  padding: 2em;
+  text-align: center;
+  background-color: $light-grey;
+  
+  #logo, #name-and-slogan{
+    float: none;
+  }
+  #logo{
+    padding-right: 110px;
+  }
+  #site-name{
+    line-height: 0;
+    padding-bottom: 1em;
+    font-weight: 100;
+  }
+  
+  .btn-fr{
+    display: inline-block;
+    background-color: $city-green;
+    font-family: $century-gothic;
+    @include text-shading;
+    @include border-box;
+    
+    padding: .5em 1em;
+    width: 175px;
+    margin-bottom: 1em;
+    font-size: 1.25em;
+
+    &:hover, &:focus, &:active{
+    }
+  }
+} 
+ 
+.header-box{
+  clear: both;
+}
+ 
+button.search-btn{
+  display: inline;
+  background-color: $city-green;
+  height: 35px;
+  width: 35px;
+  @include hide-text;
+  display: inline;
+  @extend .icons-search;
+
+  	
+  &:hover, &:active, {
+    
+    @extend .icons-search;
+    background-color: darken($city-green, 5%);
+
+  }
+}
+
 #main-menu {
 }
 
@@ -101,3 +157,6 @@ li a.active {
 
 .block-menu-block {
 }
+
+
+

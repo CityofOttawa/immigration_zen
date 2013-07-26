@@ -27,12 +27,7 @@
   
   color: #fff;
   padding: .25em 1em 1.65em;
-  border: 0;
-  
-  //@include filter-gradient(#0d000000, #26000000, vertical); // IE6-8
-  // IE9 SVG, needs conditional override of 'filter' to 'none'
-  $experimental-support-for-svg: true;
-  @include background-image(linear-gradient(top, rgba(0,0,0,0.05) 0%,rgba(0,0,0,0.05) 49%,rgba(0,0,0,0.15) 50%,rgba(0,0,0,0.15) 100%));
+  border: 0;  
 
   &:active{
     position: relative;
@@ -40,6 +35,25 @@
   }
 }
 
+/* See Paul Irish <http://www.paulirish.com/2012/box-sizing-border-box-ftw/> */
+@mixin border-box{
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box;
+  
+}
+
+@mixin btn-grad{
+  //@include filter-gradient(#0d000000, #26000000, vertical); // IE6-8
+  // IE9 SVG, needs conditional override of 'filter' to 'none'
+  $experimental-support-for-svg: true;
+  @include background-image(linear-gradient(top, rgba(0,0,0,0.05) 0%,rgba(0,0,0,0.05) 49%,rgba(0,0,0,0.15) 50%,rgba(0,0,0,0.15) 100%));
+   
+}
+
+$mysprite-layout:diagonal;
+@import "../images/icons/*.png";
+@include all-icons-sprites;
 
 /* easy-ease-in transition animation*/
 
