@@ -3,8 +3,9 @@
  * Navigation Styling
  */
 /*creates subtle dropshadow on text */
+/* See Paul Irish <http://www.paulirish.com/2012/box-sizing-border-box-ftw/> */
 /* line 50, ../images/icons/*.png */
-.icons-sprite, .icons-bullet, .icons-search, .search-btn {
+.icons-sprite, .icons-bullet, .icons-search, button.search-btn {
   background: url('../images/../images/icons-s6f17c6d1db.png') no-repeat;
 }
 
@@ -14,7 +15,7 @@
 }
 
 /* line 60, ../../../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
-.icons-search, .search-btn {
+.icons-search, button.search-btn, button.search-btn:hover, button.search-btn:active {
   background-position: 0 0;
 }
 
@@ -97,7 +98,48 @@ li a.active {
  * Main menu and Secondary menu links
  */
 /* line 81, ../sass/navigation.scss */
-.search-btn {
+header {
+  padding: 2em;
+  text-align: center;
+  background-color: whitesmoke;
+}
+/* line 86, ../sass/navigation.scss */
+header #logo, header #name-and-slogan {
+  float: none;
+}
+/* line 89, ../sass/navigation.scss */
+header #logo {
+  padding-right: 110px;
+}
+/* line 92, ../sass/navigation.scss */
+header #site-name {
+  line-height: 0;
+  padding-bottom: 1em;
+  font-weight: 100;
+}
+/* line 98, ../sass/navigation.scss */
+header .btn-fr {
+  display: inline-block;
+  background-color: #036f63;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  text-shadow: rgba(0, 0, 0, 0.4) 1px 1px 1px;
+  color: #fff;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: .5em 1em;
+  width: 175px;
+  margin-bottom: 1em;
+  font-size: 1.25em;
+}
+
+/* line 115, ../sass/navigation.scss */
+.header-box {
+  clear: both;
+}
+
+/* line 119, ../sass/navigation.scss */
+button.search-btn {
   display: inline;
   background-color: #036f63;
   height: 35px;
@@ -105,9 +147,14 @@ li a.active {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
+  display: inline;
+}
+/* line 129, ../sass/navigation.scss */
+button.search-btn:hover, button.search-btn:active {
+  background-color: #02564d;
 }
 
-/* line 98, ../sass/navigation.scss */
+/* line 140, ../sass/navigation.scss */
 #secondary-menu {
   float: right;
 }

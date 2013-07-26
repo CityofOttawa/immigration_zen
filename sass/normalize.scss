@@ -665,6 +665,8 @@ input[type="submit"] {
   @include button; //include bg color below to change color of button
   background-color: #bbb;
   margin-right: 1em;
+  @include btn-grad;
+  
   
 }
 

@@ -96,9 +96,6 @@
 
     <?php print render($page['header']); ?>
 
-  </header>
-
-
 	<div class="header-box">
 		<a href="#" class="btn-fr">Francais</a>
 
@@ -111,6 +108,7 @@
 		</form>
 	</div><!-- /header-box -->
 
+	</header>
   <div id="main">
 
     <div id="content" class="column" role="main">

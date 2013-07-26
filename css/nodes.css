@@ -5,6 +5,7 @@
  * Style anything that isn't in the $content variable.
  */
 /*creates subtle dropshadow on text */
+/* See Paul Irish <http://www.paulirish.com/2012/box-sizing-border-box-ftw/> */
 /* line 50, ../images/icons/*.png */
 .icons-sprite, .icons-bullet, .icons-search {
   background: url('../images/../images/icons-s6f17c6d1db.png') no-repeat;
