@@ -147,7 +147,7 @@ button,
 input,
 select,
 textarea {
-  font-family: Verdana, Tahoma, "DejaVu Sans", sans-serif;
+  font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
   color: #222;
 }
 
@@ -226,11 +226,11 @@ a:active {
 /* line 209, ../sass/normalize.scss */
 h1 {
   /* Sets the font-size and line-height while keeping a proper vertical rhythm. */
-  font-size: 2em;
-  line-height: 1.5em;
+  font-size: 1.75em;
+  line-height: 1.71429em;
   /* Sets 1 unit of vertical rhythm on the top and bottom margins. */
-  margin-top: 0.75em;
-  margin-bottom: 0.75em;
+  margin-top: 0.85714em;
+  margin-bottom: 0.85714em;
   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
   font-size: 27.424px;
   font-size: 1.714rem;
@@ -497,10 +497,15 @@ ul ul, ul ol, ol ul, ol ol, .item-list ul ul, .item-list ul ol, .item-list ol ul
   /* Turn off margins on nested lists. */
 }
 
+/* line 464, ../sass/normalize.scss */
+ul {
+  list-style: square;
+}
+
 /*
  * Addresses paddings set differently in IE6/7
  */
-/* line 471, ../sass/normalize.scss */
+/* line 476, ../sass/normalize.scss */
 menu,
 ol,
 ul,
@@ -511,7 +516,7 @@ ul,
 /*
  * Corrects list images handled incorrectly in IE7
  */
-/* line 480, ../sass/normalize.scss */
+/* line 485, ../sass/normalize.scss */
 nav ul,
 nav ol {
   list-style: none;
@@ -526,7 +531,7 @@ nav ol {
  * 2. Improves image quality when scaled in IE7
  *    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
  */
-/* line 496, ../sass/normalize.scss */
+/* line 500, ../sass/normalize.scss */
 img {
   border: 0;
   /* 1 */
@@ -543,7 +548,7 @@ img {
 /*
  * Corrects overflow displayed oddly in IE9
  */
-/* line 512, ../sass/normalize.scss */
+/* line 516, ../sass/normalize.scss */
 svg:not(:root) {
   overflow: hidden;
 }
@@ -554,7 +559,7 @@ svg:not(:root) {
 /*
  * Addresses margin not present in IE6/7/8/9, S5, O11
  */
-/* line 525, ../sass/normalize.scss */
+/* line 529, ../sass/normalize.scss */
 figure {
   margin: 0;
 }
@@ -565,7 +570,7 @@ figure {
 /*
  * Corrects margin displayed oddly in IE6/7
  */
-/* line 538, ../sass/normalize.scss */
+/* line 542, ../sass/normalize.scss */
 form {
   margin: 0;
 }
@@ -573,7 +578,7 @@ form {
 /*
  * Define consistent border, margin, and padding
  */
-/* line 546, ../sass/normalize.scss */
+/* line 550, ../sass/normalize.scss */
 fieldset {
   margin: 0 2px;
   /* Apply borders and padding that keep the vertical rhythm. */
@@ -600,7 +605,7 @@ fieldset {
  * 2. Corrects text not wrapping in FF3
  * 3. Corrects alignment displayed oddly in IE6/7
  */
-/* line 567, ../sass/normalize.scss */
+/* line 571, ../sass/normalize.scss */
 legend {
   border: 0;
   /* 1 */
@@ -613,16 +618,16 @@ legend {
   margin: 0;
 }
 
-/* line 584, ../sass/normalize.scss */
+/* line 588, ../sass/normalize.scss */
 fieldset.collapsible .fieldset-legend {
   padding-left: 20px !important;
 }
 
-/* line 588, ../sass/normalize.scss */
+/* line 592, ../sass/normalize.scss */
 .vertical-tabs {
   padding: 1em;
 }
-/* line 590, ../sass/normalize.scss */
+/* line 594, ../sass/normalize.scss */
 .vertical-tabs ul.vertical-tabs-list {
   width: 15em;
   margin: -15px 0 -1px -16em;
@@ -634,7 +639,7 @@ fieldset.collapsible .fieldset-legend {
  * 2. Addresses margins set differently in IE6/7, FF3+, S5, Chrome
  * 3. Improves appearance and consistency in all browsers
  */
-/* line 606, ../sass/normalize.scss */
+/* line 610, ../sass/normalize.scss */
 button,
 input,
 select,
@@ -647,7 +652,7 @@ textarea {
   /* 3 */
 }
 
-/* line 615, ../sass/normalize.scss */
+/* line 619, ../sass/normalize.scss */
 input, textarea {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -667,7 +672,7 @@ input, textarea {
   box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 3px 0 inset;
 }
 
-/* line 630, ../sass/normalize.scss */
+/* line 634, ../sass/normalize.scss */
 text-area, .form-item textarea {
   padding: 0 0 0 1.5em;
   min-height: 125px;
@@ -676,7 +681,7 @@ text-area, .form-item textarea {
 /*
  * Addresses FF3/4 setting line-height on 'input' using !important in the UA stylesheet
  */
-/* line 641, ../sass/normalize.scss */
+/* line 645, ../sass/normalize.scss */
 button,
 input {
   line-height: normal;
@@ -689,7 +694,7 @@ input {
  * 3. Removes inner spacing in IE7 without affecting normal text inputs
  *    Known issue: inner spacing remains in IE6
  */
-/* line 656, ../sass/normalize.scss */
+/* line 660, ../sass/normalize.scss */
 button,
 .button,
 input[type="button"],
@@ -742,7 +747,7 @@ input[type="submit"]:active {
   top: 1px;
 }
 
-/* line 680, ../sass/normalize.scss */
+/* line 684, ../sass/normalize.scss */
 button:hover,
 .button:hover,
 input[type="button"]:hover,
@@ -786,7 +791,7 @@ input[type="submit"]:hover:active,
   top: 1px;
 }
 
-/* line 687, ../sass/normalize.scss */
+/* line 691, ../sass/normalize.scss */
 #edit-image-button {
   border: 0;
   text-shadow: rgba(0, 0, 0, 0.4) 1px 1px 1px;
@@ -823,18 +828,18 @@ input[type="submit"]:hover:active,
   top: 1px;
 }
 
-/* line 697, ../sass/normalize.scss */
+/* line 701, ../sass/normalize.scss */
 #edit-image-button:hover {
   padding: 0.5em 1em 0.5em;
 }
 
-/* line 701, ../sass/normalize.scss */
+/* line 705, ../sass/normalize.scss */
 #edit-cancel {
   color: #666666;
 }
 
 /*Status Messages */
-/* line 706, ../sass/normalize.scss */
+/* line 710, ../sass/normalize.scss */
 .messages {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -845,20 +850,20 @@ input[type="submit"]:hover:active,
   background-image: none !important;
 }
 
-/* line 712, ../sass/normalize.scss */
+/* line 716, ../sass/normalize.scss */
 .status {
   border-color: #26aa5e !important;
   background-color: #c4f2d7 !important;
 }
 
-/* line 717, ../sass/normalize.scss */
+/* line 721, ../sass/normalize.scss */
 .warning {
   border-color: #edd207 !important;
   background-color: #fefadc !important;
   color: #8a7a04 !important;
 }
 
-/* line 724, ../sass/normalize.scss */
+/* line 728, ../sass/normalize.scss */
 .error {
   border-color: #e74c3c !important;
   color: #e74c3c;
@@ -868,7 +873,7 @@ input[type="submit"]:hover:active,
 /*
  * Re-set default cursor for disabled elements
  */
-/* line 735, ../sass/normalize.scss */
+/* line 739, ../sass/normalize.scss */
 button[disabled],
 input[disabled] {
   cursor: default;
@@ -880,7 +885,7 @@ input[disabled] {
  * 3. Removes excess padding in IE7
       Known issue: excess padding remains in IE6
  */
-/* line 747, ../sass/normalize.scss */
+/* line 751, ../sass/normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   -webkit-box-sizing: border-box;
@@ -897,7 +902,7 @@ input[type="radio"] {
  * 1. Addresses appearance set to searchfield in S5, Chrome
  * 2. Addresses box-sizing set to border-box in S5, Chrome (include -moz to future-proof)
  */
-/* line 764, ../sass/normalize.scss */
+/* line 768, ../sass/normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -905,12 +910,13 @@ input[type="search"] {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
   /* 2 */
+  border: 1px solid blue;
 }
 
 /*
  * Removes inner padding and search cancel button in S5, Chrome on OS X
  */
-/* line 774, ../sass/normalize.scss */
+/* line 781, ../sass/normalize.scss */
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
@@ -920,7 +926,7 @@ input[type="search"]::-webkit-search-cancel-button {
  * Removes inner padding and border in FF3+
  * www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
  */
-/* line 784, ../sass/normalize.scss */
+/* line 791, ../sass/normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -931,7 +937,7 @@ input::-moz-focus-inner {
  * 1. Removes default vertical scrollbar in IE6/7/8/9
  * 2. Improves readability and alignment in all browsers
  */
-/* line 794, ../sass/normalize.scss */
+/* line 801, ../sass/normalize.scss */
 textarea {
   overflow: auto;
   /* 1 */
@@ -939,7 +945,7 @@ textarea {
   /* 2 */
 }
 
-/* line 800, ../sass/normalize.scss */
+/* line 807, ../sass/normalize.scss */
 label {
   display: block;
   font-weight: bold;
@@ -947,7 +953,7 @@ label {
 }
 
 /* Styles input for file upload and managed file submit button */
-/* line 809, ../sass/normalize.scss */
+/* line 816, ../sass/normalize.scss */
 input[type="file"] {
   border: 0;
   -webkit-box-shadow: none;
@@ -956,13 +962,13 @@ input[type="file"] {
   padding: 0;
 }
 
-/* line 815, ../sass/normalize.scss */
+/* line 822, ../sass/normalize.scss */
 #edit-managed-file-upload-button {
   margin: 0 1em;
 }
 
 /* Styles password 'Fair', 'Poor' ajax text */
-/* line 825, ../sass/normalize.scss */
+/* line 832, ../sass/normalize.scss */
 .filter-guidelines {
   margin-left: 0;
   padding-left: 0;
@@ -974,7 +980,7 @@ input[type="file"] {
 /*
  * Remove most spacing between table cells
  */
-/* line 838, ../sass/normalize.scss */
+/* line 845, ../sass/normalize.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -989,37 +995,37 @@ table {
  * Drupal provides table styling which is only useful for its admin section
  * forms, so we override this default CSS. (We set it back in forms.css.)
  */
-/* line 852, ../sass/normalize.scss */
+/* line 859, ../sass/normalize.scss */
 th {
   text-align: left;
   padding: 0;
   border-bottom: none;
 }
 
-/* line 858, ../sass/normalize.scss */
+/* line 865, ../sass/normalize.scss */
 tbody {
   border-top: none;
   border-bottom: 1px solid #cccccc;
 }
 
-/* line 864, ../sass/normalize.scss */
+/* line 871, ../sass/normalize.scss */
 thead {
   border-bottom: 2px solid #cccccc;
   background-color: whitesmoke;
   color: #036f63;
 }
 
-/* line 870, ../sass/normalize.scss */
+/* line 877, ../sass/normalize.scss */
 td, th {
   padding: .7em 1em .5em 1em;
 }
 
-/* line 874, ../sass/normalize.scss */
+/* line 881, ../sass/normalize.scss */
 th {
   font-weight: normal;
 }
 
-/* line 879, ../sass/normalize.scss */
+/* line 886, ../sass/normalize.scss */
 tr.even, tr.odd {
   font-size: 13.712px;
   font-size: 0.857rem;

@@ -118,6 +118,10 @@ header #site-name {
   font-weight: 100;
 }
 /* line 98, ../sass/navigation.scss */
+header #site-name a {
+  color: #004990;
+}
+/* line 104, ../sass/navigation.scss */
 header .btn-fr {
   display: inline-block;
   background-color: #036f63;
@@ -133,12 +137,12 @@ header .btn-fr {
   font-size: 1.25em;
 }
 
-/* line 115, ../sass/navigation.scss */
+/* line 121, ../sass/navigation.scss */
 .header-box {
   clear: both;
 }
 
-/* line 119, ../sass/navigation.scss */
+/* line 125, ../sass/navigation.scss */
 button.search-btn {
   display: inline;
   background-color: #036f63;
@@ -149,12 +153,12 @@ button.search-btn {
   text-align: left;
   display: inline;
 }
-/* line 129, ../sass/navigation.scss */
+/* line 135, ../sass/navigation.scss */
 button.search-btn:hover, button.search-btn:active {
   background-color: #02564d;
 }
 
-/* line 140, ../sass/navigation.scss */
+/* line 146, ../sass/navigation.scss */
 #secondary-menu {
   float: right;
 }
