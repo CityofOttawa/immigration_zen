@@ -46,6 +46,11 @@ li a.active {
 
 #navigation {
   /* overflow: hidden; */ /* Sometimes you want to prevent overlapping with main div. */
+  background-color: $rich-black;
+  padding: 2em;
+  a{
+    color: #fff;
+  }
 
   .block {
     margin-bottom: 0;
@@ -79,15 +84,16 @@ li a.active {
  */
 
 header{
-  padding: 2em;
+  padding: 2em 2em 1em;
   text-align: center;
   background-color: $light-grey;
+  margin-bottom: 0;
   
   #logo, #name-and-slogan{
     float: none;
   }
   #logo{
-    padding-right: 110px;
+    padding-right: 150px;
   }
   #site-name{
     color: $city-blue;
@@ -98,44 +104,81 @@ header{
     font-weight: 100;
   }
   
-  .btn-fr{
-    display: inline-block;
-    background-color: $city-green;
-    font-family: $century-gothic;
-    @include text-shading;
-    @include border-box;
-    
-    padding: .5em 1em;
-    width: 195px;
-    margin-bottom: 1em;
-    font-size: 1em;
-    font-weight: 100;
-  }
-} 
- 
-.header-box{
-  clear: both;
-}
- 
-button.search-btn{
-  display: inline;
-  background-color: $city-green;
-  height: 35px;
-  width: 35px;
-  @include hide-text;
-  display: inline;
-  @extend .icons-search;
 
-  	
-  &:hover, &:active, {
-    
-    @extend .icons-search;
-    background-color: darken($city-green, 5%);
-
-  }
 }
+  
+  
+  .header-box{
+      width: 205px;
+      margin: 0 auto;
+    clear: both;
+    
+    .btn-fr{
+      display: inline-block;
+      background-color: $city-green;
+      font-family: $century-gothic;
+      @include text-shading;
+      @include border-box;
+
+      padding: .5em 1em;
+      width: 100%;
+      font-size: 1em;
+      font-weight: 100;
+
+      &:hover{
+        text-decoration: none;
+        background-color: darken($city-green, 5%);
+      }
+
+    }//btn-fr  
+
+    #search{
+      position: relative;
+      overflow: auto;
+        label{
+          @include hide-text;
+          line-height: 0;
+        }
+        input{
+          @include border-box;
+          margin: 15px 5px 1em 0px;
+          width: 100%;
+          padding: .2em 45px .2em 1em; 
+          float: left;
+          display: inline-block;
+          &:focus{
+            
+          }
+        }
+        .search-btn{
+            display: inline-block;
+            background-color: $city-green;
+            height: 34px;
+            width:35px;
+            @include hide-text;
+            display: inline-block;
+            @extend .icons-search;
+            position: absolute;
+            bottom: 14px;
+            right: 0;
+            margin: 1em 0 0;
+            @include border-box;
+            padding: .5em;
+
+            &:hover, &:active, {
+
+              @extend .icons-search;
+              background-color: darken($city-green, 5%);
+
+          }
+        }//search-btn
+      }//search    
+    
+  } // header-box
+
 
 #main-menu {
+  
 }
 
 #secondary-menu {
@@ -159,5 +202,40 @@ button.search-btn{
 .block-menu-block {
 }
 
+
+/* Footer menu */
+
+#footer{
+  ul{
+    background-color: $rich-black;
+    margin: 2em 0 0 ;
+    padding: 1em;
+  }
+    
+  li{
+    display: inline-block;
+    &:after{
+      color: darken($light-grey, 40%);
+      padding: 1em;
+     content: "|"; 
+    }
+    &:last-child {
+      &:after{
+        content: "";
+        padding: 0;
+      }
+    }
+  }
+  
+  a{
+    color: $line-grey;
+    @include rem-fallback(font-size, 0.857); 
+    
+    &:hover{
+      color: darken($line-grey, 15%);
+      text-decoration: none;
+    }
+  }
+}
 
 

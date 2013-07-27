@@ -134,7 +134,7 @@ button,
 input,
 select,
 textarea {
-  font-family: $base-font-family;
+  font-family: $verdana;
   color: #222;
 }
 
@@ -482,7 +482,8 @@ ul,
  */
 
 nav ul,
-nav ol {
+nav ol, 
+footer ul{
   list-style: none;
   list-style-image: none;
 }
@@ -621,12 +622,8 @@ input, textarea{
   
   @include border-radius(3px);
   line-height: 1.5em;
-  height: 25px;
   margin-top: .1em;
-  padding-left: 10px;
-  padding-top: .1em;
-  padding-bottom: .1em;
-  padding-right: 25px;
+  padding: .2em 1em;
   border: 1px solid #ccc;
   @include box-shadow(rgba(black, 0.1) 1px 1px 3px 0 inset);
 }
@@ -769,8 +766,6 @@ input[type="search"] {
   -webkit-appearance: textfield; /* 1 */
   @include box-sizing(content-box); /* 2 */
   
-  // @todo fix the blue here
-  border: 1px solid blue;
 }
 
 /*

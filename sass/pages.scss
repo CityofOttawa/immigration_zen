@@ -91,6 +91,8 @@ body {
  */
 
 #main {
+  padding-top: 2em;
+  text-align: center;
 }
 
 /*
@@ -123,6 +125,7 @@ h2.title, /* Comment section heading */
 h2.comment-form, /* Comment form heading */
 h3.title { /* Comment title */
   margin: 0;
+  line-height: 1.2;
 }
 
 tr.even { /* Some tables have rows marked even or odd. */
@@ -227,6 +230,23 @@ span.field-label { /* The inline field label used by the Fences module */
  */
 
 #footer {
+  
+  background-color: $dark-grey;
+  color: $line-grey;
+  text-align: center;
+  padding: 2em 0 0 !important; /*overrides zen responsive gutters*/
+
+  p, address{
+    font-style: normal;
+    @include rem-fallback(font-size, 0.857); 
+    margin: 0; 
+    line-height: 1.4;
+  }
+  p{
+    margin-top: 1em;
+  }
+
+  
 }
 
 /*
