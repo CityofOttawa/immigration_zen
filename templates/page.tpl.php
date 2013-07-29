@@ -89,6 +89,7 @@
         <?php if ($site_slogan): ?>
           <h2 id="site-slogan"><?php print $site_slogan; ?></h2>
         <?php endif; ?>
+					<h2 class="subtitle">Diverse · Welcoming · Vibrant</h2>
       </hgroup><!-- /#name-and-slogan -->
     <?php endif; ?>
 
@@ -97,7 +98,8 @@
     <?php print render($page['header']); ?>
 
 	<div class="header-box">
-		<a href="#" class="btn-fr">Francais</a>
+		<a href="#" class="btn-fr" title="French Language">Francais</a>
+		<a href="#" class="btn-fr btn-contact" title="Contact Us">Contact Us</a>
 
 		<form id="search" action="#" method="post">
 
