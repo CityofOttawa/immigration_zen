@@ -101,7 +101,7 @@
 		<a href="#" class="btn-fr" title="French Language">Francais</a>
 		<a href="#" class="btn-fr btn-contact" title="Contact Us">Contact Us</a>
 
-		<form id="search" action="#" method="post">
+		<form id="search-bar" action="#" method="post">
 
 				<label for="search">Search City of Ottawa</label>
 				<input id="search" type="search" name="site-search" placeholder="Search...">

@@ -708,21 +708,28 @@ input[type="submit"]:hover,
   @include border-radius(4px);
   padding: 0.5em 1em 0.6em !important;
   background-image: none !important;
+  border: 1px solid $line-grey;
 }
 
 .status{
+  @extend .messages;
   border-color: $success-green !important;
   background-color: lighten($success-green, 45%) !important;
 }
 
 .warning{
+  @extend .messages;
+  
   border-color: $warning-yellow !important;
   background-color: lighten($warning-yellow, 45%) !important;
   color: darken($warning-yellow, 20%) !important;
+  background-image: none !important;
   
 }
 
 .error{
+  @extend .messages;
+  
   border-color: $error-red !important;
   color: $error-red;
   background-color: lighten($error-red, 35%) !important;

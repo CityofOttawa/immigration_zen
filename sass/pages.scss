@@ -20,6 +20,13 @@ body {
 }
 
 #page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  @include box-shadow(rgba(black, 0.5) 1px 1px 15px 0);  
+  @media only screen and (min-width: 1200px){ // header-box media queries
+    width: 1200px;
+  }
 }
 
 /*
@@ -44,19 +51,8 @@ body {
 /*
  * Header
  */
-
-#header {
-}
-
-#logo { /* Wrapping link for logo */
-  float: left;
-  margin: 0;
-  padding: 0;
-
-  img {
-    vertical-align: bottom;
-  }
-}
+ 
+//defaults
 
 #name-and-slogan { /* Wrapper for website name and slogan */
   float: left;
@@ -86,13 +82,178 @@ body {
   clear: both; /* Clear the logo */
 }
 
+
+header{
+   padding: 2em 2em 1em;
+   text-align: center;
+   background-color: $light-grey;
+   margin-bottom: 0;
+   position: relative;
+   #logo, #name-and-slogan{
+     float: none;
+   }
+
+   #logo{
+     padding-right: 150px;
+   }
+   #site-name{
+     color: $city-blue;
+
+     font-size: 2.5em;
+     line-height: .5;
+     padding-bottom: 1.5em;
+     font-weight: 100;
+   }
+
+   .subtitle{
+     display: none;
+   }
+
+   @media only screen and (min-width: 768px){ // header media queries
+
+     text-align: left;
+     padding: 2em 3em 55px !important;
+     border-bottom: 1px solid $line-grey;
+
+     #site-name{
+       padding-bottom: 0;
+     }
+
+     #logo{
+       padding-right: 0;
+       float: left;
+     }
+
+     hgroup{
+       float: left;
+       margin-top: 45px;
+       position: relative;
+
+       #site-name{
+         display: inline-block;
+         padding-left: 20px;
+       } //site-name
+
+       .subtitle{
+         display: block;
+         color: $color-4;
+         position: absolute;
+         top: 10px;
+         left: 20px;
+       }
+
+     } //hgroup
+
+   }// end media queries
+
+ }// header
+
+ .header-box{
+     width: 205px;
+     margin: 0 auto;
+     clear: both;
+  
+     #search-bar{ 
+       position: relative;
+       overflow: auto;
+         label{
+           @include hide-text;
+           line-height: 0;
+         }
+         input{
+           @include border-box;
+           margin: 15px 5px 1em 0px;
+           width: 100%;
+           padding: .55em 45px .55em 1em; 
+           float: left;
+           display: inline-block;
+           &:focus{
+
+           }
+         }
+         .search-btn{
+             display: inline-block;
+             background-color: $city-green;
+             height: 34px;
+             width:35px;
+             @include hide-text;
+             display: inline-block;
+             @extend .icons-search;
+             position: absolute;
+             bottom: 14px;
+             right: 0;
+             margin: 1em 0 0;
+             @include border-box;
+             padding: .5em;
+
+             &:hover, &:active, {
+
+               @extend .icons-search;
+               background-color: darken($city-green, 5%);
+
+           }
+         }//search-btn
+       }//search
+       
+       @media only screen and (min-width: 480px){
+         width: 300px;
+       } 
+
+       @media only screen and (min-width: 768px){ // header-box media queries
+       position: absolute; // based on parent (header) set to relative
+       top: 55px;
+       right: 3em;
+       text-align: right;
+       width: 250px;
+       
+      }
+      
+      @media only screen and (min-width: 960px){ // header-box media queries
+       width: 400px;
+
+       #search-bar{
+           input{
+             width: 80%;
+             display: inline-block;
+             margin-left: 3px;
+           }
+           .search-btn{
+             padding: .5em 2em;
+             background-position: top center;
+             &:hover{
+               background-position: top center; 
+             }
+           }
+       }//search-bar
+       }//mediaqueries
+  
+   }//header-box
+
+
+#logo { /* Wrapping link for logo */
+  float: left;
+  margin: 0;
+  padding: 0;
+
+  img {
+    vertical-align: bottom;
+  }
+}
+
+
 /*
  * Main (container for everything else)
  */
 
 #main {
-  padding-top: 2em;
+  padding: 2em 3em;
   text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  @media only screen and (min-width: 768px){ // header-box media queries
+    text-align: left;
+  }
+  
 }
 
 /*

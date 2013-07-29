@@ -837,7 +837,7 @@ input[type="submit"]:hover:active,
 
 /*Status Messages */
 /* line 707, ../sass/normalize.scss */
-.messages {
+.messages, .status, .warning, .error {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -845,22 +845,24 @@ input[type="submit"]:hover:active,
   border-radius: 4px;
   padding: 0.5em 1em 0.6em !important;
   background-image: none !important;
+  border: 1px solid #cccccc;
 }
 
-/* line 713, ../sass/normalize.scss */
+/* line 714, ../sass/normalize.scss */
 .status {
   border-color: #26aa5e !important;
   background-color: #c4f2d7 !important;
 }
 
-/* line 718, ../sass/normalize.scss */
+/* line 720, ../sass/normalize.scss */
 .warning {
   border-color: #edd207 !important;
   background-color: #fefadc !important;
   color: #8a7a04 !important;
+  background-image: none !important;
 }
 
-/* line 725, ../sass/normalize.scss */
+/* line 730, ../sass/normalize.scss */
 .error {
   border-color: #e74c3c !important;
   color: #e74c3c;
@@ -870,7 +872,7 @@ input[type="submit"]:hover:active,
 /*
  * Re-set default cursor for disabled elements
  */
-/* line 736, ../sass/normalize.scss */
+/* line 743, ../sass/normalize.scss */
 button[disabled],
 input[disabled] {
   cursor: default;
@@ -882,7 +884,7 @@ input[disabled] {
  * 3. Removes excess padding in IE7
       Known issue: excess padding remains in IE6
  */
-/* line 748, ../sass/normalize.scss */
+/* line 755, ../sass/normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   -webkit-box-sizing: border-box;
@@ -899,7 +901,7 @@ input[type="radio"] {
  * 1. Addresses appearance set to searchfield in S5, Chrome
  * 2. Addresses box-sizing set to border-box in S5, Chrome (include -moz to future-proof)
  */
-/* line 765, ../sass/normalize.scss */
+/* line 772, ../sass/normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -912,7 +914,7 @@ input[type="search"] {
 /*
  * Removes inner padding and search cancel button in S5, Chrome on OS X
  */
-/* line 776, ../sass/normalize.scss */
+/* line 783, ../sass/normalize.scss */
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
@@ -922,7 +924,7 @@ input[type="search"]::-webkit-search-cancel-button {
  * Removes inner padding and border in FF3+
  * www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
  */
-/* line 786, ../sass/normalize.scss */
+/* line 793, ../sass/normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -933,7 +935,7 @@ input::-moz-focus-inner {
  * 1. Removes default vertical scrollbar in IE6/7/8/9
  * 2. Improves readability and alignment in all browsers
  */
-/* line 796, ../sass/normalize.scss */
+/* line 803, ../sass/normalize.scss */
 textarea {
   overflow: auto;
   /* 1 */
@@ -941,7 +943,7 @@ textarea {
   /* 2 */
 }
 
-/* line 802, ../sass/normalize.scss */
+/* line 809, ../sass/normalize.scss */
 label {
   display: block;
   font-weight: bold;
@@ -949,7 +951,7 @@ label {
 }
 
 /* Styles input for file upload and managed file submit button */
-/* line 811, ../sass/normalize.scss */
+/* line 818, ../sass/normalize.scss */
 input[type="file"] {
   border: 0;
   -webkit-box-shadow: none;
@@ -958,13 +960,13 @@ input[type="file"] {
   padding: 0;
 }
 
-/* line 817, ../sass/normalize.scss */
+/* line 824, ../sass/normalize.scss */
 #edit-managed-file-upload-button {
   margin: 0 1em;
 }
 
 /* Styles password 'Fair', 'Poor' ajax text */
-/* line 827, ../sass/normalize.scss */
+/* line 834, ../sass/normalize.scss */
 .filter-guidelines {
   margin-left: 0;
   padding-left: 0;
@@ -976,7 +978,7 @@ input[type="file"] {
 /*
  * Remove most spacing between table cells
  */
-/* line 840, ../sass/normalize.scss */
+/* line 847, ../sass/normalize.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -991,37 +993,37 @@ table {
  * Drupal provides table styling which is only useful for its admin section
  * forms, so we override this default CSS. (We set it back in forms.css.)
  */
-/* line 854, ../sass/normalize.scss */
+/* line 861, ../sass/normalize.scss */
 th {
   text-align: left;
   padding: 0;
   border-bottom: none;
 }
 
-/* line 860, ../sass/normalize.scss */
+/* line 867, ../sass/normalize.scss */
 tbody {
   border-top: none;
   border-bottom: 1px solid #cccccc;
 }
 
-/* line 866, ../sass/normalize.scss */
+/* line 873, ../sass/normalize.scss */
 thead {
   border-bottom: 2px solid #cccccc;
   background-color: whitesmoke;
   color: #036f63;
 }
 
-/* line 872, ../sass/normalize.scss */
+/* line 879, ../sass/normalize.scss */
 td, th {
   padding: .7em 1em .5em 1em;
 }
 
-/* line 876, ../sass/normalize.scss */
+/* line 883, ../sass/normalize.scss */
 th {
   font-weight: normal;
 }
 
-/* line 881, ../sass/normalize.scss */
+/* line 888, ../sass/normalize.scss */
 tr.even, tr.odd {
   font-size: 13.712px;
   font-size: 0.857rem;

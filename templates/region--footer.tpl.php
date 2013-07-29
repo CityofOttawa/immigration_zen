@@ -27,7 +27,7 @@
  */
 ?>
   <footer id="footer" class="<?php print $classes; ?>" role="contentinfo">
-		<img src="http://i39.tinypic.com/2r6mi3d.png" alt="City of Ottawa Logo">
+		<img src="<?php print '/'. drupal_get_path('theme', 'immigration_zen') . '/images/ottawa-white.png'; ?>" alt="City of Ottawa Logo">
 			<p>&copy; 2001-2013 City of Ottawa</p>
 
 			<address>110 Laurier Avenue West <br>

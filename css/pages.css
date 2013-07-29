@@ -9,7 +9,7 @@
 /*creates subtle dropshadow on text */
 /* See Paul Irish <http://www.paulirish.com/2012/box-sizing-border-box-ftw/> */
 /* line 50, ../images/icons/*.png */
-.icons-sprite, .icons-bullet, .icons-search {
+.icons-sprite, .icons-bullet, .icons-search, .header-box #search-bar .search-btn {
   background: url('../images/../images/icons-s6f17c6d1db.png') no-repeat;
 }
 
@@ -19,7 +19,7 @@
 }
 
 /* line 60, ../../../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
-.icons-search {
+.icons-search, .header-box #search-bar .search-btn, .header-box #search-bar .search-btn:hover, .header-box #search-bar .search-btn:active {
   background-position: 0 0;
 }
 
@@ -39,15 +39,31 @@ body {
   padding: 0;
 }
 
+/* line 22, ../sass/pages.scss */
+#page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 1px 1px 15px 0;
+  -moz-box-shadow: rgba(0, 0, 0, 0.5) 1px 1px 15px 0;
+  box-shadow: rgba(0, 0, 0, 0.5) 1px 1px 15px 0;
+}
+@media only screen and (min-width: 1200px) {
+  /* line 22, ../sass/pages.scss */
+  #page {
+    width: 1200px;
+  }
+}
+
 /*
  * The skip-link link will be completely hidden until a user tabs to the link.
  * See the element-focusable rule in system.base.css.
  */
-/* line 30, ../sass/pages.scss */
+/* line 37, ../sass/pages.scss */
 #skip-link {
   margin: 0;
 }
-/* line 34, ../sass/pages.scss */
+/* line 41, ../sass/pages.scss */
 #skip-link a,
 #skip-link a:visited {
   display: block;
@@ -61,73 +77,236 @@ body {
 /*
  * Header
  */
-/* line 51, ../sass/pages.scss */
-#logo {
-  /* Wrapping link for logo */
-  float: left;
-  margin: 0;
-  padding: 0;
-}
-/* line 56, ../sass/pages.scss */
-#logo img {
-  vertical-align: bottom;
-}
-
-/* line 61, ../sass/pages.scss */
+/* line 57, ../sass/pages.scss */
 #name-and-slogan {
   /* Wrapper for website name and slogan */
   float: left;
 }
 
-/* line 65, ../sass/pages.scss */
+/* line 61, ../sass/pages.scss */
 #site-name {
   /* The name of the website */
   margin: 0;
   font-size: 2em;
   line-height: 1.5em;
 }
-/* line 71, ../sass/pages.scss */
+/* line 67, ../sass/pages.scss */
 #site-name a:link,
 #site-name a:visited {
   text-decoration: none;
 }
 
-/* line 80, ../sass/pages.scss */
+/* line 76, ../sass/pages.scss */
 #site-slogan {
   /* The slogan (or tagline) of a website */
   margin: 0;
   font-size: 1em;
 }
 
-/* line 85, ../sass/pages.scss */
+/* line 81, ../sass/pages.scss */
 .region-header {
   /* Wrapper for any blocks placed in the header region */
   clear: both;
   /* Clear the logo */
 }
 
+/* line 86, ../sass/pages.scss */
+header {
+  padding: 2em 2em 1em;
+  text-align: center;
+  background-color: whitesmoke;
+  margin-bottom: 0;
+  position: relative;
+}
+/* line 92, ../sass/pages.scss */
+header #logo, header #name-and-slogan {
+  float: none;
+}
+/* line 96, ../sass/pages.scss */
+header #logo {
+  padding-right: 150px;
+}
+/* line 99, ../sass/pages.scss */
+header #site-name {
+  color: #004990;
+  font-size: 2.5em;
+  line-height: .5;
+  padding-bottom: 1.5em;
+  font-weight: 100;
+}
+/* line 108, ../sass/pages.scss */
+header .subtitle {
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  /* line 86, ../sass/pages.scss */
+  header {
+    text-align: left;
+    padding: 2em 3em 55px !important;
+    border-bottom: 1px solid #cccccc;
+  }
+  /* line 118, ../sass/pages.scss */
+  header #site-name {
+    padding-bottom: 0;
+  }
+  /* line 122, ../sass/pages.scss */
+  header #logo {
+    padding-right: 0;
+    float: left;
+  }
+  /* line 127, ../sass/pages.scss */
+  header hgroup {
+    float: left;
+    margin-top: 45px;
+    position: relative;
+  }
+  /* line 132, ../sass/pages.scss */
+  header hgroup #site-name {
+    display: inline-block;
+    padding-left: 20px;
+  }
+  /* line 137, ../sass/pages.scss */
+  header hgroup .subtitle {
+    display: block;
+    color: #990000;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+  }
+}
+
+/* line 151, ../sass/pages.scss */
+.header-box {
+  width: 205px;
+  margin: 0 auto;
+  clear: both;
+}
+/* line 156, ../sass/pages.scss */
+.header-box #search-bar {
+  position: relative;
+  overflow: auto;
+}
+/* line 159, ../sass/pages.scss */
+.header-box #search-bar label {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  line-height: 0;
+}
+/* line 163, ../sass/pages.scss */
+.header-box #search-bar input {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 15px 5px 1em 0px;
+  width: 100%;
+  padding: .55em 45px .55em 1em;
+  float: left;
+  display: inline-block;
+}
+/* line 174, ../sass/pages.scss */
+.header-box #search-bar .search-btn {
+  display: inline-block;
+  background-color: #036f63;
+  height: 34px;
+  width: 35px;
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  display: inline-block;
+  position: absolute;
+  bottom: 14px;
+  right: 0;
+  margin: 1em 0 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: .5em;
+}
+/* line 189, ../sass/pages.scss */
+.header-box #search-bar .search-btn:hover, .header-box #search-bar .search-btn:active {
+  background-color: #02564d;
+}
+@media only screen and (min-width: 480px) {
+  /* line 151, ../sass/pages.scss */
+  .header-box {
+    width: 300px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* line 151, ../sass/pages.scss */
+  .header-box {
+    position: absolute;
+    top: 55px;
+    right: 3em;
+    text-align: right;
+    width: 250px;
+  }
+}
+@media only screen and (min-width: 960px) {
+  /* line 151, ../sass/pages.scss */
+  .header-box {
+    width: 400px;
+  }
+  /* line 215, ../sass/pages.scss */
+  .header-box #search-bar input {
+    width: 80%;
+    display: inline-block;
+    margin-left: 3px;
+  }
+  /* line 220, ../sass/pages.scss */
+  .header-box #search-bar .search-btn {
+    padding: .5em 2em;
+    background-position: top center;
+  }
+  /* line 223, ../sass/pages.scss */
+  .header-box #search-bar .search-btn:hover {
+    background-position: top center;
+  }
+}
+
+/* line 233, ../sass/pages.scss */
+#logo {
+  /* Wrapping link for logo */
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+/* line 238, ../sass/pages.scss */
+#logo img {
+  vertical-align: bottom;
+}
+
 /*
  * Main (container for everything else)
  */
-/* line 93, ../sass/pages.scss */
+/* line 248, ../sass/pages.scss */
 #main {
-  padding-top: 2em;
+  padding: 2em 3em;
   text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 768px) {
+  /* line 248, ../sass/pages.scss */
+  #main {
+    text-align: left;
+  }
 }
 
 /*
  * Content
  */
-/* line 108, ../sass/pages.scss */
+/* line 269, ../sass/pages.scss */
 .breadcrumb {
   /* The path to the current page in the form of a list of links */
 }
-/* line 109, ../sass/pages.scss */
+/* line 270, ../sass/pages.scss */
 .breadcrumb ol {
   margin: 0;
   padding: 0;
 }
-/* line 113, ../sass/pages.scss */
+/* line 274, ../sass/pages.scss */
 .breadcrumb li {
   display: inline;
   list-style-type: none;
@@ -135,7 +314,7 @@ body {
   padding: 0;
 }
 
-/* line 126, ../sass/pages.scss */
+/* line 287, ../sass/pages.scss */
 h1.title,
 h2.node-title,
 h2.block-title,
@@ -147,37 +326,37 @@ h3.title {
   line-height: 1.2;
 }
 
-/* line 131, ../sass/pages.scss */
+/* line 292, ../sass/pages.scss */
 tr.even {
   /* Some tables have rows marked even or odd. */
   /* background-color: #eee; */
   /* Drupal core uses a #eee background */
 }
 
-/* line 135, ../sass/pages.scss */
+/* line 296, ../sass/pages.scss */
 tr.odd {
   /* background-color: #eee; */
   /* Drupal core uses a #eee background */
 }
 
-/* line 139, ../sass/pages.scss */
+/* line 300, ../sass/pages.scss */
 div.messages {
   /* Important messages (status, warning, and error) for the user. See also the declarations in messages.css. */
   margin: 1.5em 0;
   /* Drupal core uses "6px 0" margin */
 }
-/* line 142, ../sass/pages.scss */
+/* line 303, ../sass/pages.scss */
 div.messages ul {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-/* line 148, ../sass/pages.scss */
+/* line 309, ../sass/pages.scss */
 div.status {
   /* Normal priority messages */
 }
 
-/* line 152, ../sass/pages.scss */
+/* line 313, ../sass/pages.scss */
 div.warning,
 tr.warning {
   /* Medium priority messages */
@@ -185,82 +364,82 @@ tr.warning {
   /* Drupal core uses: 1px solid #f0c020 */
 }
 
-/* line 157, ../sass/pages.scss */
+/* line 318, ../sass/pages.scss */
 div.error,
 tr.error {
   /* High priority messages. See also the .error declaration below. */
 }
 
-/* line 160, ../sass/pages.scss */
+/* line 321, ../sass/pages.scss */
 .error {
   /* Errors that are separate from div.messages status messages. */
   /* color: #e55; */
   /* Drupal core uses a #e55 background */
 }
 
-/* line 164, ../sass/pages.scss */
+/* line 325, ../sass/pages.scss */
 .warning {
   /* Warnings that are separate from div.messages status messages. */
   /* color: #e09010; */
   /* Drupal core uses a #e09010 background */
 }
 
-/* line 168, ../sass/pages.scss */
+/* line 329, ../sass/pages.scss */
 .tabs {
   /* See also the tabs.css file. */
 }
 
-/* line 171, ../sass/pages.scss */
+/* line 332, ../sass/pages.scss */
 .region-help {
   /* Help text on a page */
 }
 
-/* line 174, ../sass/pages.scss */
+/* line 335, ../sass/pages.scss */
 .more-help-link {
   /* Link to more help */
 }
 
-/* line 177, ../sass/pages.scss */
+/* line 338, ../sass/pages.scss */
 .region-content {
   /* Wrapper for the actual page content */
 }
 
-/* line 180, ../sass/pages.scss */
+/* line 341, ../sass/pages.scss */
 ul.inline {
   /* List of links generated by theme_links() */
   display: inline;
   padding: 0;
 }
-/* line 184, ../sass/pages.scss */
+/* line 345, ../sass/pages.scss */
 ul.inline li {
   display: inline;
   list-style-type: none;
   padding: 0 1em 0 0;
 }
 
-/* line 190, ../sass/pages.scss */
+/* line 351, ../sass/pages.scss */
 span.field-label {
   /* The inline field label used by the Fences module */
   padding: 0 1em 0 0;
 }
 
-/* line 194, ../sass/pages.scss */
+/* line 355, ../sass/pages.scss */
 .item-list .pager {
   /* A list of page numbers when more than 1 page of content is available */
   padding: 0;
 }
-/* line 197, ../sass/pages.scss */
+/* line 358, ../sass/pages.scss */
 .item-list .pager li {
   /* Each page number in the pager list */
   padding: 0 0.5em;
 }
 
-/* line 202, ../sass/pages.scss */
+/* line 363, ../sass/pages.scss */
 .feed-icon {
   /* The link to the RSS or Atom feed for the current list of content */
 }
 
-/* line 205, ../sass/pages.scss */
+/* line 366, ../sass/pages.scss */
 .more-link {
   /* Aggregator, blog, and forum more link */
 }
@@ -280,7 +459,7 @@ span.field-label {
 /*
  * Footer
  */
-/* line 232, ../sass/pages.scss */
+/* line 393, ../sass/pages.scss */
 #footer {
   background-color: #333333;
   color: #cccccc;
@@ -288,7 +467,7 @@ span.field-label {
   padding: 2em 0 0 !important;
   /*overrides zen responsive gutters*/
 }
-/* line 239, ../sass/pages.scss */
+/* line 400, ../sass/pages.scss */
 #footer p, #footer address {
   font-style: normal;
   font-size: 13.712px;
@@ -296,7 +475,7 @@ span.field-label {
   margin: 0;
   line-height: 1.4;
 }
-/* line 245, ../sass/pages.scss */
+/* line 406, ../sass/pages.scss */
 #footer p {
   margin-top: 1em;
 }
@@ -304,7 +483,7 @@ span.field-label {
 /*
  * Page bottom
  */
-/* line 256, ../sass/pages.scss */
+/* line 417, ../sass/pages.scss */
 .region-bottom {
   /* Wrapper for any blocks placed in the page bottom region */
 }
