@@ -255,6 +255,15 @@ header{
       margin-bottom: .5em;
     }
     
+    ul li { /* Drupal override */
+      margin: 0;
+      list-style-image: url(../images/icons/bullet.png);
+    }
+    
+    .tabs li, .status ul li{ //fixes and prevents bullet image on status messages and in edit tabs
+      list-style-image: none;
+    } 
+    
     img {
       display: block;
       margin: 1em 0;
