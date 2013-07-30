@@ -250,6 +250,11 @@ header{
     h1{
       text-align: center;
     }
+    
+    h1, h2, h3, h4, h5, h6{
+      display: block;
+      clear: both;
+    }
     #page-title{
       text-transform: capitalize;
       margin-bottom: .5em;
@@ -271,8 +276,8 @@ header{
       @include box-shadow(rgba(black, 0.2) 0 1px 5px 0);  
       
       @media only screen and (min-width: 768px){ // main media queries
-        margin: 1em 2em;
-        display: inline-block;
+        margin: 0 2em 1em 0;
+        float: left;
       }
     }
     
