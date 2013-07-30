@@ -261,12 +261,12 @@ header{
     }
     
     .tabs li, .status ul li{ //fixes and prevents bullet image on status messages and in edit tabs
-      list-style-image: none;
+      list-style-image: none; 
     } 
     
     img {
       display: block;
-      margin: 1em 0;
+      margin: 1em 0; 
       
       @include box-shadow(rgba(black, 0.2) 0 1px 5px 0);  
       
