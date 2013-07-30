@@ -48,10 +48,12 @@ li a.active {
   /* overflow: hidden; */ /* Sometimes you want to prevent overlapping with main div. */
   background-color: $rich-black;
   padding: 2em 0;
+  margin-bottom: 0;
   
   .tinynav-wrapper{
     margin: 0 auto;
-    padding: 0 1em;
+    padding: 0;
+    
     select{
       width: 100%;
     }
@@ -62,7 +64,7 @@ li a.active {
     
     @media only screen and (min-width: 480px){ 
       width: 300px;
-      padding: 2em 3em;
+      padding: 0 3em;
 
     }
     
@@ -105,6 +107,8 @@ li a.active {
           @include box-shadow($line-grey 1px 2px 0 0); //simulates an underline  
         }
         a{
+          text-decoration: none;
+          
           text-align: center;
           border: 2px solid #fff;
           border-bottom: 4px solid #fff;
@@ -124,37 +128,37 @@ li a.active {
         &:nth-child(1) a{
           background-color: $color-1;
           &:hover{
-            background-color: darken($color-1, 5%);
+            background-color: lighten($color-1, 5%);
           }
         }
         &:nth-child(2) a{
           background-color: $color-2;
           &:hover{
-            background-color: darken($color-2, 5%);
+            background-color: lighten($color-2, 5%);
           }
         }
         &:nth-child(3) a{
           background-color: $color-3;
           &:hover{
-            background-color: darken($color-3, 5%);
+            background-color: lighten($color-3, 5%);
           }
         }
         &:nth-child(4) a{
           background-color: $color-4;
           &:hover{
-            background-color: darken($color-4, 5%);
+            background-color: lighten($color-4, 5%);
           }
         }
         &:nth-child(5) a{
           background-color: $color-5;
           &:hover{
-            background-color: darken($color-5, 5%);
+            background-color: lighten($color-5, 5%);
           }
         }
         &:nth-child(6) a{
           background-color: $color-6;
           &:hover{
-            background-color: darken($color-6, 5%);
+            background-color: lighten($color-6, 5%);
           }
         }
         
@@ -165,8 +169,6 @@ li a.active {
   
   @media only screen and (min-width: 768px){ // #navigation
     background-color: #fff;
-    
-    
 
   }
   
@@ -188,6 +190,7 @@ li a.active {
       font-family: $century-gothic;
       @include text-shading;
       @include border-box;
+      text-decoration: none;
 
       padding: .5em 1em;
       width: 100%;
@@ -195,7 +198,7 @@ li a.active {
       font-weight: 100;
 
       &:hover{
-        background-color: darken($city-green, 5%);
+        background-color: lighten($city-green, 5%);
         }
 
       }//btn-fr  

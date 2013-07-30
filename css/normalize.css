@@ -170,7 +170,6 @@ body {
 a:link,
 a:visited {
   color: #004990;
-  text-decoration: none;
   -webkit-transition-property: all;
   -moz-transition-property: all;
   -o-transition-property: all;
@@ -185,11 +184,11 @@ a:visited {
   transition-timing-function: ease-in-out;
 }
 
-/* line 169, ../sass/normalize.scss */
+/* line 170, ../sass/normalize.scss */
 a:hover,
 a:focus,
 a:active {
-  text-decoration: underline;
+  color: #0070dd;
 }
 
 /*
@@ -987,43 +986,49 @@ table {
   /* Add vertical rhythm margins. */
   margin-top: 1.5em;
   margin-bottom: 1.5em;
+  background-color: #fff;
+  border: 1px solid #cccccc;
 }
 
 /*
  * Drupal provides table styling which is only useful for its admin section
  * forms, so we override this default CSS. (We set it back in forms.css.)
  */
-/* line 861, ../sass/normalize.scss */
+/* line 864, ../sass/normalize.scss */
 th {
   text-align: left;
   padding: 0;
   border-bottom: none;
 }
 
-/* line 867, ../sass/normalize.scss */
+/* line 870, ../sass/normalize.scss */
 tbody {
   border-top: none;
   border-bottom: 1px solid #cccccc;
 }
 
-/* line 873, ../sass/normalize.scss */
-thead {
+/* line 876, ../sass/normalize.scss */
+thead, tr:first-child {
+  border: 1px solid #cccccc;
   border-bottom: 2px solid #cccccc;
   background-color: whitesmoke;
   color: #036f63;
+  text-align: left;
+  vertical-align: text-bottom;
 }
 
-/* line 879, ../sass/normalize.scss */
+/* line 885, ../sass/normalize.scss */
 td, th {
   padding: .7em 1em .5em 1em;
+  border: 1px solid #ccc;
 }
 
-/* line 883, ../sass/normalize.scss */
+/* line 892, ../sass/normalize.scss */
 th {
   font-weight: normal;
 }
 
-/* line 888, ../sass/normalize.scss */
+/* line 897, ../sass/normalize.scss */
 tr.even, tr.odd {
   font-size: 13.712px;
   font-size: 0.857rem;

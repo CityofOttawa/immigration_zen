@@ -159,16 +159,16 @@ body {
 a:link, 
 a:visited {
   color: $city-blue;
-  text-decoration: none;
+  //text-decoration: none;
   @include ease-all;
+  
   
 }
 
 a:hover,
 a:focus,
 a:active {
-  //color: $city-blue;
-  text-decoration: underline;
+  color: lighten($city-blue, 15%);
 }
 
 
@@ -851,6 +851,9 @@ table {
   /* Add vertical rhythm margins. */
   @include leader(1);
   @include trailer(1);
+  
+  background-color: #fff;
+  border: 1px solid $line-grey;
 }
 
 /*
@@ -864,26 +867,32 @@ th {
   border-bottom: none;
 }
 
-tbody {
+tbody {  
   border-top: none;
   border-bottom: 1px solid $line-grey;
   
 }
 
-thead{
+thead, tr:first-child{
+  border: 1px solid $line-grey;
   border-bottom: 2px solid $line-grey;
   background-color: $light-grey;
   color: $city-green;
+  text-align: left;
+  vertical-align: text-bottom;
 }
 
 td, th{
   padding: .7em 1em .5em 1em;
+  border: 1px solid #ccc;
+  //border-left: 0;
+  //border-right: 0;
 }
 
 th{
   font-weight: normal;
-  
 }
+
 
 tr.even, tr.odd {
     @include rem-fallback(font-size, 0.857); // 12px
