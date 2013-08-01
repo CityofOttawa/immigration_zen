@@ -66,33 +66,33 @@ li a.active {
   padding: 2em 0;
   margin-bottom: 0;
 }
-/* line 53, ../sass/navigation.scss */
+/* line 54, ../sass/navigation.scss */
 #navigation .tinynav-wrapper {
   margin: 0 auto;
   padding: 0;
 }
-/* line 57, ../sass/navigation.scss */
+/* line 58, ../sass/navigation.scss */
 #navigation .tinynav-wrapper select {
   width: 100%;
 }
 @media only screen and (min-width: 260px) {
-  /* line 53, ../sass/navigation.scss */
+  /* line 54, ../sass/navigation.scss */
   #navigation .tinynav-wrapper {
     width: 200px;
   }
 }
 @media only screen and (min-width: 480px) {
-  /* line 53, ../sass/navigation.scss */
+  /* line 54, ../sass/navigation.scss */
   #navigation .tinynav-wrapper {
     width: 300px;
     padding: 0 3em;
   }
 }
-/* line 73, ../sass/navigation.scss */
+/* line 74, ../sass/navigation.scss */
 #navigation .block {
   margin-bottom: 0;
 }
-/* line 78, ../sass/navigation.scss */
+/* line 79, ../sass/navigation.scss */
 #navigation .block-menu .block-title,
 #navigation .block-menu-block .block-title {
   position: absolute !important;
@@ -101,7 +101,7 @@ li a.active {
   overflow: hidden;
   clip: rect(1px, 1px, 1px, 1px);
 }
-/* line 83, ../sass/navigation.scss */
+/* line 84, ../sass/navigation.scss */
 #navigation ul.links,
 #navigation ul.menu {
   /* Menu block links */
@@ -109,7 +109,7 @@ li a.active {
   padding: 0;
   text-align: left;
 }
-/* line 88, ../sass/navigation.scss */
+/* line 89, ../sass/navigation.scss */
 #navigation ul.links li,
 #navigation ul.menu li {
   /* A simple method to get navigation links to appear in one line. */
@@ -118,29 +118,29 @@ li a.active {
   list-style-type: none;
   list-style-image: none;
 }
-/* line 96, ../sass/navigation.scss */
+/* line 97, ../sass/navigation.scss */
 #navigation #main-menu {
   padding: 0 3em;
 }
-/* line 99, ../sass/navigation.scss */
+/* line 100, ../sass/navigation.scss */
 #navigation #main-menu ul {
   width: 100%;
   margin: 0;
 }
-/* line 102, ../sass/navigation.scss */
+/* line 103, ../sass/navigation.scss */
 #navigation #main-menu ul li {
   padding: 0;
   margin: 0;
   width: 16.66%;
   /*colored bg for each menu item */
 }
-/* line 106, ../sass/navigation.scss */
+/* line 107, ../sass/navigation.scss */
 #navigation #main-menu ul li:hover {
   -webkit-box-shadow: #cccccc 1px 2px 0 0;
   -moz-box-shadow: #cccccc 1px 2px 0 0;
   box-shadow: #cccccc 1px 2px 0 0;
 }
-/* line 109, ../sass/navigation.scss */
+/* line 110, ../sass/navigation.scss */
 #navigation #main-menu ul li a {
   text-decoration: none;
   text-align: center;
@@ -154,57 +154,57 @@ li a.active {
   display: block;
   width: 100%;
 }
-/* line 122, ../sass/navigation.scss */
+/* line 123, ../sass/navigation.scss */
 #navigation #main-menu ul li a:hover {
   text-decoration: none;
 }
-/* line 128, ../sass/navigation.scss */
+/* line 129, ../sass/navigation.scss */
 #navigation #main-menu ul li:nth-child(1) a {
-  background-color: #cc9f33;
+  background-color: #69511a;
 }
-/* line 130, ../sass/navigation.scss */
+/* line 131, ../sass/navigation.scss */
 #navigation #main-menu ul li:nth-child(1) a:hover {
-  background-color: #d1a947;
+  background-color: #7d611f;
 }
-/* line 134, ../sass/navigation.scss */
+/* line 135, ../sass/navigation.scss */
 #navigation #main-menu ul li:nth-child(2) a {
-  background-color: #5e963b;
+  background-color: #345420;
 }
-/* line 136, ../sass/navigation.scss */
+/* line 137, ../sass/navigation.scss */
 #navigation #main-menu ul li:nth-child(2) a:hover {
-  background-color: #69a842;
+  background-color: #3f6627;
 }
-/* line 140, ../sass/navigation.scss */
+/* line 141, ../sass/navigation.scss */
 #navigation #main-menu ul li:nth-child(3) a {
   background-color: #1d2747;
 }
-/* line 142, ../sass/navigation.scss */
+/* line 143, ../sass/navigation.scss */
 #navigation #main-menu ul li:nth-child(3) a:hover {
   background-color: #243159;
 }
-/* line 146, ../sass/navigation.scss */
+/* line 147, ../sass/navigation.scss */
 #navigation #main-menu ul li:nth-child(4) a {
   background-color: #990000;
 }
-/* line 148, ../sass/navigation.scss */
+/* line 149, ../sass/navigation.scss */
 #navigation #main-menu ul li:nth-child(4) a:hover {
   background-color: #b30000;
 }
-/* line 152, ../sass/navigation.scss */
+/* line 153, ../sass/navigation.scss */
 #navigation #main-menu ul li:nth-child(5) a {
-  background-color: #666666;
+  background-color: #565656;
 }
-/* line 154, ../sass/navigation.scss */
+/* line 155, ../sass/navigation.scss */
 #navigation #main-menu ul li:nth-child(5) a:hover {
-  background-color: #737373;
+  background-color: #636363;
 }
-/* line 158, ../sass/navigation.scss */
+/* line 159, ../sass/navigation.scss */
 #navigation #main-menu ul li:nth-child(6) a {
-  background-color: #4f6fa3;
+  background-color: #3a5078;
 }
-/* line 160, ../sass/navigation.scss */
+/* line 161, ../sass/navigation.scss */
 #navigation #main-menu ul li:nth-child(6) a:hover {
-  background-color: #5c7cb0;
+  background-color: #425b89;
 }
 @media only screen and (min-width: 768px) {
   /* line 47, ../sass/navigation.scss */
@@ -216,7 +216,7 @@ li a.active {
 /*
  * Main menu and Secondary menu links
  */
-/* line 187, ../sass/navigation.scss */
+/* line 188, ../sass/navigation.scss */
 .header-box .btn-fr {
   display: inline-block;
   background-color: #036f63;
@@ -232,21 +232,21 @@ li a.active {
   font-size: 1em;
   font-weight: 100;
 }
-/* line 200, ../sass/navigation.scss */
+/* line 201, ../sass/navigation.scss */
 .header-box .btn-fr:hover {
   background-color: #048879;
 }
-/* line 206, ../sass/navigation.scss */
+/* line 207, ../sass/navigation.scss */
 .header-box .btn-contact {
   display: none;
   visibility: hidden;
 }
 @media only screen and (min-width: 768px) {
-  /* line 213, ../sass/navigation.scss */
+  /* line 214, ../sass/navigation.scss */
   .header-box .btn-fr {
     display: inline-block;
     background-color: transparent;
-    color: #004990;
+    color: #194f84;
     font-family: Verdana, Tahoma, "DejaVu Sans", sans-serif;
     text-shadow: none;
     padding: 0.5em 1em 0 0;
@@ -254,21 +254,21 @@ li a.active {
     font-size: 1.143em;
     font-weight: normal;
   }
-  /* line 225, ../sass/navigation.scss */
+  /* line 226, ../sass/navigation.scss */
   .header-box .btn-fr:hover {
-    color: #007df6;
+    color: #2c82d7;
     background-color: transparent;
   }
-  /* line 231, ../sass/navigation.scss */
+  /* line 232, ../sass/navigation.scss */
   .header-box .btn-contact {
     display: inline-block;
     visibility: visible;
     padding: 0 0 0 1em;
-    border-left: 2px solid #004990;
+    border-left: 2px solid #194f84;
   }
 }
 
-/* line 249, ../sass/navigation.scss */
+/* line 250, ../sass/navigation.scss */
 #secondary-menu {
   float: right;
 }
@@ -283,34 +283,34 @@ li a.active {
  * these limitations, see http://drupal.org/project/menu_block
  */
 /* Footer menu */
-/* line 274, ../sass/navigation.scss */
+/* line 275, ../sass/navigation.scss */
 #footer ul {
   background-color: #222222;
   margin: 2em 0 0;
   padding: 1em;
 }
-/* line 280, ../sass/navigation.scss */
+/* line 281, ../sass/navigation.scss */
 #footer li {
   display: inline-block;
 }
-/* line 282, ../sass/navigation.scss */
+/* line 283, ../sass/navigation.scss */
 #footer li:after {
   color: #8f8f8f;
   padding: 1em;
   content: "|";
 }
-/* line 288, ../sass/navigation.scss */
+/* line 289, ../sass/navigation.scss */
 #footer li:last-child:after {
   content: "";
   padding: 0;
 }
-/* line 295, ../sass/navigation.scss */
+/* line 296, ../sass/navigation.scss */
 #footer a {
   color: #cccccc;
   font-size: 13.712px;
   font-size: 0.857rem;
 }
-/* line 299, ../sass/navigation.scss */
+/* line 300, ../sass/navigation.scss */
 #footer a:hover {
   color: #a6a6a6;
   text-decoration: none;

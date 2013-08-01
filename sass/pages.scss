@@ -13,13 +13,20 @@
 /*
  * Body
  */
+html{
+  background: #e9e3d5 url(../images/bg-left.jpg) bottom left no-repeat;
+  
+}
 
 body {
   margin: 0;
   padding: 0;
+  background: transparent url(../images/bg-right.jpg) bottom right no-repeat;
+  
 }
 
 #page {
+  background-color: #fff;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0;
@@ -250,12 +257,15 @@ header{
     h1{
       text-align: center;
     }
+    h2{
+      font-weight: 600;
+    }
     
     h1, h2, h3, h4, h5, h6{
       display: block;
       clear: both;
     }
-    #page-title{
+    #page-title, h1{
       text-transform: capitalize;
       margin-bottom: .5em;
     }
@@ -265,9 +275,13 @@ header{
       list-style-image: url(../images/icons/bullet.png);
     }
     
-    .tabs li, .status ul li{ //fixes and prevents bullet image on status messages and in edit tabs
+    .tabs li, .status ul li, fieldset ul li{ //fixes and prevents bullet image on status messages and in edit tabs
       list-style-image: none; 
     } 
+    
+    fieldset ul li{
+      list-style-type: none;
+    }  
     
     img {
       display: block;
@@ -331,6 +345,10 @@ table{
     @include rem-fallback(font-size, 1); // 14px
   
   }
+}
+
+th{
+  font-weight: bold;
 }
 
 td{

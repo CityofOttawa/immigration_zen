@@ -226,7 +226,7 @@ h2 {
   
   
   font-family: $font-heading; //century gothic
-  @include rem-fallback(font-size, 1.286); // 18px
+  @include rem-fallback(font-size, 1.429); // 20px
   font-weight: normal;
   
 }
@@ -235,6 +235,7 @@ h3 {
   @include adjust-font-size-to( $h3-font-size );
   @include leader(1, $h3-font-size);
   @include trailer(1, $h3-font-size);
+  @include rem-fallback(font-size, 1.286); //18px
   
   font-family: $font-heading; //century gothic
 }
@@ -262,7 +263,8 @@ h6 {
 /* Thematic break */
 hr {
   height: 1px;
-  border: 1px solid #666;
+  border: 0;
+  border-bottom: 1px solid $line-grey;
   padding-bottom: -1px;
   margin: rhythm(1) 0;
 }
@@ -428,6 +430,14 @@ footer img{
   @include box-shadow(none);
 }
 
+code{
+  background-color: $light-grey;
+  border: 1px solid #dedede;
+  padding: 0.1em 0.2em .05em .2em;
+  margin: 5px;
+  @include rem-fallback(font-size, 1); //14px
+}
+
 
 /* =============================================================================
    Lists
@@ -449,6 +459,10 @@ ul,
 .item-list ul li, .links li { /* Drupal override */
   margin: 0;
   list-style-image: url(../images/icons/bullet.png);
+}
+
+dt{
+  font-weight: bold;
 }
 
 dd {
@@ -558,9 +572,9 @@ fieldset {
   
   
   border: 0;
-  border-top: 1px solid $med-grey;
+  border-top: 1px solid $line-grey;
   position: relative;
-  margin-top: 25px;
+  margin-top: 55px;
 }
 
 /*
@@ -623,6 +637,7 @@ input, textarea{
   @include border-radius(3px);
   line-height: 1.5em;
   margin-top: .1em;
+  margin-right: 1em;
   padding: .2em 1em;
   border: 1px solid #ccc;
   @include box-shadow(rgba(black, 0.1) 1px 1px 3px 0 inset);
@@ -873,13 +888,12 @@ tbody {
   
 }
 
-thead, tr:first-child{
+thead{
   border: 1px solid $line-grey;
   border-bottom: 2px solid $line-grey;
   background-color: $light-grey;
   color: $city-green;
   text-align: left;
-  vertical-align: text-bottom;
 }
 
 td, th{
