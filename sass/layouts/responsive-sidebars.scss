@@ -169,11 +169,10 @@ $zen-auto-include-item-base: false;
   .cityott-two-66-33,
   .panel-2col {
     .region-cityott-two-66-33-first {
-      @include zen-clear();
-      @include zen-grid-item(1, 1);      
+      @include zen-grid-item(1, 1, right);      
     }
     .region-cityott-two-66-33-second {
-      @include zen-grid-item(3, 2);
+      @include zen-grid-item(2, 1);
     }
   } 
   
