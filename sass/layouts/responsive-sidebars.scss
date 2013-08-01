@@ -159,6 +159,25 @@ $zen-auto-include-item-base: false;
   }
 }
 
+@media all and (min-width: 767px) {
+  /*
+   * Use 4 grid columns for smaller screens.
+   */
+  $zen-column-count: 3;
+
+  // Panels
+  .cityott-two-66-33,
+  .panel-2col {
+    .region-cityott-two-66-33-first {
+      @include zen-grid-item(1, 1, right);      
+    }
+    .region-cityott-two-66-33-second {
+      @include zen-grid-item(2, 1);
+    }
+  } 
+  
+}
+
 @media all and (min-width: 960px) {
   /*
    * Use 5 grid columns for larger screens.

@@ -207,6 +207,27 @@ http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
     margin-right: -100%;
   }
 }
+@media all and (min-width: 767px) {
+  /*
+   * Use 4 grid columns for smaller screens.
+   */
+  /* line 171, ../../sass/layouts/responsive-sidebars.scss */
+  .cityott-two-66-33 .region-cityott-two-66-33-first,
+  .panel-2col .region-cityott-two-66-33-first {
+    float: right;
+    width: 33.33333%;
+    margin-right: 0%;
+    margin-left: -33.33333%;
+  }
+  /* line 174, ../../sass/layouts/responsive-sidebars.scss */
+  .cityott-two-66-33 .region-cityott-two-66-33-second,
+  .panel-2col .region-cityott-two-66-33-second {
+    float: left;
+    width: 66.66667%;
+    margin-left: 0%;
+    margin-right: -66.66667%;
+  }
+}
 @media all and (min-width: 960px) {
   /*
    * Use 5 grid columns for larger screens.
@@ -214,7 +235,7 @@ http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
   /*
    * The layout when there is only one sidebar, the left one.
    */
-  /* line 173, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 192, ../../sass/layouts/responsive-sidebars.scss */
   .sidebar-first #content {
     /* Span 4 columns, starting in 2nd column from left. */
     float: left;
@@ -222,7 +243,7 @@ http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
     margin-left: 20%;
     margin-right: -100%;
   }
-  /* line 177, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 196, ../../sass/layouts/responsive-sidebars.scss */
   .sidebar-first .region-sidebar-first {
     /* Span 1 column, starting in 1st column from left. */
     float: left;
@@ -234,7 +255,7 @@ http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
   /*
    * The layout when there is only one sidebar, the right one.
    */
-  /* line 187, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 206, ../../sass/layouts/responsive-sidebars.scss */
   .sidebar-second #content {
     /* Span 4 columns, starting in 1st column from left. */
     float: left;
@@ -242,7 +263,7 @@ http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
     margin-left: 0%;
     margin-right: -80%;
   }
-  /* line 191, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 210, ../../sass/layouts/responsive-sidebars.scss */
   .sidebar-second .region-sidebar-second {
     /* Span 1 column, starting in 5th column from left. */
     float: left;
@@ -254,7 +275,7 @@ http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
   /*
    * The layout when there are two sidebars.
    */
-  /* line 201, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 220, ../../sass/layouts/responsive-sidebars.scss */
   .two-sidebars #content {
     /* Span 3 columns, starting in 2nd column from left. */
     float: left;
@@ -262,7 +283,7 @@ http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
     margin-left: 20%;
     margin-right: -80%;
   }
-  /* line 205, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 224, ../../sass/layouts/responsive-sidebars.scss */
   .two-sidebars .region-sidebar-first {
     /* Span 1 column, starting in 1st column from left. */
     float: left;
@@ -270,7 +291,7 @@ http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
     margin-left: 0%;
     margin-right: -20%;
   }
-  /* line 209, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 228, ../../sass/layouts/responsive-sidebars.scss */
   .two-sidebars .region-sidebar-second {
     /* Span 1 column, starting in 5th column from left. */
     float: left;
