@@ -143,11 +143,11 @@
     <ul class="landing-items">
       <li>
         <figure>
-          <img src="http://placekitten.com/400/300" alt="Placeholder Img">
+          <img src="http://lorempixel.com/400/300/city/1" alt="Placeholder Img">
           <figcaption>
             <a href="#">
               <h2>Why Choose Ottawa</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.</p>
+              <p>Lorem ipsum dolor sit amet, con secte tur adipiscing elit sed.</p>
             </a>
           </figcaption>
         </figure>
@@ -155,11 +155,11 @@
 
       <li>
         <figure>
-          <img src="http://placekitten.com/g/400/300" alt="Placeholder Img">
+          <img src="http://lorempixel.com/400/300/city/2" alt="Placeholder Img">
           <figcaption>
             <a href="#">
               <h2>Before you arrive</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.</p>
+              <p>Lorem ipsum dolor sit amet, consect etur adipiscing elit sed.</p>
             </a>
           </figcaption>
         </figure>
@@ -167,11 +167,11 @@
       
       <li>
         <figure>
-          <img src="http://placekitten.com/400/300" alt="Placeholder Img">
+          <img src="http://lorempixel.com/400/300/city/3" alt="Placeholder Img">
           <figcaption>
             <a href="#">
               <h2>After you arrive</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.</p>
+              <p>Lorem ipsum dolor sit amet, con secte tur adipiscing elit sed.</p>
             </a>
           </figcaption>
         </figure>
@@ -179,11 +179,11 @@
 
       <li>
         <figure>
-          <img src="http://placekitten.com/g/400/300/" alt="Placeholder Img">
+          <img src="http://lorempixel.com/400/300/city/4" alt="Placeholder Img">
           <figcaption>
             <a href="#">
               <h2>Working / doing business</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.</p>
+              <p>Lorem ipsum dolor sit amet, con secte tur adipiscing elit sed.</p>
             </a>
           </figcaption>
         </figure>
@@ -191,11 +191,11 @@
 
       <li>
         <figure>
-          <img src="http://placekitten.com/400/300" alt="Placeholder Img">
+          <img src="http://lorempixel.com/400/300/city/5" alt="Placeholder Img">
           <figcaption>
             <a href="#">
               <h2>Learning</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.</p>
+              <p>Lorem ipsum dolor sit amet, consec tetur adipiscing elit sed.</p>
             </a>
           </figcaption>
         </figure>
@@ -203,7 +203,7 @@
 
       <li>
         <figure>
-          <img src="http://placekitten.com/400/300" alt="Placeholder Img">
+          <img src="http://lorempixel.com/400/300/city/6" alt="Placeholder Img">
           <figcaption>
             <a href="#">
               <h2>Living /engaging</h2>
