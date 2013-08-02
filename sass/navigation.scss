@@ -297,9 +297,11 @@ li a.active {
 .pane-simple-toc-simple-toc{
   margin-left: 3em;
   h2{
-    background-color: lighten($color-1, 20%);
-    
-    padding: 1em .5em;
+    //background-color: lighten($color-1, 20%);
+    background-color: $color-1;
+    color: #fff;
+    font-weight: 100 !important;
+    padding: .2em .5em;
     margin: 0;
   }
   //border: 1px solid $line-grey;
@@ -307,19 +309,41 @@ li a.active {
   .toc-wrapper{
     @include zero;
     display: block;
+    border: 3px solid $color-1; 
+    border-top: 0; 
     
     ol{
       @include zero;
+      li{
+        display: block;
+       border-top: 0;
+      }
       
       a{
-        //background-color: $color-1;
-        text-decoration: none;
-        //@include text-shading;
+        color: #222;
+        padding: 0;
         display: block;
-        padding: .5em 1em;
-        border: 1px solid darken($color-1, 5%);
-        border-top: 0;
+        padding: .4em 1em;
+        //border-bottom: 1px solid $line-grey;
+        text-decoration: none;
+        &:hover{
+          text-decoration: underline;
+          
+        }
+
       }
+      .selected{
+        background-color: lighten($color-1, 10%); //passes contrast ratio for WCAG AA
+        color: #fff;
+        border-bottom: 0;
+        
+        &:hover{
+          text-decoration: none;
+          background-color: lighten($color-1, 15%); 
+        }
+      }
+      
+      
       
     }//ol
   }//toc-wrapper

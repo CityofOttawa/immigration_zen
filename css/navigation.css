@@ -322,59 +322,83 @@ li a.active {
 }
 /* line 299, ../sass/navigation.scss */
 .pane-simple-toc-simple-toc h2 {
-  background-color: #bb902e;
-  padding: 1em .5em;
+  background-color: #69511a;
+  color: #fff;
+  font-weight: 100 !important;
+  padding: .2em .5em;
   margin: 0;
 }
-/* line 307, ../sass/navigation.scss */
+/* line 309, ../sass/navigation.scss */
 .pane-simple-toc-simple-toc .toc-wrapper {
   margin: 0;
   padding: 0;
   display: block;
+  border: 3px solid #69511a;
+  border-top: 0;
 }
-/* line 311, ../sass/navigation.scss */
+/* line 315, ../sass/navigation.scss */
 .pane-simple-toc-simple-toc .toc-wrapper ol {
   margin: 0;
   padding: 0;
 }
-/* line 314, ../sass/navigation.scss */
-.pane-simple-toc-simple-toc .toc-wrapper ol a {
-  text-decoration: none;
+/* line 317, ../sass/navigation.scss */
+.pane-simple-toc-simple-toc .toc-wrapper ol li {
   display: block;
-  padding: .5em 1em;
-  border: 1px solid #554115;
   border-top: 0;
+}
+/* line 322, ../sass/navigation.scss */
+.pane-simple-toc-simple-toc .toc-wrapper ol a {
+  color: #222;
+  padding: 0;
+  display: block;
+  padding: .4em 1em;
+  text-decoration: none;
+}
+/* line 329, ../sass/navigation.scss */
+.pane-simple-toc-simple-toc .toc-wrapper ol a:hover {
+  text-decoration: underline;
+}
+/* line 335, ../sass/navigation.scss */
+.pane-simple-toc-simple-toc .toc-wrapper ol .selected {
+  background-color: #927124;
+  color: #fff;
+  border-bottom: 0;
+}
+/* line 340, ../sass/navigation.scss */
+.pane-simple-toc-simple-toc .toc-wrapper ol .selected:hover {
+  text-decoration: none;
+  background-color: #a68029;
 }
 
 /* Footer menu */
-/* line 331, ../sass/navigation.scss */
+/* line 355, ../sass/navigation.scss */
 #footer ul {
   background-color: #222222;
   margin: 2em 0 0;
   padding: 1em;
 }
-/* line 337, ../sass/navigation.scss */
+/* line 361, ../sass/navigation.scss */
 #footer li {
   display: inline-block;
 }
-/* line 339, ../sass/navigation.scss */
+/* line 363, ../sass/navigation.scss */
 #footer li:after {
   color: #8f8f8f;
   padding: 1em;
   content: "|";
 }
-/* line 345, ../sass/navigation.scss */
+/* line 369, ../sass/navigation.scss */
 #footer li:last-child:after {
   content: "";
   padding: 0;
 }
-/* line 352, ../sass/navigation.scss */
+/* line 376, ../sass/navigation.scss */
 #footer a {
   color: #cccccc;
   font-size: 13.712px;
   font-size: 0.857rem;
 }
-/* line 356, ../sass/navigation.scss */
+/* line 380, ../sass/navigation.scss */
 #footer a:hover {
   color: #a6a6a6;
   text-decoration: none;
