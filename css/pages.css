@@ -763,11 +763,23 @@ span.field-label {
     padding: .5em;
   }
 }
+@media only screen and (min-width: 960px) {
+  /* line 606, ../sass/pages.scss */
+  .landing-items li {
+    width: 30%;
+    margin-right: 5% !important;
+    margin-bottom: 3em !important;
+  }
+  /* line 610, ../sass/pages.scss */
+  .landing-items li:nth-child(3n+3) {
+    margin-right: 0 !important;
+  }
+}
 
 /*
  * Footer
  */
-/* line 611, ../sass/pages.scss */
+/* line 623, ../sass/pages.scss */
 #footer {
   background-color: #333333;
   color: #cccccc;
@@ -775,7 +787,7 @@ span.field-label {
   padding: 2em 0 0 !important;
   /*overrides zen responsive gutters*/
 }
-/* line 618, ../sass/pages.scss */
+/* line 630, ../sass/pages.scss */
 #footer p, #footer address {
   font-style: normal;
   font-size: 13.712px;
@@ -783,7 +795,7 @@ span.field-label {
   margin: 0;
   line-height: 1.4;
 }
-/* line 624, ../sass/pages.scss */
+/* line 636, ../sass/pages.scss */
 #footer p {
   margin-top: 1em;
 }
@@ -791,7 +803,7 @@ span.field-label {
 /*
  * Page bottom
  */
-/* line 635, ../sass/pages.scss */
+/* line 647, ../sass/pages.scss */
 .region-bottom {
   /* Wrapper for any blocks placed in the page bottom region */
 }

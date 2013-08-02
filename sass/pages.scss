@@ -601,6 +601,18 @@ span.field-label { /* The inline field label used by the Fences module */
 
       }//li
      }//end of media query
+     
+     @media only screen and (min-width: 960px){
+        li{
+          width: 30%;
+          margin-right: 5% !important;
+          margin-bottom: 3em !important;
+          &:nth-child(3n+3){
+            margin-right: 0 !important;
+          }
+        }
+      
+     }
  }//landing-items
 
 
