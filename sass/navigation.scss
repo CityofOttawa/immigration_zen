@@ -316,7 +316,7 @@ li a.active {
       @include zero;
       li{
         display: block;
-       border-top: 0;
+        border-top: 0;
       }
       
       a{
@@ -342,11 +342,23 @@ li a.active {
           background-color: lighten($color-1, 15%); 
         }
       }
-      
-      
-      
     }//ol
   }//toc-wrapper
+  
+  @media only screen and (min-width: 1200px){ // .toc-btn
+    h2{
+      padding: .2em 1em;
+    }
+    .toc-wrapper{
+      ol{
+        a{
+          padding: .4em 2.5em;
+        }
+      }
+      padding-bottom: 1em;  
+
+    }
+  }//media-queries
 } //pane
 
 /* Footer menu */

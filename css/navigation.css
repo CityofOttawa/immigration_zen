@@ -369,36 +369,50 @@ li a.active {
   text-decoration: none;
   background-color: #a68029;
 }
+@media only screen and (min-width: 1200px) {
+  /* line 349, ../sass/navigation.scss */
+  .pane-simple-toc-simple-toc h2 {
+    padding: .2em 1em;
+  }
+  /* line 352, ../sass/navigation.scss */
+  .pane-simple-toc-simple-toc .toc-wrapper {
+    padding-bottom: 1em;
+  }
+  /* line 354, ../sass/navigation.scss */
+  .pane-simple-toc-simple-toc .toc-wrapper ol a {
+    padding: .4em 2.5em;
+  }
+}
 
 /* Footer menu */
-/* line 355, ../sass/navigation.scss */
+/* line 367, ../sass/navigation.scss */
 #footer ul {
   background-color: #222222;
   margin: 2em 0 0;
   padding: 1em;
 }
-/* line 361, ../sass/navigation.scss */
+/* line 373, ../sass/navigation.scss */
 #footer li {
   display: inline-block;
 }
-/* line 363, ../sass/navigation.scss */
+/* line 375, ../sass/navigation.scss */
 #footer li:after {
   color: #8f8f8f;
   padding: 1em;
   content: "|";
 }
-/* line 369, ../sass/navigation.scss */
+/* line 381, ../sass/navigation.scss */
 #footer li:last-child:after {
   content: "";
   padding: 0;
 }
-/* line 376, ../sass/navigation.scss */
+/* line 388, ../sass/navigation.scss */
 #footer a {
   color: #cccccc;
   font-size: 13.712px;
   font-size: 0.857rem;
 }
-/* line 380, ../sass/navigation.scss */
+/* line 392, ../sass/navigation.scss */
 #footer a:hover {
   color: #a6a6a6;
   text-decoration: none;
