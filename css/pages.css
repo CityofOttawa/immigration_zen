@@ -749,16 +749,16 @@ span.field-label {
     height: inherit;
     background-image: none;
   }
-  /* line 590, ../sass/pages.scss */
+  /* line 587, ../sass/pages.scss */
+  .landing-items li figure figcaption a:hover {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+    opacity: 0.8;
+  }
+  /* line 593, ../sass/pages.scss */
   .landing-items li figure:hover figcaption {
     bottom: 0;
   }
-  /* line 593, ../sass/pages.scss */
-  .landing-items li figure:hover a {
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-    opacity: 1;
-  }
-  /* line 597, ../sass/pages.scss */
+  /* line 596, ../sass/pages.scss */
   .landing-items li figure:hover h2 {
     padding: .5em;
   }
@@ -767,7 +767,7 @@ span.field-label {
 /*
  * Footer
  */
-/* line 612, ../sass/pages.scss */
+/* line 611, ../sass/pages.scss */
 #footer {
   background-color: #333333;
   color: #cccccc;
@@ -775,7 +775,7 @@ span.field-label {
   padding: 2em 0 0 !important;
   /*overrides zen responsive gutters*/
 }
-/* line 619, ../sass/pages.scss */
+/* line 618, ../sass/pages.scss */
 #footer p, #footer address {
   font-style: normal;
   font-size: 13.712px;
@@ -783,7 +783,7 @@ span.field-label {
   margin: 0;
   line-height: 1.4;
 }
-/* line 625, ../sass/pages.scss */
+/* line 624, ../sass/pages.scss */
 #footer p {
   margin-top: 1em;
 }
@@ -791,7 +791,7 @@ span.field-label {
 /*
  * Page bottom
  */
-/* line 636, ../sass/pages.scss */
+/* line 635, ../sass/pages.scss */
 .region-bottom {
   /* Wrapper for any blocks placed in the page bottom region */
 }

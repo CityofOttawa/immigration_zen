@@ -584,16 +584,15 @@ span.field-label { /* The inline field label used by the Fences module */
             a{
               height: inherit;
               background-image: none;
+              &:hover{
+                @include opacity(.8);
+              }
             } 
           }
           &:hover{ //figure
             figcaption{
               bottom: 0;
             }
-            a{
-              @include opacity(1);
-            }
-            
            h2{
               padding: .5em;
             }
