@@ -55,7 +55,7 @@
    
 }
 
-$mysprite-layout:diagonal;
+//$icons-layout: diagonal;
 @import "../images/icons/*.png";
 @include all-icons-sprites;
 

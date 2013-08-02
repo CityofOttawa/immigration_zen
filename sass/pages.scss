@@ -275,7 +275,7 @@ header{
       list-style-image: url(../images/icons/bullet.png);
     }
     
-    .tabs li, .status ul li, fieldset ul li{ //fixes and prevents bullet image on status messages and in edit tabs
+    .tabs li, .status ul li, fieldset ul li, .landing-items li{ //fixes and prevents bullet image on status messages and in edit tabs
       list-style-image: none; 
     } 
     
@@ -284,14 +284,14 @@ header{
     }  
     
     img {
-      display: block;
+      //display: inline-block; 
       margin: 1em 0; 
       
       @include box-shadow(rgba(black, 0.2) 0 1px 5px 0);  
       
       @media only screen and (min-width: 768px){ // main media queries
-        margin: 0 2em 1em 0;
-        float: left;
+        margin: 1em 2em;
+        //float: left;
       }
     }
     
@@ -454,6 +454,63 @@ span.field-label { /* The inline field label used by the Fences module */
 
 .region-sidebar-second {
 }
+
+/*
+ *Landing Page Items
+ */
+ .landing-items{
+    @include zero;  
+   
+     width: 400px;
+     margin: 0 auto;
+     list-style-type: none;
+     
+     li{
+       margin-bottom: 2em !important;
+       display: block;
+       clear: both;
+       
+       figure{
+         display: block;
+         padding: 0;
+       }
+       figure img{
+         display: inline-block;
+         float: left;
+         height: 105px;
+         width: 25%;
+         margin: 0 !important;
+       }
+       
+       figcaption{
+         display: inline-block;
+         width: 75%;
+         a{
+           @include border-box;
+           padding: 1em 2em 1em 1em;
+           color: #fff;
+           display: block;
+           height: 105px;
+           text-decoration: none;
+           /*bg styling*/
+            background: $color-6 url('../images/arrow-bg.png') top right no-repeat;
+           
+         }
+         h2{
+           @include zero;
+           line-height: 1.1;
+           font-weight: 300 !important;
+           margin: 0;
+           padding: 0;
+         }
+         p{
+           margin: .5em 0;
+           line-height: 1.3;
+         }
+       }
+     }
+ }//landing-items
+
 
 /*
  * Footer
