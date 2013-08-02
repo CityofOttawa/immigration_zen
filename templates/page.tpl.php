@@ -138,7 +138,6 @@
   </div><!-- /#navigation -->
 
   <div id="main">
-
     <div id="content" class="column" role="main">
       <?php print render($page['highlighted']); ?>
       <?php //print $breadcrumb; ?>
@@ -148,6 +147,8 @@
         <h1 class="title" id="page-title"><?php print $title; ?></h1>
       <?php endif; ?>
       <?php print render($title_suffix); ?>
+			<a class="toc-btn" href="#cityott-sidebar">Table of Contents</a>
+
       <?php print $messages; ?>
       <?php print render($tabs); ?>
       <?php print render($page['help']); ?>

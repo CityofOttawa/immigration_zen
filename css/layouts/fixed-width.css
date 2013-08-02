@@ -10,18 +10,23 @@
  */
 /*creates subtle dropshadow on text */
 /* See Paul Irish <http://www.paulirish.com/2012/box-sizing-border-box-ftw/> */
-/* line 50, ../images/icons/*.png */
-.icons-sprite, .icons-bullet, .icons-search {
-  background: url('../../images/../images/icons-s6f17c6d1db.png') no-repeat;
+/* line 58, ../images/icons/*.png */
+.icons-sprite, .icons-bullet, .icons-search, .icons-toc {
+  background: url('../../images/../images/icons-sccd069ddf1.png') no-repeat;
 }
 
 /* line 60, ../../../../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-bullet {
-  background-position: 0 -35px;
+  background-position: 0 -79px;
 }
 
 /* line 60, ../../../../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-search {
+  background-position: 0 -44px;
+}
+
+/* line 60, ../../../../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-toc {
   background-position: 0 0;
 }
 

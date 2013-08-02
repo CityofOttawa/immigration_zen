@@ -11,18 +11,23 @@
    ========================================================================== */
 /*creates subtle dropshadow on text */
 /* See Paul Irish <http://www.paulirish.com/2012/box-sizing-border-box-ftw/> */
-/* line 50, ../images/icons/*.png */
-.icons-sprite, .icons-bullet, .icons-search {
-  background: url('../images/../images/icons-s6f17c6d1db.png') no-repeat;
+/* line 58, ../images/icons/*.png */
+.icons-sprite, .icons-bullet, .icons-search, .icons-toc {
+  background: url('../images/../images/icons-sccd069ddf1.png') no-repeat;
 }
 
 /* line 60, ../../../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-bullet {
-  background-position: 0 -35px;
+  background-position: 0 -79px;
 }
 
 /* line 60, ../../../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-search {
+  background-position: 0 -44px;
+}
+
+/* line 60, ../../../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-toc {
   background-position: 0 0;
 }
 
@@ -752,7 +757,7 @@ input[type="submit"] {
   background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.05) 49%, rgba(0, 0, 0, 0.15) 50%, rgba(0, 0, 0, 0.15) 100%);
   background-image: linear-gradient(top, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.05) 49%, rgba(0, 0, 0, 0.15) 50%, rgba(0, 0, 0, 0.15) 100%);
 }
-/* line 32, ../sass/_custom.scss */
+/* line 37, ../sass/_custom.scss */
 button:active,
 .button:active,
 input[type="button"]:active,
@@ -794,7 +799,7 @@ input[type="submit"]:hover,
   border: 0;
   background-color: #999;
 }
-/* line 32, ../sass/_custom.scss */
+/* line 37, ../sass/_custom.scss */
 button:hover:active,
 .button:hover:active,
 input[type="button"]:hover:active,
@@ -837,7 +842,7 @@ input[type="submit"]:hover:active,
   padding: 0.5em 1em 0.5em;
   background-color: #bbb;
 }
-/* line 32, ../sass/_custom.scss */
+/* line 37, ../sass/_custom.scss */
 #edit-image-button:active {
   position: relative;
   top: 1px;

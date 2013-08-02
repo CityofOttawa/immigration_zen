@@ -4,18 +4,23 @@
  */
 /*creates subtle dropshadow on text */
 /* See Paul Irish <http://www.paulirish.com/2012/box-sizing-border-box-ftw/> */
-/* line 50, ../images/icons/*.png */
-.icons-sprite, .icons-bullet, .icons-search {
-  background: url('../images/../images/icons-s6f17c6d1db.png') no-repeat;
+/* line 58, ../images/icons/*.png */
+.icons-sprite, .icons-bullet, .icons-search, .icons-toc, .toc-btn {
+  background: url('../images/../images/icons-sccd069ddf1.png') no-repeat;
 }
 
 /* line 60, ../../../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-bullet {
-  background-position: 0 -35px;
+  background-position: 0 -79px;
 }
 
 /* line 60, ../../../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-search {
+  background-position: 0 -44px;
+}
+
+/* line 60, ../../../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-toc, .toc-btn, .toc-btn:hover, .toc-btn:active {
   background-position: 0 0;
 }
 
@@ -282,35 +287,94 @@ li a.active {
  * Drupal core has limited ways in which it can display its menus. To get around
  * these limitations, see http://drupal.org/project/menu_block
  */
+/*TOC (Table of Contents) block */
+/* line 274, ../sass/navigation.scss */
+.toc-btn {
+  float: right;
+  display: inline-block;
+  margin-right: 1em;
+  margin: 0 1em 2em;
+  padding: 1.2em 1.2em .5em 1em;
+  width: 1em;
+  background-color: #036f63;
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+}
+/* line 285, ../sass/navigation.scss */
+.toc-btn:hover, .toc-btn:active {
+  background-color: #048879;
+}
+@media only screen and (min-width: 768px) {
+  /* line 274, ../sass/navigation.scss */
+  .toc-btn {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+  }
+}
+
+/* line 297, ../sass/navigation.scss */
+.pane-simple-toc-simple-toc {
+  margin-left: 3em;
+}
+/* line 299, ../sass/navigation.scss */
+.pane-simple-toc-simple-toc h2 {
+  background-color: #bb902e;
+  padding: 1em .5em;
+  margin: 0;
+}
+/* line 307, ../sass/navigation.scss */
+.pane-simple-toc-simple-toc .toc-wrapper {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+/* line 311, ../sass/navigation.scss */
+.pane-simple-toc-simple-toc .toc-wrapper ol {
+  margin: 0;
+  padding: 0;
+}
+/* line 314, ../sass/navigation.scss */
+.pane-simple-toc-simple-toc .toc-wrapper ol a {
+  text-decoration: none;
+  display: block;
+  padding: .5em 1em;
+  border: 1px solid #554115;
+  border-top: 0;
+}
+
 /* Footer menu */
-/* line 275, ../sass/navigation.scss */
+/* line 331, ../sass/navigation.scss */
 #footer ul {
   background-color: #222222;
   margin: 2em 0 0;
   padding: 1em;
 }
-/* line 281, ../sass/navigation.scss */
+/* line 337, ../sass/navigation.scss */
 #footer li {
   display: inline-block;
 }
-/* line 283, ../sass/navigation.scss */
+/* line 339, ../sass/navigation.scss */
 #footer li:after {
   color: #8f8f8f;
   padding: 1em;
   content: "|";
 }
-/* line 289, ../sass/navigation.scss */
+/* line 345, ../sass/navigation.scss */
 #footer li:last-child:after {
   content: "";
   padding: 0;
 }
-/* line 296, ../sass/navigation.scss */
+/* line 352, ../sass/navigation.scss */
 #footer a {
   color: #cccccc;
   font-size: 13.712px;
   font-size: 0.857rem;
 }
-/* line 300, ../sass/navigation.scss */
+/* line 356, ../sass/navigation.scss */
 #footer a:hover {
   color: #a6a6a6;
   text-decoration: none;

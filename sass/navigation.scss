@@ -269,6 +269,62 @@ li a.active {
 }
 
 
+/*TOC (Table of Contents) block */
+
+.toc-btn{
+  float: right;
+  display: inline-block;
+  margin-right: 1em;
+  margin: 0 1em 2em;
+  padding: 1.2em 1.2em .5em 1em;
+  width: 1em;
+  background-color: $city-green;
+  @include hide-text;
+  @extend .icons-toc;
+  
+  &:hover, &:active{
+    @extend .icons-toc;
+    background-color: lighten($city-green, 5%);
+  }
+  
+  @media only screen and (min-width: 768px){ // .toc-btn
+    @include element-invisible;
+  
+  }
+}
+
+
+.pane-simple-toc-simple-toc{
+  margin-left: 3em;
+  h2{
+    background-color: lighten($color-1, 20%);
+    
+    padding: 1em .5em;
+    margin: 0;
+  }
+  //border: 1px solid $line-grey;
+  
+  .toc-wrapper{
+    @include zero;
+    display: block;
+    
+    ol{
+      @include zero;
+      
+      a{
+        //background-color: $color-1;
+        text-decoration: none;
+        //@include text-shading;
+        display: block;
+        padding: .5em 1em;
+        border: 1px solid darken($color-1, 5%);
+        border-top: 0;
+      }
+      
+    }//ol
+  }//toc-wrapper
+} //pane
+
 /* Footer menu */
 
 #footer{

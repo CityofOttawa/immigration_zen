@@ -13,6 +13,11 @@
   color: #fff; 
 }
 
+@mixin zero{
+  margin: 0;
+  padding: 0;
+}
+
 @mixin ease-all{
     @include transition-property(all);
     @include transition-duration(250ms);
@@ -40,7 +45,6 @@
   -moz-box-sizing: border-box; 
   -webkit-box-sizing: border-box; 
   box-sizing: border-box;
-  
 }
 
 @mixin btn-grad{
