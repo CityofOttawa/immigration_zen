@@ -139,6 +139,8 @@
 
   <div id="main">
     <div id="content" class="column" role="main">
+      <h1>Welcome to the City of Ottawa Immigration Portal</h1>
+      <p>Morbi nec auctor risus, quis aliquam ligula. Donec augue enim, porttitor vitae tincidunt vel, tristique id ligula. Morbi eget ante lobortis, varius elit eu, mattis augue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec vitae molestie lorem, quis cursus libero. Quisque sollicitudin ut est congue laoreet. Vivamus ut imperdiet nulla. Donec rutrum, mi in fringilla ullamcorper, eros arcu consectetur ipsum, sed ultrices justo neque id nisl.</p>
 
     <ul class="landing-items">
       <li>

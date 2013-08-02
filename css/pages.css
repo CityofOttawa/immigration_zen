@@ -343,7 +343,7 @@ header .subtitle {
 @media only screen and (min-width: 768px) {
   /* line 251, ../sass/pages.scss */
   #main {
-    padding: 2em 3em;
+    padding: 0em 3em 2em;
   }
   /* line 301, ../sass/pages.scss */
   #main h1 {
@@ -551,7 +551,7 @@ span.field-label {
   margin: 0;
   padding: 0;
   width: 100%;
-  margin: 0 auto;
+  margin: 4em auto;
   list-style-type: none;
 }
 @media only screen and (min-width: 380px) {

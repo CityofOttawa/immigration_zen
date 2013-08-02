@@ -296,7 +296,7 @@ header{
     }
     
   @media only screen and (min-width: 768px){ // main media queries
-    padding: 2em 3em;
+    padding: 0em 3em 2em;
     
     h1{
       text-align: left; 
@@ -462,7 +462,7 @@ span.field-label { /* The inline field label used by the Fences module */
     @include zero;  
    
      width: 100%;
-     margin: 0 auto;
+     margin: 4em auto;
      list-style-type: none;
      
      @media only screen and (min-width: 380px){ // media queries
