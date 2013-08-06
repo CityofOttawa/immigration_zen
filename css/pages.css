@@ -601,7 +601,7 @@ span.field-label {
   display: block;
   padding: 0;
 }
-/* line 491, ../sass/pages.scss */
+/* line 492, ../sass/pages.scss */
 .landing-items li figure img {
   display: none;
   float: left;
@@ -610,23 +610,23 @@ span.field-label {
   margin: 0 !important;
 }
 @media only screen and (min-width: 380px) {
-  /* line 491, ../sass/pages.scss */
+  /* line 492, ../sass/pages.scss */
   .landing-items li figure img {
     display: inline-block;
   }
 }
-/* line 503, ../sass/pages.scss */
+/* line 504, ../sass/pages.scss */
 .landing-items li figcaption {
   display: inline-block;
   width: 100%;
 }
 @media only screen and (min-width: 380px) {
-  /* line 503, ../sass/pages.scss */
+  /* line 504, ../sass/pages.scss */
   .landing-items li figcaption {
     width: 75%;
   }
 }
-/* line 511, ../sass/pages.scss */
+/* line 512, ../sass/pages.scss */
 .landing-items li figcaption a {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -639,24 +639,24 @@ span.field-label {
   /*bg styling*/
   background: transparent url("../images/arrow-bg.png") top right no-repeat;
 }
-/* line 520, ../sass/pages.scss */
+/* line 522, ../sass/pages.scss */
 .landing-items li figcaption a:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
   opacity: 0.9;
 }
 @media only screen and (min-width: 320px) {
-  /* line 511, ../sass/pages.scss */
+  /* line 512, ../sass/pages.scss */
   .landing-items li figcaption a {
     padding: 1em 30px 1em 1em;
   }
 }
 @media only screen and (min-width: 380px) {
-  /* line 511, ../sass/pages.scss */
+  /* line 512, ../sass/pages.scss */
   .landing-items li figcaption a {
     padding: 1em 30px 1em 1em;
   }
 }
-/* line 531, ../sass/pages.scss */
+/* line 535, ../sass/pages.scss */
 .landing-items li figcaption h2 {
   font-size: 22.00608px;
   font-size: 1.37538rem;
@@ -668,13 +668,13 @@ span.field-label {
   padding: 0;
 }
 @media only screen and (min-width: 320px) {
-  /* line 531, ../sass/pages.scss */
+  /* line 535, ../sass/pages.scss */
   .landing-items li figcaption h2 {
     font-size: 24px;
     font-size: 1.5rem;
   }
 }
-/* line 542, ../sass/pages.scss */
+/* line 546, ../sass/pages.scss */
 .landing-items li figcaption p {
   margin: .5em 0;
   line-height: 1.3;
@@ -684,28 +684,28 @@ span.field-label {
   .landing-items {
     width: 100%;
   }
-  /* line 551, ../sass/pages.scss */
+  /* line 556, ../sass/pages.scss */
   .landing-items li {
     clear: none;
     width: 47.5%;
     display: inline-block;
     float: left;
   }
-  /* line 557, ../sass/pages.scss */
+  /* line 562, ../sass/pages.scss */
   .landing-items li:nth-child(odd) {
     margin-right: 5% !important;
   }
-  /* line 561, ../sass/pages.scss */
+  /* line 566, ../sass/pages.scss */
   .landing-items li figure img {
     width: 100%;
     height: inherit;
   }
-  /* line 564, ../sass/pages.scss */
+  /* line 569, ../sass/pages.scss */
   .landing-items li figure {
     position: relative;
     overflow: hidden;
   }
-  /* line 570, ../sass/pages.scss */
+  /* line 575, ../sass/pages.scss */
   .landing-items li figure figcaption {
     position: absolute;
     bottom: -100px;
@@ -724,9 +724,9 @@ span.field-label {
     -o-transition-timing-function: ease-in-out;
     transition-timing-function: ease-in-out;
   }
-  /* line 576, ../sass/pages.scss */
+  /* line 582, ../sass/pages.scss */
   .landing-items li figure figcaption h2 {
-    padding: .7em .5em 3em;
+    padding: .7em 20px 3em;
     -webkit-transition-property: all;
     -moz-transition-property: all;
     -o-transition-property: all;
@@ -740,37 +740,37 @@ span.field-label {
     -o-transition-timing-function: ease-in-out;
     transition-timing-function: ease-in-out;
   }
-  /* line 581, ../sass/pages.scss */
+  /* line 587, ../sass/pages.scss */
   .landing-items li figure figcaption p {
-    padding: 0 1em 1em;
+    padding: 0 20px 1em;
   }
-  /* line 584, ../sass/pages.scss */
+  /* line 590, ../sass/pages.scss */
   .landing-items li figure figcaption a {
     height: inherit;
     background-image: none;
   }
-  /* line 587, ../sass/pages.scss */
+  /* line 593, ../sass/pages.scss */
   .landing-items li figure figcaption a:hover {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
     opacity: 0.8;
   }
-  /* line 593, ../sass/pages.scss */
+  /* line 599, ../sass/pages.scss */
   .landing-items li figure:hover figcaption {
     bottom: 0;
   }
-  /* line 596, ../sass/pages.scss */
+  /* line 602, ../sass/pages.scss */
   .landing-items li figure:hover h2 {
-    padding: .5em;
+    padding: .5em 20px .5em;
   }
 }
 @media only screen and (min-width: 960px) {
-  /* line 606, ../sass/pages.scss */
+  /* line 612, ../sass/pages.scss */
   .landing-items li {
     width: 30%;
     margin-right: 5% !important;
     margin-bottom: 3em !important;
   }
-  /* line 610, ../sass/pages.scss */
+  /* line 616, ../sass/pages.scss */
   .landing-items li:nth-child(3n+3) {
     margin-right: 0 !important;
   }
@@ -779,7 +779,7 @@ span.field-label {
 /*
  * Footer
  */
-/* line 623, ../sass/pages.scss */
+/* line 629, ../sass/pages.scss */
 #footer {
   background-color: #333333;
   color: #cccccc;
@@ -787,7 +787,7 @@ span.field-label {
   padding: 2em 0 0 !important;
   /*overrides zen responsive gutters*/
 }
-/* line 630, ../sass/pages.scss */
+/* line 636, ../sass/pages.scss */
 #footer p, #footer address {
   font-style: normal;
   font-size: 13.712px;
@@ -795,7 +795,7 @@ span.field-label {
   margin: 0;
   line-height: 1.4;
 }
-/* line 636, ../sass/pages.scss */
+/* line 642, ../sass/pages.scss */
 #footer p {
   margin-top: 1em;
 }
@@ -803,7 +803,7 @@ span.field-label {
 /*
  * Page bottom
  */
-/* line 647, ../sass/pages.scss */
+/* line 653, ../sass/pages.scss */
 .region-bottom {
   /* Wrapper for any blocks placed in the page bottom region */
 }

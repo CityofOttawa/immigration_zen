@@ -488,6 +488,7 @@ span.field-label { /* The inline field label used by the Fences module */
          display: block;
          padding: 0;
        }
+       
        figure img{
          display: none;
          float: left;
@@ -517,16 +518,19 @@ span.field-label { /* The inline field label used by the Fences module */
            text-decoration: none;
            /*bg styling*/
             background: transparent url('../images/arrow-bg.png') top right no-repeat;
-          &:hover{
-            @include opacity(.90);
-          }
-          @media only screen and (min-width: 320px){ // a media queries
-            padding: 1em 30px 1em 1em;
-          }          
-          @media only screen and (min-width: 380px){ // a media queries
-            padding: 1em 30px 1em 1em;
-          }
-         }
+            
+            &:hover{
+              @include opacity(.90);
+            }
+            
+            @media only screen and (min-width: 320px){ // a media queries
+              padding: 1em 30px 1em 1em;
+            }          
+            
+            @media only screen and (min-width: 380px){ // a media queries
+              padding: 1em 30px 1em 1em;
+            }
+         }//hover
          
          h2{
            @include rem-fallback(font-size, 1.375380); 
@@ -548,6 +552,7 @@ span.field-label { /* The inline field label used by the Fences module */
      //full screen styles
      @media only screen and (min-width: 768px){
        width: 100%; // figcaption media queries
+       
       li{
         clear: none;
         width: 47.5%;
@@ -573,13 +578,14 @@ span.field-label { /* The inline field label used by the Fences module */
             left: 0;
             width: 100%;
             @include ease-all;
+            
             h2{
-              padding: .7em .5em 3em;
+              padding: .7em 20px 3em;
               @include ease-all;
               
             }
             p{
-              padding: 0 1em 1em;
+              padding: 0 20px 1em;
             }
             a{
               height: inherit;
@@ -594,7 +600,7 @@ span.field-label { /* The inline field label used by the Fences module */
               bottom: 0;
             }
            h2{
-              padding: .5em;
+              padding: .5em 20px .5em;
             }
           }
         }
