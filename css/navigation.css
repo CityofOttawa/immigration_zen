@@ -411,9 +411,10 @@ li a.active {
   color: #cccccc;
   font-size: 13.712px;
   font-size: 0.857rem;
+  text-decoration: none;
 }
-/* line 392, ../sass/navigation.scss */
+/* line 393, ../sass/navigation.scss */
 #footer a:hover {
   color: #a6a6a6;
-  text-decoration: none;
+  text-decoration: underline;
 }

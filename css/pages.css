@@ -726,7 +726,7 @@ span.field-label {
   }
   /* line 582, ../sass/pages.scss */
   .landing-items li figure figcaption h2 {
-    padding: .7em 20px 3em;
+    padding: .7em 15px 3em;
     -webkit-transition-property: all;
     -moz-transition-property: all;
     -o-transition-property: all;
@@ -742,7 +742,7 @@ span.field-label {
   }
   /* line 587, ../sass/pages.scss */
   .landing-items li figure figcaption p {
-    padding: 0 20px 1em;
+    padding: 0 15px 1em;
   }
   /* line 590, ../sass/pages.scss */
   .landing-items li figure figcaption a {
@@ -760,7 +760,7 @@ span.field-label {
   }
   /* line 602, ../sass/pages.scss */
   .landing-items li figure:hover h2 {
-    padding: .5em 20px .5em;
+    padding: .5em 15px .5em;
   }
 }
 @media only screen and (min-width: 960px) {

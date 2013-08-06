@@ -388,10 +388,12 @@ li a.active {
   a{
     color: $line-grey;
     @include rem-fallback(font-size, 0.857); 
+    text-decoration: none;
     
     &:hover{
       color: darken($line-grey, 15%);
-      text-decoration: none;
+      text-decoration: underline;
+      
     }
   }
 }

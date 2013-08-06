@@ -580,12 +580,12 @@ span.field-label { /* The inline field label used by the Fences module */
             @include ease-all;
             
             h2{
-              padding: .7em 20px 3em;
+              padding: .7em 15px 3em;
               @include ease-all;
               
             }
             p{
-              padding: 0 20px 1em;
+              padding: 0 15px 1em;
             }
             a{
               height: inherit;
@@ -600,7 +600,7 @@ span.field-label { /* The inline field label used by the Fences module */
               bottom: 0;
             }
            h2{
-              padding: .5em 20px .5em;
+              padding: .5em 15px .5em;
             }
           }
         }
