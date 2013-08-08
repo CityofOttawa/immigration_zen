@@ -148,7 +148,7 @@
           <?php print theme_image(array('path' => "/" .  drupal_get_path('theme', 'immigration_zen') . '/images/crop/why_choose_ottawa.jpg', 'alt' => t('Parliament building in the summer time'), 'title' => t('Parliament building in the summer time'))); ?>
           <figcaption>
             <a href="#">
-              <h2>Why Choose Ottawa</h2>
+              <h2><?php print t('Why Choose Ottawa'); ?></h2>
               <p>Lorem ipsum dolor sit amet, con secte tur adipiscing elit sed.</p>
             </a>
           </figcaption>
@@ -157,10 +157,10 @@
 
       <li>
         <figure>
-          <img src="http://lorempixel.com/400/300/city/2" alt="Placeholder Img">
+          <?php print theme_image(array('path' => "/" .  drupal_get_path('theme', 'immigration_zen') . '/images/crop/before_you_arrive.jpg')); ?>
           <figcaption>
             <a href="#">
-              <h2>Before you arrive</h2>
+              <h2><?php print t('Before you arrive'); ?></h2>
               <p>Lorem ipsum dolor sit amet, consect etur adipiscing elit sed.</p>
             </a>
           </figcaption>
@@ -169,10 +169,10 @@
       
       <li>
         <figure>
-          <img src="http://lorempixel.com/400/300/city/3" alt="Placeholder Img">
+          <?php print theme_image(array('path' => "/" .  drupal_get_path('theme', 'immigration_zen') . '/images/crop/after_you_arrive.jpg')); ?>
           <figcaption>
             <a href="#">
-              <h2>After you arrive</h2>
+              <h2><?php print t('After you arrive'); ?></h2>
               <p>Lorem ipsum dolor sit amet, con secte tur adipiscing elit sed.</p>
             </a>
           </figcaption>
@@ -181,10 +181,10 @@
 
       <li>
         <figure>
-          <img src="http://lorempixel.com/400/300/city/4" alt="Placeholder Img">
+          <?php print theme_image(array('path' => "/" .  drupal_get_path('theme', 'immigration_zen') . '/images/crop/working_doing_business.jpg')); ?>
           <figcaption>
             <a href="#">
-              <h2>Working / doing business</h2>
+              <h2><?php print t('Working / doing business'); ?></h2>
               <p>Lorem ipsum dolor sit amet, con secte tur adipiscing elit sed.</p>
             </a>
           </figcaption>
@@ -193,10 +193,10 @@
 
       <li>
         <figure>
-          <img src="http://lorempixel.com/400/300/city/5" alt="Placeholder Img">
+          <?php print theme_image(array('path' => "/" .  drupal_get_path('theme', 'immigration_zen') . '/images/crop/international_students.jpg')); ?>
           <figcaption>
             <a href="#">
-              <h2>Learning</h2>
+              <h2><?php print t('Learning'); ?></h2>
               <p>Lorem ipsum dolor sit amet, consec tetur adipiscing elit sed.</p>
             </a>
           </figcaption>
@@ -205,10 +205,10 @@
 
       <li>
         <figure>
-          <img src="http://lorempixel.com/400/300/city/6" alt="Placeholder Img">
+          <?php print theme_image(array('path' => "/" .  drupal_get_path('theme', 'immigration_zen') . '/images/crop/living_in_ottawa.jpg')); ?>
           <figcaption>
             <a href="#">
-              <h2>Living /engaging</h2>
+              <h2><?php print t('Living /engaging'); ?></h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.</p>
             </a>
           </figcaption>
