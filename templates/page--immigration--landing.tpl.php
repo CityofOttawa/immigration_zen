@@ -97,6 +97,7 @@
 
     <?php print render($page['header']); ?>
 
+<!--
 	<div class="header-box">
 		<a href="#" class="btn-fr" title="French Language">Francais</a>
 		<a href="#" class="btn-fr btn-contact" title="Contact Us">Contact Us</a>
@@ -136,6 +137,7 @@
     <?php print render($page['navigation']); ?>
 
   </div><!-- /#navigation -->
+  <?php print $messages; ?>
 
   <div id="main">
     <div id="content" class="column" role="main">

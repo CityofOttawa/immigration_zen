@@ -182,9 +182,54 @@ li a.active {
  * Main menu and Secondary menu links
  */
   
-  
+  .region-header,
   .header-box{      
-    
+    ul.language-switcher-locale-url {
+      display: inline-block;
+      padding: 0;
+      margin: 0;
+      li {
+        display: inline-block;
+        &.active {
+          @include element-invisible;
+        }
+        a {
+          display: inline-block;
+          background-color: $city-green;
+          font-family: $century-gothic;
+          @include text-shading;
+          @include border-box;
+          text-decoration: none;
+
+          padding: .5em 1em;
+          width: 100%;
+          font-size: 1em;
+          font-weight: 100;
+
+          &:hover{
+            background-color: lighten($city-green, 5%);
+          }
+          
+          @media only screen and (min-width: 768px) {
+            display: inline-block;
+            background-color: transparent;
+            color: $city-blue;
+            font-family: $verdana;
+            @include text-shadow(none); //over-rides @include text-shading
+            padding: .5em 1em 0 0 ;
+
+            width: auto; 
+            font-size: 1.143em;
+            font-weight: normal;
+
+            &:hover{
+              color: lighten($city-blue, 20%);
+              background-color: transparent;
+            }
+          }
+        }
+      }
+    }
     .btn-fr{
       display: inline-block;
       background-color: $city-green;

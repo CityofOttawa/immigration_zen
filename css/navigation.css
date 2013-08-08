@@ -5,21 +5,21 @@
 /*creates subtle dropshadow on text */
 /* See Paul Irish <http://www.paulirish.com/2012/box-sizing-border-box-ftw/> */
 /* line 58, ../images/icons/*.png */
-.icons-sprite, .icons-bullet, .icons-search, .icons-toc, .toc-btn, .toc-btn:hover, .toc-btn:active {
+.icons-sprite, .icons-bullet, .icons-search, .icons-toc, .toc-btn {
   background: url('../images/../images/icons-sccd069ddf1.png') no-repeat;
 }
 
-/* line 60, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-bullet {
   background-position: 0 -79px;
 }
 
-/* line 60, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-search {
   background-position: 0 -44px;
 }
 
-/* line 60, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-toc, .toc-btn, .toc-btn:hover, .toc-btn:active {
   background-position: 0 0;
 }
@@ -221,7 +221,72 @@ li a.active {
 /*
  * Main menu and Secondary menu links
  */
-/* line 188, ../sass/navigation.scss */
+/* line 187, ../sass/navigation.scss */
+.region-header ul.language-switcher-locale-url,
+.header-box ul.language-switcher-locale-url {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+/* line 191, ../sass/navigation.scss */
+.region-header ul.language-switcher-locale-url li,
+.header-box ul.language-switcher-locale-url li {
+  display: inline-block;
+}
+/* line 193, ../sass/navigation.scss */
+.region-header ul.language-switcher-locale-url li.active,
+.header-box ul.language-switcher-locale-url li.active {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+/* line 196, ../sass/navigation.scss */
+.region-header ul.language-switcher-locale-url li a,
+.header-box ul.language-switcher-locale-url li a {
+  display: inline-block;
+  background-color: #036f63;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  text-shadow: rgba(0, 0, 0, 0.4) 1px 1px 1px;
+  color: #fff;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-decoration: none;
+  padding: .5em 1em;
+  width: 100%;
+  font-size: 1em;
+  font-weight: 100;
+}
+/* line 209, ../sass/navigation.scss */
+.region-header ul.language-switcher-locale-url li a:hover,
+.header-box ul.language-switcher-locale-url li a:hover {
+  background-color: #048879;
+}
+@media only screen and (min-width: 768px) {
+  /* line 196, ../sass/navigation.scss */
+  .region-header ul.language-switcher-locale-url li a,
+  .header-box ul.language-switcher-locale-url li a {
+    display: inline-block;
+    background-color: transparent;
+    color: #194f84;
+    font-family: Verdana, Tahoma, "DejaVu Sans", sans-serif;
+    text-shadow: none;
+    padding: 0.5em 1em 0 0;
+    width: auto;
+    font-size: 1.143em;
+    font-weight: normal;
+  }
+  /* line 225, ../sass/navigation.scss */
+  .region-header ul.language-switcher-locale-url li a:hover,
+  .header-box ul.language-switcher-locale-url li a:hover {
+    color: #2c82d7;
+    background-color: transparent;
+  }
+}
+/* line 233, ../sass/navigation.scss */
+.region-header .btn-fr,
 .header-box .btn-fr {
   display: inline-block;
   background-color: #036f63;
@@ -237,34 +302,39 @@ li a.active {
   font-size: 1em;
   font-weight: 100;
 }
-/* line 201, ../sass/navigation.scss */
+/* line 246, ../sass/navigation.scss */
+.region-header .btn-fr:hover,
 .header-box .btn-fr:hover {
   background-color: #048879;
 }
-/* line 207, ../sass/navigation.scss */
+/* line 252, ../sass/navigation.scss */
+.region-header .btn-contact,
 .header-box .btn-contact {
   display: none;
   visibility: hidden;
 }
 @media only screen and (min-width: 768px) {
-  /* line 214, ../sass/navigation.scss */
+  /* line 259, ../sass/navigation.scss */
+  .region-header .btn-fr,
   .header-box .btn-fr {
     display: inline-block;
     background-color: transparent;
     color: #194f84;
     font-family: Verdana, Tahoma, "DejaVu Sans", sans-serif;
     text-shadow: none;
-    padding: .5em 1em 0 0;
+    padding: 0.5em 1em 0 0;
     width: auto;
     font-size: 1.143em;
     font-weight: normal;
   }
-  /* line 226, ../sass/navigation.scss */
+  /* line 271, ../sass/navigation.scss */
+  .region-header .btn-fr:hover,
   .header-box .btn-fr:hover {
     color: #2c82d7;
     background-color: transparent;
   }
-  /* line 232, ../sass/navigation.scss */
+  /* line 277, ../sass/navigation.scss */
+  .region-header .btn-contact,
   .header-box .btn-contact {
     display: inline-block;
     visibility: visible;
@@ -273,7 +343,7 @@ li a.active {
   }
 }
 
-/* line 250, ../sass/navigation.scss */
+/* line 295, ../sass/navigation.scss */
 #secondary-menu {
   float: right;
 }
@@ -288,7 +358,7 @@ li a.active {
  * these limitations, see http://drupal.org/project/menu_block
  */
 /*TOC (Table of Contents) block */
-/* line 274, ../sass/navigation.scss */
+/* line 319, ../sass/navigation.scss */
 .toc-btn {
   float: right;
   display: inline-block;
@@ -301,12 +371,12 @@ li a.active {
   overflow: hidden;
   text-align: left;
 }
-/* line 285, ../sass/navigation.scss */
+/* line 330, ../sass/navigation.scss */
 .toc-btn:hover, .toc-btn:active {
   background-color: #048879;
 }
 @media only screen and (min-width: 768px) {
-  /* line 274, ../sass/navigation.scss */
+  /* line 319, ../sass/navigation.scss */
   .toc-btn {
     position: absolute !important;
     height: 1px;
@@ -316,11 +386,11 @@ li a.active {
   }
 }
 
-/* line 297, ../sass/navigation.scss */
+/* line 342, ../sass/navigation.scss */
 .pane-simple-toc-simple-toc {
   margin-left: 3em;
 }
-/* line 299, ../sass/navigation.scss */
+/* line 344, ../sass/navigation.scss */
 .pane-simple-toc-simple-toc h2 {
   background-color: #69511a;
   color: #fff;
@@ -328,7 +398,7 @@ li a.active {
   padding: .2em .5em;
   margin: 0;
 }
-/* line 309, ../sass/navigation.scss */
+/* line 354, ../sass/navigation.scss */
 .pane-simple-toc-simple-toc .toc-wrapper {
   margin: 0;
   padding: 0;
@@ -336,17 +406,17 @@ li a.active {
   border: 3px solid #69511a;
   border-top: 0;
 }
-/* line 315, ../sass/navigation.scss */
+/* line 360, ../sass/navigation.scss */
 .pane-simple-toc-simple-toc .toc-wrapper ol {
   margin: 0;
   padding: 0;
 }
-/* line 317, ../sass/navigation.scss */
+/* line 362, ../sass/navigation.scss */
 .pane-simple-toc-simple-toc .toc-wrapper ol li {
   display: block;
   border-top: 0;
 }
-/* line 322, ../sass/navigation.scss */
+/* line 367, ../sass/navigation.scss */
 .pane-simple-toc-simple-toc .toc-wrapper ol a {
   color: #222;
   padding: 0;
@@ -354,66 +424,66 @@ li a.active {
   padding: .4em 1em;
   text-decoration: none;
 }
-/* line 329, ../sass/navigation.scss */
+/* line 374, ../sass/navigation.scss */
 .pane-simple-toc-simple-toc .toc-wrapper ol a:hover {
   text-decoration: underline;
 }
-/* line 335, ../sass/navigation.scss */
+/* line 380, ../sass/navigation.scss */
 .pane-simple-toc-simple-toc .toc-wrapper ol .selected {
   background-color: #927124;
   color: #fff;
   border-bottom: 0;
 }
-/* line 340, ../sass/navigation.scss */
+/* line 385, ../sass/navigation.scss */
 .pane-simple-toc-simple-toc .toc-wrapper ol .selected:hover {
   text-decoration: none;
   background-color: #a68029;
 }
 @media only screen and (min-width: 1200px) {
-  /* line 349, ../sass/navigation.scss */
+  /* line 394, ../sass/navigation.scss */
   .pane-simple-toc-simple-toc h2 {
     padding: .2em 1em;
   }
-  /* line 352, ../sass/navigation.scss */
+  /* line 397, ../sass/navigation.scss */
   .pane-simple-toc-simple-toc .toc-wrapper {
     padding-bottom: 1em;
   }
-  /* line 354, ../sass/navigation.scss */
+  /* line 399, ../sass/navigation.scss */
   .pane-simple-toc-simple-toc .toc-wrapper ol a {
     padding: .4em 2.5em;
   }
 }
 
 /* Footer menu */
-/* line 367, ../sass/navigation.scss */
+/* line 412, ../sass/navigation.scss */
 #footer ul {
   background-color: #222222;
   margin: 2em 0 0;
   padding: 1em;
 }
-/* line 373, ../sass/navigation.scss */
+/* line 418, ../sass/navigation.scss */
 #footer li {
   display: inline-block;
 }
-/* line 375, ../sass/navigation.scss */
+/* line 420, ../sass/navigation.scss */
 #footer li:after {
   color: #8f8f8f;
   padding: 1em;
   content: "|";
 }
-/* line 381, ../sass/navigation.scss */
+/* line 426, ../sass/navigation.scss */
 #footer li:last-child:after {
   content: "";
   padding: 0;
 }
-/* line 388, ../sass/navigation.scss */
+/* line 433, ../sass/navigation.scss */
 #footer a {
   color: #cccccc;
   font-size: 13.712px;
   font-size: 0.857rem;
   text-decoration: none;
 }
-/* line 393, ../sass/navigation.scss */
+/* line 438, ../sass/navigation.scss */
 #footer a:hover {
   color: #a6a6a6;
   text-decoration: underline;

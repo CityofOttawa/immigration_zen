@@ -155,11 +155,13 @@ header{
 
  }// header
 
+ .region-header,
  .header-box{
      width: 205px;
      margin: 0 auto;
      clear: both;
-  
+    
+    #search-block-form,
      #search-bar{ 
        position: relative;
        overflow: auto;
@@ -167,7 +169,8 @@ header{
            @include hide-text;
            line-height: 0;
          }
-         input{
+         input[type=search],
+         input[type=text] {
            @include border-box;
            margin: 15px 5px 1em 0px;
            width: 100%;
@@ -177,6 +180,7 @@ header{
            &:focus{
            }
          }
+         #edit-submit,
          .search-btn{
              display: inline-block;
              background-color: $city-green;
@@ -217,12 +221,14 @@ header{
       @media only screen and (min-width: 960px){ // header-box media queries
        width: 400px;
 
+       #search-block-form,
        #search-bar{
            input{
              width: 80%;
              display: inline-block;
              margin-left: 3px;
            }
+           #edit-submit,
            .search-btn{
              padding: .5em 2em;
              background-position: 14px -44px;
