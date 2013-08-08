@@ -145,7 +145,7 @@
     <ul class="landing-items">
       <li>
         <figure>
-          <?php print theme_image("/" .  drupal_get_path('theme', 'immigration_zen') . '/images/crop/why_choose_ottawa.jpg', t('Parliament building in the summer time'), t('Parliament building in the summer time')); ?>
+          <?php print theme_image(array('path' => "/" .  drupal_get_path('theme', 'immigration_zen') . '/images/crop/why_choose_ottawa.jpg', 'alt' => t('Parliament building in the summer time'), 'title' => t('Parliament building in the summer time'))); ?>
           <figcaption>
             <a href="#">
               <h2>Why Choose Ottawa</h2>
