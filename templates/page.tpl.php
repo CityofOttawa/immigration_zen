@@ -97,7 +97,7 @@
 
     <?php print render($page['header']); ?>
 
-	<div class="header-box">
+<--	<div class="header-box">
 		<a href="#" class="btn-fr" title="French Language">Francais</a>
 		<a href="#" class="btn-fr btn-contact" title="Contact Us">Contact Us</a>
 
