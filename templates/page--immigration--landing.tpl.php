@@ -97,42 +97,8 @@
 
     <?php print render($page['header']); ?>
 
-<!--
-	<div class="header-box">
-		<a href="#" class="btn-fr" title="French Language">Francais</a>
-		<a href="#" class="btn-fr btn-contact" title="Contact Us">Contact Us</a>
-
-		<form id="search-bar" action="#" method="post">
-
-				<label for="search">Search City of Ottawa</label>
-				<input id="search" type="search" name="site-search" placeholder="Search...">
-
-				<button type="submit" class="search-btn">Search</button>
-		</form>
-	</div><!-- /header-box -->
 	</header>
   <div id="navigation">
-
-    <?php if ($main_menu): ?>
-      <nav id="main-menu" role="navigation">
-        <?php
-        // This code snippet is hard to modify. We recommend turning off the
-        // "Main menu" on your sub-theme's settings form, deleting this PHP
-        // code block, and, instead, using the "Menu block" module.
-        // @see http://drupal.org/project/menu_block
-        print theme('links__system_main_menu', array(
-          'links' => $main_menu,
-          'attributes' => array(
-            'class' => array('links', 'inline', 'clearfix'),
-          ),
-          'heading' => array(
-            'text' => t('Main menu'),
-            'level' => 'h2',
-            'class' => array('element-invisible'),
-          ),
-        )); ?>
-      </nav>
-    <?php endif; ?>
 
     <?php print render($page['navigation']); ?>
 
@@ -147,7 +113,7 @@
     <ul class="landing-items">
       <li>
         <figure>
-          <?php print theme_image(array('path' => "/" .  drupal_get_path('theme', 'immigration_zen') . '/images/crop/why_choose_ottawa.jpg', 'alt' => t('Parliament building in the summer time'), 'title' => t('Parliament building in the summer time'))); ?>
+          <?php print theme_image(array('path' => "/" .  drupal_get_path('theme', 'immigration_zen') . '/images/crop/why_choose_ottawa.jpg', 'alt' => t('A crowd is watching the changing of the guard on Parliament Hill in Ottawa'), 'title' => t('An outline of the life in Ottawa and what Ottawa has to offer to new immigrants'))); ?>
           <figcaption>
             <a href="#">
               <h2><?php print t('Why Choose Ottawa'); ?></h2>
@@ -159,7 +125,7 @@
 
       <li>
         <figure>
-          <?php print theme_image(array('path' => "/" .  drupal_get_path('theme', 'immigration_zen') . '/images/crop/before_you_arrive.jpg')); ?>
+          <?php print theme_image(array('path' => "/" .  drupal_get_path('theme', 'immigration_zen') . '/images/crop/before_you_arrive.jpg', 'alt' => t('A woman is seated writing a list'), 'title' => t('A cultural and practical guide to preparing for life in Ottawa') )); ?>
           <figcaption>
             <a href="#">
               <h2><?php print t('Before you arrive'); ?></h2>
@@ -171,7 +137,7 @@
       
       <li>
         <figure>
-          <?php print theme_image(array('path' => "/" .  drupal_get_path('theme', 'immigration_zen') . '/images/crop/after_you_arrive.jpg')); ?>
+          <?php print theme_image(array('path' => "/" .  drupal_get_path('theme', 'immigration_zen') . '/images/crop/after_you_arrive.jpg', 'alt' => t('A woman stares upwards with a pensive expression on her face'), 'title' => t('Adapting to life in Ottawa and the many programs, events and support services available'))); ?>
           <figcaption>
             <a href="#">
               <h2><?php print t('After you arrive'); ?></h2>
@@ -183,7 +149,7 @@
 
       <li>
         <figure>
-          <?php print theme_image(array('path' => "/" .  drupal_get_path('theme', 'immigration_zen') . '/images/crop/working_doing_business.jpg')); ?>
+          <?php print theme_image(array('path' => "/" .  drupal_get_path('theme', 'immigration_zen') . '/images/crop/working_doing_business.jpg', 'alt' => t('A group of business men smile while shaking hands'), 'title' => t('A guide to finding work, starting or buying a business and access employment services'))); ?>
           <figcaption>
             <a href="#">
               <h2><?php print t('Working / doing business'); ?></h2>
@@ -195,7 +161,7 @@
 
       <li>
         <figure>
-          <?php print theme_image(array('path' => "/" .  drupal_get_path('theme', 'immigration_zen') . '/images/crop/international_students.jpg')); ?>
+          <?php print theme_image(array('path' => "/" .  drupal_get_path('theme', 'immigration_zen') . '/images/crop/international_students.jpg', 'alt' => t('A group of international students pose while leaning on a railing'), 'title' => t('A guide for international students looking to study, work and live in Ottawa'))); ?>
           <figcaption>
             <a href="#">
               <h2><?php print t('Learning'); ?></h2>
@@ -207,7 +173,7 @@
 
       <li>
         <figure>
-          <?php print theme_image(array('path' => "/" .  drupal_get_path('theme', 'immigration_zen') . '/images/crop/living_in_ottawa.jpg')); ?>
+          <?php print theme_image(array('path' => "/" .  drupal_get_path('theme', 'immigration_zen') . '/images/crop/living_in_ottawa.jpg', 'alt' => t('An open green space next to a street with bikes lined up'), 'title' => t('An outline of the living conditions and government services in Ottawa'))); ?>
           <figcaption>
             <a href="#">
               <h2><?php print t('Living /engaging'); ?></h2>

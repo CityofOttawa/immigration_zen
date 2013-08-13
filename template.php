@@ -387,7 +387,7 @@ function immigration_zen_form_search_block_form_alter(&$form, &$form_state) {
   // Add hidden fields required by GSA
   $form['proxystylesheet'] = array(
     '#type' => 'hidden',
-    '#value' => 'ottawa_en',
+    '#value' => 'immigration_en',
   );
   
   $form['site'] = array(
@@ -397,13 +397,13 @@ function immigration_zen_form_search_block_form_alter(&$form, &$form_state) {
 
   $form['client'] = array(
     '#type' => 'hidden',
-    '#value' => 'ottawa_en',
+    '#value' => 'immigration_en',
   );
 
   // Change values based on language
   if ($language->language == 'fr') {
-    $form['proxystylesheet']['#value'] = 'ottawa_fr';
-    $form['client']['#value'] = 'ottawa_fr';
+    $form['proxystylesheet']['#value'] = 'immigration_fr';
+    $form['client']['#value'] = 'immigration_fr';
     $form['site']['#value'] = 'immigration_fr';
   }
 

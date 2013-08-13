@@ -97,41 +97,8 @@
 
     <?php print render($page['header']); ?>
 
-<!--	<div class="header-box">
-		<a href="#" class="btn-fr" title="French Language">Francais</a>
-		<a href="#" class="btn-fr btn-contact" title="Contact Us">Contact Us</a>
-
-		<form id="search-bar" action="#" method="post">
-
-				<label for="search">Search City of Ottawa</label>
-				<input id="search" type="search" name="site-search" placeholder="Search...">
-
-				<button type="submit" class="search-btn">Search</button>
-		</form>
-	</div><!-- /header-box -->
 	</header>
   <div id="navigation">
-
-    <?php if ($main_menu): ?>
-      <nav id="main-menu" role="navigation">
-        <?php
-        // This code snippet is hard to modify. We recommend turning off the
-        // "Main menu" on your sub-theme's settings form, deleting this PHP
-        // code block, and, instead, using the "Menu block" module.
-        // @see http://drupal.org/project/menu_block
-        print theme('links__system_main_menu', array(
-          'links' => $main_menu,
-          'attributes' => array(
-            'class' => array('links', 'inline', 'clearfix'),
-          ),
-          'heading' => array(
-            'text' => t('Main menu'),
-            'level' => 'h2',
-            'class' => array('element-invisible'),
-          ),
-        )); ?>
-      </nav>
-    <?php endif; ?>
 
     <?php print render($page['navigation']); ?>
 
