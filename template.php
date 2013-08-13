@@ -364,7 +364,18 @@ function immigration_zen_container($variables) {
  * Implements hook_form_FORM_ID_alter().
  */
 function immigration_zen_form_search_block_form_alter(&$form, &$form_state) {
+  global $language;
+  
   $form['search_block_form']['#no-wrapper'] = TRUE;
   $form['actions']['#no-wrapper'] = TRUE;
   $form['search_block_form']['#attributes']['placeholder'] = t('Search...');
+
+  // @todo is there a better way to do this?
+  switch($language->language) {
+    case 'fr':
+    $form['#action'] = 'http://search.ottawa.ca/search?q=2013&site=immigration_fr';
+    break;
+    default:
+      $form['#action'] = 'http://search.ottawa.ca/search?q=2013&site=immigration_en';
+  }
 }
