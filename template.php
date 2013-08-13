@@ -378,9 +378,36 @@ function immigration_zen_form_search_block_form_alter(&$form, &$form_state) {
   // @todo is there a better way to do this?
   switch($language->language) {
     case 'fr':
-    $form['#action'] = 'http://search.ottawa.ca/search?q=2013&site=immigration_fr';
+
     break;
     default:
-      $form['#action'] = 'http://search.ottawa.ca/search?q=2013&site=immigration_en';
+      $form['#action'] = 'http://search.ottawa.ca/search';
   }
+
+  // Add hidden fields required by GSA
+  $form['proxystylesheet'] = array(
+    '#type' => 'hidden',
+    '#value' => 'ottawa_en',
+  );
+  
+  $form['site'] = array(
+    '#type' => 'hidden',
+    '#value' => 'immigration_en',
+  );
+
+  $form['client'] = array(
+    '#type' => 'hidden',
+    '#value' => 'ottawa_en',
+  );
+
+  // Change values based on language
+  if ($language->language == 'fr') {
+    $form['proxystylesheet']['#value'] = 'ottawa_fr';
+    $form['client']['#value'] = 'ottawa_fr';
+    $form['site']['#value'] = 'immigration_fr';
+  }
+
+  // Set global form properties
+  $form['#action'] = 'http://search.ottawa.ca/search';
+  $form['#method'] = 'get';
 }
