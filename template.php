@@ -366,9 +366,14 @@ function immigration_zen_container($variables) {
 function immigration_zen_form_search_block_form_alter(&$form, &$form_state) {
   global $language;
   
+  // Fix the field settings
   $form['search_block_form']['#no-wrapper'] = TRUE;
   $form['actions']['#no-wrapper'] = TRUE;
   $form['search_block_form']['#attributes']['placeholder'] = t('Search...');
+
+  // Change the textfield to match what the GSA expects
+  $form['q'] = $form['search_block_form'];
+  unset($form['search_block_form']);
 
   // @todo is there a better way to do this?
   switch($language->language) {
