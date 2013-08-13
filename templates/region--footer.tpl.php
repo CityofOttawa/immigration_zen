@@ -27,7 +27,7 @@
  */
 ?>
   <footer id="footer" class="<?php print $classes; ?>" role="contentinfo">
-		<img src="<?php print '/'. drupal_get_path('theme', 'immigration_zen') . '/images/ottawa-white.png'; ?>" alt="City of Ottawa Logo">
+		<a href="<?php print $front_page; ?>" title=""><img src="<?php print '/'. drupal_get_path('theme', 'immigration_zen') . '/images/ottawa-white.png'; ?>" alt="City of Ottawa Logo"></a>
 			<p>&copy; 2001-2013 City of Ottawa</p>
 
 			<address>110 Laurier Avenue West <br>
