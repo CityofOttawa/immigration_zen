@@ -107,7 +107,7 @@
 
   <div id="main">
     <div id="content" class="column" role="main">
-      <div class="flexslider">
+      <div id="flexslider-test" class="flexslider">
         <ul class="slides">
           <li>
             <img src="/<?php print drupal_get_path('theme', 'immigration_zen') . '/images-source/slide-images/1.jpg'; ?>" />
