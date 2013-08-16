@@ -110,13 +110,13 @@
       <div class="flexslider">
         <ul class="slides">
           <li>
-            <img src="/<?php print drupal_get_path('theme', 'immigration_zen') . '/images-source/slide\ images/1.jpg'; ?>" />
+            <img src="/<?php print drupal_get_path('theme', 'immigration_zen') . '/images-source/slide-images/1.jpg'; ?>" />
           </li>
           <li>
-            <img src="/<?php print drupal_get_path('theme', 'immigration_zen') . '/images-source/slide\ images/2.jpg'; ?>" />
+            <img src="/<?php print drupal_get_path('theme', 'immigration_zen') . '/images-source/slide-images/2.jpg'; ?>" />
           </li>
           <li>
-            <img src="/<?php print drupal_get_path('theme', 'immigration_zen') . '/images-source/slide\ images/3.jpg'; ?>" />
+            <img src="/<?php print drupal_get_path('theme', 'immigration_zen') . '/images-source/slide-images/3.jpg'; ?>" />
           </li>
         </ul>
       </div>
