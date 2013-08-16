@@ -107,6 +107,20 @@
 
   <div id="main">
     <div id="content" class="column" role="main">
+      <div class="flexslider">
+        <ul class="slides">
+          <li>
+            <img src="<?php print drupal_get_path('theme', 'immigration_zen') . '/images-source/slide\ images/1.jpg'; ?>" />
+          </li>
+          <li>
+            <img src="<?php print drupal_get_path('theme', 'immigration_zen') . '/images-source/slide\ images/2.jpg'; ?>" />
+          </li>
+          <li>
+            <img src="<?php print drupal_get_path('theme', 'immigration_zen') . '/images-source/slide\ images/3.jpg'; ?>" />
+          </li>
+        </ul>
+      </div>
+
       <h1>Welcome to the City of Ottawa Immigration Portal</h1>
       <p>Morbi nec auctor risus, quis aliquam ligula. Donec augue enim, porttitor vitae tincidunt vel, tristique id ligula. Morbi eget ante lobortis, varius elit eu, mattis augue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec vitae molestie lorem, quis cursus libero. Quisque sollicitudin ut est congue laoreet. Vivamus ut imperdiet nulla. Donec rutrum, mi in fringilla ullamcorper, eros arcu consectetur ipsum, sed ultrices justo neque id nisl.</p>
 
