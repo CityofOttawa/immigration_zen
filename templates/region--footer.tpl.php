@@ -27,8 +27,8 @@
  */
 ?>
   <footer id="footer" class="<?php print $classes; ?>" role="contentinfo">
-		<a href="<?php print $front_page; ?>" title=""><img src="<?php print '/'. drupal_get_path('theme', 'immigration_zen') . '/images/ottawa-white.png'; ?>" alt="City of Ottawa Logo"></a>
-			<p>&copy; 2001-2013 City of Ottawa</p>
+		<a href="/" title=""><img src="<?php print '/'. drupal_get_path('theme', 'immigration_zen') . '/images/ottawa-white.png'; ?>" alt="City of Ottawa Logo"></a>
+			<p>&copy; 2001-<?php print date("Y");?> <?php print t('City of Ottawa'); ?></p>
 
 			<address>110 Laurier Avenue West <br>
 			Ottawa, Ontario, K1P 1J1
