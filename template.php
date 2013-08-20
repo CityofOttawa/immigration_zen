@@ -131,7 +131,7 @@ function immigration_zen_preprocess_maintenance_page(&$variables, $hook) {
 
 function immigration_zen_preprocess_html(&$variables, $hook) {
   
-  flexslider_add('#flexslider-test');
+  flexslider_add('flexslider-test', 'immigration_slider');
 
   // The body tag's classes are controlled by the $classes_array variable. To
   // remove a class from $classes_array, use array_diff().
