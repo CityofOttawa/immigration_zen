@@ -14,13 +14,28 @@
  * Body
  */
 html{
-  background: #e9e3d5 url(../images/bg-left.jpg) bottom left no-repeat;
+
 }
 
 body {
   margin: 0;
   padding: 0;
-  background: transparent url(../images/bg-right.jpg) bottom right no-repeat;
+  background: #333333 url(../images/immigration_background_home.jpg) top center no-repeat;
+  &.immigration-after-arrive {
+    //background-image: url(../images/);
+  }
+  &.immigration-before-arrive {
+    background-image: url(../images/immigration_background_city_hall.jpg);
+  }
+  &.immigration-learning {
+    background-image: url(../images/immigration_background_visitors.jpg);
+  }
+  &.immigration-living {
+    background-image: url(../images/immigration_background_residents.jpg);
+  }
+  &.immigration-business {
+    background-image: url(../images/immigration_background_business.jpg);
+  }
 }
 
 #page {
