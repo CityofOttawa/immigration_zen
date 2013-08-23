@@ -5,21 +5,21 @@
 /*creates subtle dropshadow on text */
 /* See Paul Irish <http://www.paulirish.com/2012/box-sizing-border-box-ftw/> */
 /* line 58, ../images/icons/*.png */
-.icons-sprite, .icons-bullet, .icons-search, .icons-toc, .toc-btn {
+.icons-sprite, .icons-bullet, .icons-search, .icons-toc, .toc-btn, .toc-btn:hover, .toc-btn:active {
   background: url('../images/../images/icons-sccd069ddf1.png') no-repeat;
 }
 
-/* line 60, ../../../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-bullet {
   background-position: 0 -79px;
 }
 
-/* line 60, ../../../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-search {
   background-position: 0 -44px;
 }
 
-/* line 60, ../../../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-toc, .toc-btn, .toc-btn:hover, .toc-btn:active {
   background-position: 0 0;
 }
@@ -291,7 +291,7 @@ li a.active {
     color: #194f84;
     font-family: Verdana, Tahoma, "DejaVu Sans", sans-serif;
     text-shadow: none;
-    padding: 0.5em 1em 0 0;
+    padding: .5em 1em 0 0;
     width: auto;
     font-size: 1.143em;
     font-weight: normal;
@@ -340,7 +340,7 @@ li a.active {
     color: #194f84;
     font-family: Verdana, Tahoma, "DejaVu Sans", sans-serif;
     text-shadow: none;
-    padding: 0.5em 1em 0 0;
+    padding: .5em 1em 0 0;
     width: auto;
     font-size: 1.143em;
     font-weight: normal;
@@ -422,7 +422,7 @@ li a.active {
   padding: 0;
   display: block;
   border: 3px solid #69511a;
-  border-top: 0;
+  border-top-width: 0px;
 }
 /* line 361, ../sass/navigation.scss */
 .pane-simple-toc-simple-toc .toc-wrapper ol {
