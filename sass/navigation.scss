@@ -356,7 +356,7 @@ li a.active {
     @include zero;
     display: block;
     border: 3px solid $color-1; 
-    border-top-width: 0px; 
+//    border-top-width: 0px; 
     
     ol{
       @include zero;

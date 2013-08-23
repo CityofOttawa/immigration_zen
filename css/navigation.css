@@ -422,7 +422,6 @@ li a.active {
   padding: 0;
   display: block;
   border: 3px solid #69511a;
-  border-top-width: 0px;
 }
 /* line 361, ../sass/navigation.scss */
 .pane-simple-toc-simple-toc .toc-wrapper ol {
