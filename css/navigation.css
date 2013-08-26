@@ -461,10 +461,6 @@ li a.active {
   .pane-simple-toc-simple-toc h2 {
     padding: .2em 1em;
   }
-  /* line 398, ../sass/navigation.scss */
-  .pane-simple-toc-simple-toc .toc-wrapper {
-    padding-bottom: 1em;
-  }
   /* line 400, ../sass/navigation.scss */
   .pane-simple-toc-simple-toc .toc-wrapper ol a {
     padding: .4em 2.5em;
@@ -472,35 +468,35 @@ li a.active {
 }
 
 /* Footer menu */
-/* line 413, ../sass/navigation.scss */
+/* line 411, ../sass/navigation.scss */
 #footer ul {
   background-color: #222222;
   margin: 2em 0 0;
   padding: 1em;
 }
-/* line 419, ../sass/navigation.scss */
+/* line 417, ../sass/navigation.scss */
 #footer li {
   display: inline-block;
 }
-/* line 421, ../sass/navigation.scss */
+/* line 419, ../sass/navigation.scss */
 #footer li:after {
   color: #8f8f8f;
   padding: 1em;
   content: "|";
 }
-/* line 427, ../sass/navigation.scss */
+/* line 425, ../sass/navigation.scss */
 #footer li:last-child:after {
   content: "";
   padding: 0;
 }
-/* line 434, ../sass/navigation.scss */
+/* line 432, ../sass/navigation.scss */
 #footer a {
   color: #cccccc;
   font-size: 13.712px;
   font-size: 0.857rem;
   text-decoration: none;
 }
-/* line 439, ../sass/navigation.scss */
+/* line 437, ../sass/navigation.scss */
 #footer a:hover {
   color: #a6a6a6;
   text-decoration: underline;
