@@ -168,6 +168,7 @@ $zen-auto-include-item-base: false;
   // Panels
   .cityott-two-66-33,
   .panel-2col {
+    clear: left;
     .region-cityott-two-66-33-first {
       @include zen-grid-item(1, 1, right);      
     }
