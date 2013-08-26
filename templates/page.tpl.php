@@ -76,12 +76,7 @@
       <?php print render($page['highlighted']); ?>
       <?php //print $breadcrumb; ?>
       <a id="main-content"></a>
-      <?php print render($title_prefix); ?>
-      <?php if ($title): ?>
-        <h1 class="title" id="page-title"><?php print $title; ?></h1>
-      <?php endif; ?>
-      <?php print render($title_suffix); ?>
-			<a class="toc-btn" href="#cityott-sidebar">Table of Contents</a>
+			<!--<a class="toc-btn" href="#cityott-sidebar">Table of Contents</a>-->
 
       <?php print $messages; ?>
       <?php print render($tabs); ?>
