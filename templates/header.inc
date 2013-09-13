@@ -10,7 +10,7 @@
       <hgroup id="name-and-slogan">
         <?php if ($site_name): ?>
           <h1 id="site-name">
-            <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span>Immigration</span></a>
+            <a href="<?php print $front_page . "/immigration"; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print t('Immigration'); ?></span></a>
           </h1>
         <?php endif; ?>
 
