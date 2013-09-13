@@ -389,7 +389,11 @@ li a.active {
         }
       }
     }//ol
-  }//toc-wrapper
+  &.sticky {
+    position: fixed;
+    top: 80px;
+  } 
+ }//toc-wrapper
   
   @media only screen and (min-width: 1200px){ // .toc-btn
     h2{
@@ -404,6 +408,14 @@ li a.active {
     }
   }//media-queries
 } //pane
+
+// Admin toolbar adjustments
+body.toolbar .pane-simple-toc-simple-toc .toc-wrapper.sticky {
+  top: 55px;
+}
+body.toolbar.toolbar-drawer .pane-simple-toc-simple-toc .toc-wrapper.sticky {
+  top: 95px;
+}
 
 /* Footer menu */
 

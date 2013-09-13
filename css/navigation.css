@@ -5,21 +5,21 @@
 /*creates subtle dropshadow on text */
 /* See Paul Irish <http://www.paulirish.com/2012/box-sizing-border-box-ftw/> */
 /* line 58, ../images/icons/*.png */
-.icons-sprite, .icons-bullet, .icons-search, .icons-toc, .toc-btn, .toc-btn:hover, .toc-btn:active {
+.icons-sprite, .icons-bullet, .icons-search, .icons-toc, .toc-btn {
   background: url('../images/../images/icons-sccd069ddf1.png') no-repeat;
 }
 
-/* line 60, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-bullet {
   background-position: 0 -79px;
 }
 
-/* line 60, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-search {
   background-position: 0 -44px;
 }
 
-/* line 60, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-toc, .toc-btn, .toc-btn:hover, .toc-btn:active {
   background-position: 0 0;
 }
@@ -291,7 +291,7 @@ li a.active {
     color: #194f84;
     font-family: Verdana, Tahoma, "DejaVu Sans", sans-serif;
     text-shadow: none;
-    padding: .5em 1em 0 0;
+    padding: 0.5em 1em 0 0;
     width: auto;
     font-size: 1.143em;
     font-weight: normal;
@@ -340,7 +340,7 @@ li a.active {
     color: #194f84;
     font-family: Verdana, Tahoma, "DejaVu Sans", sans-serif;
     text-shadow: none;
-    padding: .5em 1em 0 0;
+    padding: 0.5em 1em 0 0;
     width: auto;
     font-size: 1.143em;
     font-weight: normal;
@@ -456,47 +456,62 @@ li a.active {
   text-decoration: none;
   background-color: #a68029;
 }
+/* line 392, ../sass/navigation.scss */
+.pane-simple-toc-simple-toc .toc-wrapper.sticky {
+  position: fixed;
+  top: 80px;
+}
 @media only screen and (min-width: 1200px) {
-  /* line 395, ../sass/navigation.scss */
+  /* line 399, ../sass/navigation.scss */
   .pane-simple-toc-simple-toc h2 {
     padding: .2em 1em;
   }
-  /* line 400, ../sass/navigation.scss */
+  /* line 404, ../sass/navigation.scss */
   .pane-simple-toc-simple-toc .toc-wrapper ol a {
     padding: .4em 2.5em;
   }
 }
 
+/* line 413, ../sass/navigation.scss */
+body.toolbar .pane-simple-toc-simple-toc .toc-wrapper.sticky {
+  top: 55px;
+}
+
+/* line 416, ../sass/navigation.scss */
+body.toolbar.toolbar-drawer .pane-simple-toc-simple-toc .toc-wrapper.sticky {
+  top: 95px;
+}
+
 /* Footer menu */
-/* line 411, ../sass/navigation.scss */
+/* line 423, ../sass/navigation.scss */
 #footer ul {
   background-color: #222222;
   margin: 2em 0 0;
   padding: 1em;
 }
-/* line 417, ../sass/navigation.scss */
+/* line 429, ../sass/navigation.scss */
 #footer li {
   display: inline-block;
 }
-/* line 419, ../sass/navigation.scss */
+/* line 431, ../sass/navigation.scss */
 #footer li:after {
   color: #8f8f8f;
   padding: 1em;
   content: "|";
 }
-/* line 425, ../sass/navigation.scss */
+/* line 437, ../sass/navigation.scss */
 #footer li:last-child:after {
   content: "";
   padding: 0;
 }
-/* line 432, ../sass/navigation.scss */
+/* line 444, ../sass/navigation.scss */
 #footer a {
   color: #cccccc;
   font-size: 13.712px;
   font-size: 0.857rem;
   text-decoration: none;
 }
-/* line 437, ../sass/navigation.scss */
+/* line 449, ../sass/navigation.scss */
 #footer a:hover {
   color: #a6a6a6;
   text-decoration: underline;
