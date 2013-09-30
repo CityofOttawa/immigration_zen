@@ -385,9 +385,9 @@ li a.active {
   padding: 1.2em 1.2em .5em 1em;
   width: 1em;
   background-color: #036f63;
-  text-indent: -119988px;
+  text-indent: -9999px;
+  white-space: nowrap;
   overflow: hidden;
-  text-align: left;
 }
 /* line 331, ../sass/navigation.scss */
 .toc-btn:hover, .toc-btn:active {
@@ -447,14 +447,14 @@ li a.active {
 }
 /* line 381, ../sass/navigation.scss */
 .pane-simple-toc-simple-toc .toc-wrapper ol .selected {
-  background-color: #927124;
+  background-color: #7d611f;
   color: #fff;
   border-bottom: 0;
 }
 /* line 386, ../sass/navigation.scss */
 .pane-simple-toc-simple-toc .toc-wrapper ol .selected:hover {
   text-decoration: none;
-  background-color: #a68029;
+  background-color: #927124;
 }
 /* line 392, ../sass/navigation.scss */
 .pane-simple-toc-simple-toc .toc-wrapper.sticky {

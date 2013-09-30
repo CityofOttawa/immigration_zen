@@ -319,10 +319,19 @@ header{
     
     h1{
       text-align: left; 
+      @include rem-fallback(font-size, 2.175); 
+      line-height: 0;
+      font-weight: 400;
     }
   }//mediaqueries 
   
 }// #main
+@media only screen and (min-width: 768px){ // main media queries
+  .immigration-front #main h1{
+    line-height: 1.5;
+    font-weight: 400;
+  }
+}//mediaqueries 
 
 /*
  * Content
@@ -611,7 +620,7 @@ span.field-label { /* The inline field label used by the Fences module */
               height: inherit;
               background-image: none;
               &:hover{
-                @include opacity(.8);
+               @include opacity(1);
               }
             } 
           }
@@ -674,7 +683,7 @@ span.field-label { /* The inline field label used by the Fences module */
     }
 
     li{
-      margin-bottom: 1em !important;
+      margin-bottom: 2em !important;
       display: block;
       clear: both;
 
@@ -707,7 +716,7 @@ span.field-label { /* The inline field label used by the Fences module */
 
         a{
           @include border-box;
-          padding: .7em 30px 1em 1em;
+          padding: 0.5em 30px 1em 1em;
           color: #fff;
           display: block;
           height: 105px;
@@ -720,11 +729,11 @@ span.field-label { /* The inline field label used by the Fences module */
            }
 
            @media only screen and (min-width: 320px){ // a media queries
-             padding: 1em 30px 1em 1em;
+             padding: 0.5em 30px 1em 1em;
            }          
 
            @media only screen and (min-width: 380px){ // a media queries
-             padding: 1em 30px 1em 1em;
+             padding: 0.5em 30px 1em 1em;
            }
         }//hover
 
@@ -733,8 +742,6 @@ span.field-label { /* The inline field label used by the Fences module */
           @include zero;
           line-height: 1.1;
           font-weight: 300 !important;
-          margin: 0;
-          padding: 0;
           @media only screen and (min-width: 320px){ // h2 media queries
             @include rem-fallback(font-size, 1.5); 
           }
@@ -764,8 +771,9 @@ span.field-label { /* The inline field label used by the Fences module */
             }
           }
           figcaption {
-            background: none;
+            background: none !important;
             a {
+              height: auto;
               @include border-box;
               color: $color-1;
               background-image: none;
@@ -782,6 +790,123 @@ span.field-label { /* The inline field label used by the Fences module */
 
     }
 }//gateway-items
+
+
+/* 
+* Spot color changes for different pages
+*/
+.immigration-why #main {
+  .row-start{
+    h1{ color: $color-1; }
+    figcaption{ background-color: $color-1; }
+    @media only screen and (min-width: 768px){
+      h2, a{ color: $color-1; }
+      a:hover{ color: lighten($color-1, 10%); }
+    }
+  }
+  blockquote,.pane-simple-toc-simple-toc h2{ background-color: $color-1; }
+  .toc-wrapper{
+    border: 3px solid $color-1; 
+    .selected{background-color: lighten($color-1, 5%); 
+      &:hover{ background-color: lighten($color-1, 10%); }
+    }
+  }
+}
+
+.immigration-before-arrive #main {
+  .row-start{
+    h1{ color: $color-2; }
+    blockquote, figcaption{ background-color: $color-2; }
+    @media only screen and (min-width: 768px){
+      h2, a{ color: $color-2; }
+      a:hover{ color: lighten($color-2, 10%); }
+    }
+  }
+  blockquote,.pane-simple-toc-simple-toc h2{ background-color: $color-2; } 
+  .toc-wrapper{
+    border: 3px solid $color-2; 
+    .selected{background-color: lighten($color-2, 5%); 
+      &:hover{ background-color: lighten($color-2, 10%); }
+    }
+  }
+}
+
+.immigration-after-arrive #main {
+  .row-start{
+    h1{ color: $color-3; }
+    blockquote, figcaption{ background-color: $color-3; }
+    @media only screen and (min-width: 768px){
+      h2, a{ color: $color-3; }
+      a:hover{ color: lighten($color-3, 10%); }
+    }
+  }
+  blockquote, .pane-simple-toc-simple-toc h2{ background-color: $color-3; }
+  .toc-wrapper{
+    border: 3px solid $color-3; 
+    .selected{background-color: lighten($color-3, 5%); 
+      &:hover{ background-color: lighten($color-3, 10%); }
+    }
+  }
+}
+
+
+.immigration-business #main {
+  .row-start{
+    h1{ color: $color-4; }
+    blockquote, figcaption{ background-color: $color-4; }
+    @media only screen and (min-width: 768px){
+      h2, a{ color: $color-4; }
+      a:hover{ color: lighten($color-4, 10%); }
+    }
+  }
+  blockquote, .pane-simple-toc-simple-toc h2{ background-color: $color-4; }
+  .toc-wrapper{
+    border: 3px solid $color-4; 
+    .selected{background-color: lighten($color-4, 5%); 
+      &:hover{ background-color: lighten($color-4, 10%); }
+    }
+  } 
+}
+
+
+.immigration-learning #main {
+  .row-start{
+    h1{ color: $color-5; }
+    blockquote, figcaption{ background-color: $color-5; }
+    @media only screen and (min-width: 768px){
+      h2, a{ color: $color-5; }
+      a:hover{ color: lighten($color-5, 10%); }
+    }
+  }
+  blockquote, .pane-simple-toc-simple-toc h2{ background-color: $color-5; }
+  .toc-wrapper{
+    border: 3px solid $color-5; 
+    .selected{background-color: lighten($color-5, 5%); 
+      &:hover{ background-color: lighten($color-5, 10%); }
+    }
+  } 
+}
+
+
+.immigration-living #main {
+  .row-start{
+    h1{ color: $color-6; }
+    blockquote, figcaption{ background-color: $color-6; }
+    @media only screen and (min-width: 768px){
+      h2, a{ color: $color-6; }
+      a:hover{ color: lighten($color-6, 10%); }
+    }
+  }
+  blockquote, .pane-simple-toc-simple-toc h2{ background-color: $color-6; }
+  .toc-wrapper{
+    border: 3px solid $color-6; 
+    .selected{background-color: lighten($color-6, 5%); 
+      &:hover{ background-color: lighten($color-6, 10%); }
+    }
+  }
+}
+
+
 
 /*
  * Footer

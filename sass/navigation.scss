@@ -379,13 +379,13 @@ li a.active {
 
       }
       .selected{
-        background-color: lighten($color-1, 10%); //passes contrast ratio for WCAG AA
+        background-color: lighten($color-1, 5%); //passes contrast ratio for WCAG AA
         color: #fff;
         border-bottom: 0;
         
         &:hover{
           text-decoration: none;
-          background-color: lighten($color-1, 15%); 
+          background-color: lighten($color-1, 10%); 
         }
       }
     }//ol
