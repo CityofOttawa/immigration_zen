@@ -49,6 +49,7 @@ ul.secondary {
  */
 
 ul.primary {
+  clear: both;
   li {
     @include border-top-radius(4px);
     @include single-text-shadow(#fff, 1px, 1px, 0);

@@ -571,16 +571,17 @@ span.field-label { /* The inline field label used by the Fences module */
      //full screen styles
      @media only screen and (min-width: 768px){
        width: 100%; // figcaption media queries
-       
+      
+      li:nth-child(odd){
+          margin-right: 5% !important;
+      }
+      
       li{
         clear: none;
         width: 47.5%;
         display: inline-block;
         float: left;
         
-        &:nth-child(odd){
-          margin-right: 5% !important;
-        }
         
         figure img{
           width: 100%; height: inherit;
@@ -638,8 +639,149 @@ span.field-label { /* The inline field label used by the Fences module */
         }
       
      }
- }//landing-items
+}//landing-items
 
+.lt-ie9 .landing-items{
+  @media only screen and (min-width: 768px){
+    li{
+       width: 47.5%;
+       margin-left: 1.25% !important;
+       margin-right: 1.25% !important;
+     }
+     
+  }
+  
+  @media only screen and (min-width: 960px){
+    li{
+       width: 30%;
+     }
+  }
+ 
+}
+
+.gateway-items{
+   @include zero;  
+
+    width: 100%;
+    margin: 4em auto;
+    list-style-type: none;
+
+    @media only screen and (min-width: 380px){ // media queries
+      width: 350px;
+    }
+    @media only screen and (min-width: 480px){ // media queries
+      width: 400px;
+    }
+
+    li{
+      margin-bottom: 1em !important;
+      display: block;
+      clear: both;
+
+      & figcaption {background-color:$color-1;}
+
+      figure{
+        display: block;
+        padding: 0;
+      }
+
+      figure img{
+        display: none;
+        float: left;
+        height: 105px;
+        width: 25%;
+        margin: 0 !important;
+
+        @media only screen and (min-width: 380px){ // img media queries
+         display:inline-block;
+        }
+      }
+
+      figcaption{
+        display: inline-block;
+        width: 100%;
+
+        @media only screen and (min-width: 380px){ // figcaption media queries
+          width: 75%;
+        }
+
+        a{
+          @include border-box;
+          padding: .7em 30px 1em 1em;
+          color: #fff;
+          display: block;
+          height: 105px;
+          text-decoration: none;
+          /*bg styling*/
+           background: transparent url('../images/arrow-bg.png') top right no-repeat;
+
+           &:hover{
+             @include opacity(.90);
+           }
+
+           @media only screen and (min-width: 320px){ // a media queries
+             padding: 1em 30px 1em 1em;
+           }          
+
+           @media only screen and (min-width: 380px){ // a media queries
+             padding: 1em 30px 1em 1em;
+           }
+        }//hover
+
+        h2{
+          @include rem-fallback(font-size, 1.375380); 
+          @include zero;
+          line-height: 1.1;
+          font-weight: 300 !important;
+          margin: 0;
+          padding: 0;
+          @media only screen and (min-width: 320px){ // h2 media queries
+            @include rem-fallback(font-size, 1.5); 
+          }
+        }
+        p{
+          margin: .5em 0;
+          line-height: 1.3;
+        }
+      }//figcaption
+    }
+    //full screen styles
+    @media only screen and (min-width: 768px){
+      p {
+        color: black;        
+      }
+      width: auto;
+      ul {
+        padding-left: 0;
+        li {
+          h2 {
+//            font-size: 1em;
+            color: $color-1;
+          }
+          figure {
+            img {
+              width: 105px;
+            }
+          }
+          figcaption {
+            background: none;
+            a {
+              @include border-box;
+              color: $color-1;
+              background-image: none;
+              &:hover {
+                background-image: url('../images/arrow-bg.png');
+              }
+            }            
+          }
+        }
+      }
+    }//end of media query
+
+    @media only screen and (min-width: 960px){
+
+    }
+}//gateway-items
 
 /*
  * Footer
