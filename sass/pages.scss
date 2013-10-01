@@ -20,21 +20,19 @@ html{
 body {
   margin: 0;
   padding: 0;
-  background: #333333 url(../images/immigration_background_home.jpg) top center no-repeat;
-  &.immigration-after-arrive {
-    //background-image: url(../images/);
+  background: #333333 url(../images/immigration_background_home_why.jpg) top center no-repeat;
+  &.immigration-after-arrive, 
+  &.immigration-living{
+    background-image: url(../images/immigration_background_afterarrive_living.jpg);
   }
   &.immigration-before-arrive {
-    background-image: url(../images/immigration_background_city_hall.jpg);
-  }
-  &.immigration-learning {
-    background-image: url(../images/immigration_background_visitors.jpg);
-  }
-  &.immigration-living {
-    background-image: url(../images/immigration_background_residents.jpg);
+    background-image: url(../images/immigration_background_beforearrive.jpg);
   }
   &.immigration-business {
     background-image: url(../images/immigration_background_business.jpg);
+  }  
+  &.immigration-learning {
+    background-image: url(../images/immigration_background_learning.jpg);
   }
 }
 
@@ -319,9 +317,9 @@ header{
     
     h1{
       text-align: left; 
-      @include rem-fallback(font-size, 2.175); 
-      line-height: 0;
+      @include rem-fallback(font-size, 2.175);
       font-weight: 400;
+      line-height: 1; 
     }
   }//mediaqueries 
   
@@ -794,7 +792,7 @@ span.field-label { /* The inline field label used by the Fences module */
 
 #main {
   blockquote{
-    margin-top: 40px;
+    margin-top: 50px;
   }
 }
 

@@ -342,6 +342,7 @@ li a.active {
 
 .pane-simple-toc-simple-toc{
   margin-left: 3em;
+  margin-top: 50px;
   h2{
     //background-color: lighten($color-1, 20%);
     background-color: $color-1;
@@ -356,6 +357,8 @@ li a.active {
     @include zero;
     display: block;
     border: 3px solid $color-1; 
+    background-color: #fff;
+    
 //    border-top-width: 0px; 
     
     ol{
