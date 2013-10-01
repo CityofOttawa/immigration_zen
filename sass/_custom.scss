@@ -55,6 +55,12 @@
    
 }
 
+@mixin hide-text{
+  text-indent: -9999px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 //$icons-layout: diagonal;
 @import "../images/icons/*.png";
 @include all-icons-sprites;

@@ -69,7 +69,11 @@ ul.secondary a {
 /*
  * Primary tabs
  */
-/* line 52, ../sass/tabs.scss */
+/* line 51, ../sass/tabs.scss */
+ul.primary {
+  clear: both;
+}
+/* line 53, ../sass/tabs.scss */
 ul.primary li {
   -moz-border-radius-topleft: 4px;
   -webkit-border-top-left-radius: 4px;
@@ -82,13 +86,13 @@ ul.primary li {
   border-bottom: 0;
   margin: 0.5em 0 0 3px;
 }
-/* line 59, ../sass/tabs.scss */
+/* line 60, ../sass/tabs.scss */
 ul.primary li.active {
   border-bottom: 1px solid white;
   margin-bottom: -1px;
   /* Overlap the ul's border. */
 }
-/* line 65, ../sass/tabs.scss */
+/* line 66, ../sass/tabs.scss */
 ul.primary a:link,
 ul.primary a:visited {
   -moz-border-radius-topleft: 4px;
@@ -107,13 +111,13 @@ ul.primary a:visited {
   padding: 0 1em;
   text-align: center;
 }
-/* line 75, ../sass/tabs.scss */
+/* line 76, ../sass/tabs.scss */
 ul.primary a:hover,
 ul.primary a:focus {
   background-color: #e9e9e9;
   border-color: #f2f2f2;
 }
-/* line 79, ../sass/tabs.scss */
+/* line 80, ../sass/tabs.scss */
 ul.primary a.active {
   background-color: transparent;
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFE9E9E9', endColorstr='#00E9E9E9');
@@ -128,14 +132,14 @@ ul.primary a.active {
 /*
  * Secondary tabs
  */
-/* line 91, ../sass/tabs.scss */
+/* line 92, ../sass/tabs.scss */
 ul.secondary {
   font-size: .9em;
   margin-top: -1.5em;
   /* Collapse bottom margin of ul.primary. */
   padding-bottom: .5em;
 }
-/* line 97, ../sass/tabs.scss */
+/* line 98, ../sass/tabs.scss */
 ul.secondary a:link,
 ul.secondary a:visited {
   -webkit-border-radius: 0.75em;
@@ -152,14 +156,14 @@ ul.secondary a:visited {
   color: #666;
   padding: 0 .5em;
 }
-/* line 106, ../sass/tabs.scss */
+/* line 107, ../sass/tabs.scss */
 ul.secondary a:hover,
 ul.secondary a:focus {
   background-color: #dedede;
   border-color: #999;
   color: #333;
 }
-/* line 112, ../sass/tabs.scss */
+/* line 113, ../sass/tabs.scss */
 ul.secondary a.active,
 ul.secondary a:active {
   text-shadow: 1px 1px 0 #333333;
