@@ -36,6 +36,11 @@ body {
   }
 }
 
+/* For when environment indicator is on - override the margin*/
+body.environment-indicator-adjust.environment-indicator-left {
+  margin-left: 0;
+}
+
 #page {
   background-color: #fff;
   max-width: 1200px;
