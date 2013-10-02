@@ -323,6 +323,11 @@ header{
     }
   }//mediaqueries 
   
+  .flexslider .slides img {
+    margin: 0;
+  }
+
+
 }// #main
 @media only screen and (min-width: 768px){ // main media queries
   .immigration-front #main h1{
@@ -945,8 +950,3 @@ span.field-label { /* The inline field label used by the Fences module */
 }
 
 /*animations */
-
-.flexslider .slides img {
-  margin: 0;
-}
-
