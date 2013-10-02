@@ -43,12 +43,12 @@ body.environment-indicator-adjust.environment-indicator-left {
 
 #page {
   background-color: #fff;
-  max-width: 1200px;
+  max-width: 1205px;
   margin: 0 auto;
   padding: 0;
   @include box-shadow(rgba(black, 0.5) 1px 1px 15px 0);  
   @media only screen and (min-width: 1200px){ // header-box media queries
-    width: 1200px;
+    width: 1205px;
   }
 }
 
