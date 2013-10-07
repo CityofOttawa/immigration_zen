@@ -20,7 +20,12 @@ html{
 body {
   margin: 0;
   padding: 0;
-  background: #333333 url(../images/immigration_background_home_why.jpg) top center no-repeat;
+  background: #333333 url(../images/immigration_background_home_why.jpg) no-repeat bottom center;
+  background-attachment: fixed; 
+  @media only screen and (min-height: 1100px) { 
+    background-position: top center;
+  }
+
   &.immigration-after-arrive, 
   &.immigration-living{
     background-image: url(../images/immigration_background_afterarrive_living.jpg);
