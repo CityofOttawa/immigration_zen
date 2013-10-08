@@ -588,7 +588,7 @@ span.field-label { /* The inline field label used by the Fences module */
            margin: .5em 0;
            line-height: 1.3;
          }
-       }//figcaption
+       }//figcaption       
      }
      //full screen styles
      @media only screen and (min-width: 768px){
@@ -663,6 +663,50 @@ span.field-label { /* The inline field label used by the Fences module */
      }
 }//landing-items
 
+
+/*
+* Homepage Flexslider 
+*/
+
+#main .flexslider{
+  margin-top: 2em;
+  border-width: 10px;
+  ul li{
+    list-style-image: none;
+  }
+  
+  img{
+    @include box-shadow(none);
+  }
+  
+  .flex-control-paging li a {
+    background: rgba(0,0,0,0.2);
+    @include box-shadow(none);
+    
+    &.flex-active{
+      background: rgba(0,0,0,0.5);
+    }
+  }
+  
+  .flex-direction-nav a{
+    height: 37px;
+    padding: 1.6em 0 0;
+    color: rgba(255,255,255,0.65);
+    @include text-shadow(rgba(0,0,0, 0.2) 1px 0 3px);
+    text-decoration: none;
+    &:before{
+     font-size: 65px; 
+    }
+    &:hover{
+     color: rgba(255,255,255,0.8);
+     text-decoration: underline; 
+    }
+  }
+}
+
+
+
+
 .lt-ie9 .landing-items{
   @media only screen and (min-width: 768px){
     li{
@@ -736,6 +780,8 @@ span.field-label { /* The inline field label used by the Fences module */
           text-decoration: none;
           /*bg styling*/
            background: transparent url('../images/arrow-bg.png') top right no-repeat;
+           @include transition-property(color);
+
 
            &:hover{
              @include opacity(.90);
