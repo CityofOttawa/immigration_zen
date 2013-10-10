@@ -497,6 +497,25 @@ span.field-label { /* The inline field label used by the Fences module */
 }
 
 /*
+* Landing Page
+*/
+
+.intro h2{
+  @include rem-fallback(font-size, 1.714); //24px
+  line-height: 1.5;
+  font-weight: 400;
+  text-align: center;
+  color: $city-green;
+  
+  @media only screen and (min-width: 768px){ // main media queries
+      text-align: left; 
+      font-weight: 400;
+      @include rem-fallback(font-size, 2.175);
+  }//mediaqueries
+}
+
+
+/*
  *Landing Page Items
  */
  .landing-items{
