@@ -332,13 +332,9 @@ header{
       line-height: 1; 
     }
   }//mediaqueries 
-  
-  .flexslider .slides img {
-    margin: 0;
-  }
-
 
 }// #main
+
 @media only screen and (min-width: 768px){ // main media queries
   .immigration-front #main h1{
     line-height: 1.5;
@@ -690,6 +686,11 @@ span.field-label { /* The inline field label used by the Fences module */
 #main .flexslider{
   margin-top: 2em;
   border-width: 10px;
+  
+  .slides img {
+    margin: 0;
+  }
+  
   ul li{
     list-style-image: none;
   }
@@ -701,7 +702,7 @@ span.field-label { /* The inline field label used by the Fences module */
   .flex-control-paging li a {
     background: rgba(0,0,0,0.2);
     @include box-shadow(none);
-    
+
     &.flex-active{
       background: rgba(0,0,0,0.5);
     }
@@ -721,9 +722,55 @@ span.field-label { /* The inline field label used by the Fences module */
      text-decoration: underline; 
     }
   }
+  
+  .slides li a{
+    color: $color-3;
+    font-weight: 400;
+    text-decoration:none;
+    
+    .flex-caption{
+      @include border-box;
+      position: relative;
+      bottom: 0;
+      height: 100px;
+      padding: 1em;
+      font-family: $font-heading; //century gothic
+      @include rem-fallback(font-size, 2); //24px
+      background-color: rgba(255,255,255, 0.65);
+      width: 100%;
+      margin: -100px 0 0;
+      
+      @include ease-all;
+      @include transition-property(background-color);
+      
+    }
+    
+    
+    
+    &:hover,
+    &:active,
+    &:focus{
+      .flex-caption{
+        background-color: rgba(255,255,255, 0.8);
+      }//flex-caption
+    }//hover,focus,active
+   }//caption
+    
+}// flexslider
+
+.flex-caption{
+  @include border-box;
+  position: relative;
+  bottom: 0;
+  height: 125px;
+  padding: 1em;
+  font-family: $font-heading; //century gothic
+  @include rem-fallback(font-size, 2); //24px
+  background-color: rgba(255,255,255, 0.5);
+  width: 100%;
+  margin: -125px 0 0;
+  font-weight: 400;
 }
-
-
 
 
 .lt-ie9 .landing-items{
