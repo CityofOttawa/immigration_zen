@@ -732,17 +732,23 @@ span.field-label { /* The inline field label used by the Fences module */
       @include border-box;
       position: relative;
       bottom: 0;
-      height: 100px;
       padding: 1em;
       font-family: $font-heading; //century gothic
-      @include rem-fallback(font-size, 2); //24px
       background-color: rgba(255,255,255, 0.65);
       width: 100%;
-      margin: -100px 0 0;
       
       @include ease-all;
       @include transition-property(background-color);
       
+      @include rem-fallback(font-size, 1.5); 
+      height: 60px;
+      margin: -60px 0 0;
+      
+      @media only screen and (min-width: 768px){
+        @include rem-fallback(font-size, 2); 
+        height: 100px;
+        margin: -100px 0 0;
+      }
     }
     
     
@@ -762,14 +768,20 @@ span.field-label { /* The inline field label used by the Fences module */
   @include border-box;
   position: relative;
   bottom: 0;
-  height: 125px;
   padding: 1em;
   font-family: $font-heading; //century gothic
-  @include rem-fallback(font-size, 2); //24px
-  background-color: rgba(255,255,255, 0.5);
+  background-color: rgba(255,255,255, 0.65);
   width: 100%;
-  margin: -125px 0 0;
-  font-weight: 400;
+  
+  @include rem-fallback(font-size, 1.5);
+  height: 60px;
+  margin: -60px 0 0;
+  
+  @media only screen and (min-width: 768px){
+    @include rem-fallback(font-size, 2); //24px
+    height: 100px;
+    margin: -100px 0 0;
+  }
 }
 
 
