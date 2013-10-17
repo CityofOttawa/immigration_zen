@@ -90,6 +90,8 @@ body.environment-indicator-adjust.environment-indicator-left {
   margin: 0;
   font-size: 2em;
   line-height: 1.5em;
+  /* hide name of site for new logo */
+  @include element-invisible;
 
   a:link,
   a:visited {
@@ -732,7 +734,7 @@ span.field-label { /* The inline field label used by the Fences module */
       @include border-box;
       position: relative;
       bottom: 0;
-      padding: 1em;
+      padding: .5em 1em;
       font-family: $font-heading; //century gothic
       background-color: rgba(255,255,255, 0.65);
       width: 100%;
@@ -740,14 +742,19 @@ span.field-label { /* The inline field label used by the Fences module */
       @include ease-all;
       @include transition-property(background-color);
       
-      @include rem-fallback(font-size, 1.5); 
-      height: 60px;
-      margin: -60px 0 0;
+      height: 70px;
+      margin: -70px 0 0;
+      
+      @media only screen and (min-width: 580px){
+        @include rem-fallback(font-size, 1.5); //24px
+      }
       
       @media only screen and (min-width: 768px){
         @include rem-fallback(font-size, 2); 
         height: 100px;
         margin: -100px 0 0;
+        padding: .6em 1em;
+        
       }
     }
     
@@ -768,19 +775,24 @@ span.field-label { /* The inline field label used by the Fences module */
   @include border-box;
   position: relative;
   bottom: 0;
-  padding: 1em;
+  padding: .5em 1em;
   font-family: $font-heading; //century gothic
   background-color: rgba(255,255,255, 0.65);
   width: 100%;
+  line-height: 1.2;
+  height: 70px;
+  margin: -70px 0 0;
   
-  @include rem-fallback(font-size, 1.5);
-  height: 60px;
-  margin: -60px 0 0;
+  @media only screen and (min-width: 580px){
+    @include rem-fallback(font-size, 1.5); //24px
+  }
   
   @media only screen and (min-width: 768px){
     @include rem-fallback(font-size, 2); //24px
     height: 100px;
     margin: -100px 0 0;
+    padding: .6em 1em;
+    
   }
 }
 
