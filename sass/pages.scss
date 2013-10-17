@@ -124,7 +124,10 @@ header{
    }
 
    #logo{
-     padding-right: 150px;
+     //padding-right: 150px;
+     /*new logo*/
+     margin-bottom: 1em;
+     display: block;
    }
    #site-name{
      color: $city-blue;
@@ -168,8 +171,27 @@ header{
          display: block;
          color: $color-4;
          position: absolute;
-         top: 10px;
-         left: 20px;
+         //top: 10px;
+         //left: 20px;
+         
+        //New logo
+         top: 90px;
+         left: 80px;
+         font-family: $balthazar;
+         text-transform: uppercase;
+         letter-spacing: 2px;
+         
+         .red{
+           color: $color-4;
+         }
+         
+         .green{
+           color: $color-2;
+         }
+         
+         .black{
+           color: #000;
+         }
        }
 
      } //hgroup
@@ -178,8 +200,7 @@ header{
 
  }// header
 
- .region-header,
- .header-box{
+ .region-header{
      width: 205px;
      margin: 0 auto;
      clear: both;
@@ -234,7 +255,10 @@ header{
 
        @media only screen and (min-width: 768px){ // header-box media queries
        position: absolute; // based on parent (header) set to relative
-       top: 55px;
+       //top: 55px;
+       //New logo
+       top: 105px;
+       // end
        right: 3em;
        text-align: right;
        width: 250px;

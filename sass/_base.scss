@@ -59,6 +59,14 @@ $h6-font-size: 0.75 * $base-font-size;
 // find any of the fonts in the list.
 
 // First, let's create some font stacks.
+
+@font-face {
+  font-family: 'Balthazar';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Balthazar Regular'), local('Balthazar-Regular'), url(http://themes.googleusercontent.com/static/fonts/balthazar/v2/E9s_OrHc1N8XyvXr2y-jyrO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+
 $times-new-roman: "Times New Roman", Times, Georgia, "DejaVu Serif", serif;
 $times:           Times, "Times New Roman", Georgia, "DejaVu Serif", serif;
 $georgia:         Georgia, "Times New Roman", "DejaVu Serif", serif;
@@ -67,6 +75,7 @@ $verdana:         Verdana, Tahoma, "DejaVu Sans", sans-serif;
 $century-gothic:  "Century Gothic", CenturyGothic, AppleGothic, sans-serif; 
 $tahoma:          Tahoma, Verdana, "DejaVu Sans", sans-serif;
 $helvetica:       Helvetica, Arial, "Nimbus Sans L", sans-serif;
+$balthazar:       Balthazar, "Copperplate Gothic Bold", "Times New Roman", Georgia, "DejaVu Serif", serif;
 
 // For an explanation of why "sans-serif" is at the end of this list, see
 // http://meyerweb.com/eric/thoughts/2010/02/12/fixed-monospace-sizing/
