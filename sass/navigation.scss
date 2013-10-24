@@ -412,6 +412,11 @@ li a.active {
   }//media-queries
 } //pane
 
+// Hide toc headings h3-h6
+.toc-h3, .toc-h4, .toc-h5, .toc-h6{
+  @include element-invisible;
+}
+
 // Admin toolbar adjustments
 body.toolbar .pane-simple-toc-simple-toc .toc-wrapper.sticky {
   top: 55px;
