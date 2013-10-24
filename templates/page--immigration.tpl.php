@@ -87,9 +87,9 @@ include('header.inc');
         <figure>
           <?php print theme_image(array('path' => "/" .  drupal_get_path('theme', 'immigration_zen') . '/images/crop/why_choose_ottawa.jpg', 'alt' => t('A crowd is watching the changing of the guard on Parliament Hill in Ottawa.'), 'title' => t('An outline of the life in Ottawa and what Ottawa has to offer to new immigrants.'))); ?>
           <figcaption>
-            <a href="/immigration/why-choose-ottawa">
-              <h2><?php print t('Why Choose Ottawa'); ?></h2>
-              <p><?php print t("What Ottawa has to offer to new immigrants."); ?></p>
+            <a href="<?php print url('immigration/why-choose-ottawa'); ?>">
+              <h2><?php print t('Why choose Ottawa'); ?></h2>
+              <p><?php print t('See what Ottawa has to offer.'); ?></p>
             </a>
           </figcaption>
         </figure>
@@ -101,7 +101,7 @@ include('header.inc');
           <figcaption>
             <a href="/immigration/you-arrive">
               <h2><?php print t('Before you arrive'); ?></h2>
-              <p><?php print t("A cultural and practical guide to preparing for life in Ottawa."); ?></p>
+              <p><?php print t('A practical guide to preparing for life in Ottawa.'); ?></p>
             </a>
           </figcaption>
         </figure>
@@ -113,7 +113,7 @@ include('header.inc');
           <figcaption>
             <a href="/immigration/after-you-arrive">
               <h2><?php print t('After you arrive'); ?></h2>
-              <p><?php print t("Adapting to life in Ottawa and support services available."); ?></p>
+              <p><?php print t('A practical guide to adapting to life in Ottawa.'); ?></p>
             </a>
           </figcaption>
         </figure>
