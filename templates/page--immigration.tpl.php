@@ -1,4 +1,4 @@
-<?php
+ t<?php
 /**
  * @file
  * Zen theme's implementation to display a single Drupal page.
@@ -91,7 +91,7 @@ include('header.inc');
           <figcaption>
             <a href="<?php $language->language == 'fr' ? print url('immigration/pourquoi-choisir-ottawa') : print url('immigration/why-choose-ottawa'); ?>">
               <h2><?php print t('Why choose Ottawa'); ?></h2>
-              <p><?php print t('See what Ottawa has to offer.'); ?><br>&nbsp;</p>
+              <p><?php print t('See what Ottawa has to offer.'); ?></p>
             </a>
           </figcaption>
         </figure>
