@@ -710,6 +710,7 @@ span.field-label { /* The inline field label used by the Fences module */
 * Homepage Flexslider 
 */
 
+
 #main .flexslider{
   margin-top: 2em;
   border-width: 10px;
@@ -738,6 +739,7 @@ span.field-label { /* The inline field label used by the Fences module */
   .flex-direction-nav a{
     height: 37px;
     padding: 1.6em 0 0;
+    color: #fff;
     color: rgba(255,255,255,0.65);
     @include text-shadow(rgba(0,0,0, 0.2) 1px 0 3px);
     text-decoration: none;
@@ -745,8 +747,8 @@ span.field-label { /* The inline field label used by the Fences module */
      font-size: 65px; 
     }
     &:hover{
+      color: #fff;
      color: rgba(255,255,255,0.8);
-     text-decoration: underline; 
     }
   }
   
@@ -761,7 +763,7 @@ span.field-label { /* The inline field label used by the Fences module */
       bottom: 0;
       padding: .5em 1em;
       font-family: $font-heading; //century gothic
-      background-color: rgba(255,255,255, 0.65);
+      background: rgba(255,255,255, 0.65);
       width: 100%;
       
       @include ease-all;
@@ -789,7 +791,7 @@ span.field-label { /* The inline field label used by the Fences module */
     &:active,
     &:focus{
       .flex-caption{
-        background-color: rgba(255,255,255, 0.8);
+        background: rgba(255,255,255, 0.8);
       }//flex-caption
     }//hover,focus,active
    }//caption
@@ -802,7 +804,7 @@ span.field-label { /* The inline field label used by the Fences module */
   bottom: 0;
   padding: .5em 1em;
   font-family: $font-heading; //century gothic
-  background-color: rgba(255,255,255, 0.65);
+  background: rgba(255,255,255, 0.65);
   width: 100%;
   line-height: 1.2;
   height: 70px;
@@ -822,6 +824,51 @@ span.field-label { /* The inline field label used by the Fences module */
 }
 
 
+/* ie fixes */
+
+.lt-ie9 #main .flexslider{
+  .flex-control-paging li a {
+    background: transparent;
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#33000000,endColorstr=#33000000)"; /* IE8 */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#33000000,endColorstr=#33000000);   /* IE6 & 7 */
+    zoom: 1;
+  }
+  &.flex-active{
+    background: transparent;
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000)"; /* IE8 */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000);   /* IE6 & 7 */
+    zoom: 1;
+  }
+  
+  .slides li a{
+    .flex-caption{
+      background: transparent;
+      -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#A5FFFFFF,endColorstr=#A5FFFFFF)"; /* IE8 */
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#A5FFFFFF,endColorstr=#A5FFFFFF);   /* IE6 & 7 */
+            zoom: 1;
+    }
+    &:hover,
+    &:active,
+    &:focus{
+      .flex-caption{
+        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF,endColorstr=#CCFFFFFF)"; /* IE8 */
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF,endColorstr=#CCFFFFFF);   /* IE6 & 7 */
+      }//flex-caption
+    }//hover,focus,active
+    
+  }
+  
+  
+}
+
+.flex-caption{
+  background: transparent;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#A5FFFFFF,endColorstr=#A5FFFFFF)"; /* IE8 */
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#A5FFFFFF,endColorstr=#A5FFFFFF);   /* IE6 & 7 */
+        zoom: 1;
+}
+
+
 .lt-ie9 .landing-items{
   @media only screen and (min-width: 768px){
     li{
@@ -834,7 +881,9 @@ span.field-label { /* The inline field label used by the Fences module */
   
   @media only screen and (min-width: 960px){
     li{
-       width: 30%;
+       width: 32%;
+      margin-left: .5% !important;
+      margin-right: .5% !important;
      }
   }
  
