@@ -87,7 +87,7 @@ include('header.inc');
     <ul class="landing-items">
       <li>
         <figure>
-          <?php print theme_image(array('path' => "/" .  drupal_get_path('theme', 'immigration_zen') . '/images/crop/why_choose_ottawa.jpg', 'alt' => t('A crowd is watching the changing of the guard on Parliament Hill in Ottawa.'), 'title' => t('An outline of the life in Ottawa and what Ottawa has to offer to new immigrants.'))); ?>
+          <?php print theme_image(array('path' => "/" .  drupal_get_path('theme', 'immigration_zen') . '/images/crop/why_choose_ottawa.jpg', 'alt' => t('See what Ottawa has to offer.'), 'title' => t('An outline of the life in Ottawa and what Ottawa has to offer to new immigrants.'))); ?>
           <figcaption>
             <a href="<?php $language->language == 'fr' ? print url('immigration/pourquoi-choisir-ottawa') : print url('immigration/why-choose-ottawa'); ?>">
               <h2><?php print t('Why choose Ottawa'); ?></h2>
