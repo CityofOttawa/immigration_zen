@@ -978,14 +978,16 @@ span.field-label { /* The inline field label used by the Fences module */
     //full screen styles
     @media only screen and (min-width: 768px){
       p {
-        color: black;        
+        color:#000;        
       }
       width: auto;
       ul {
         padding-left: 0;
         li {
+          a{
+            color: #000;
+          }
           h2 {
-//            font-size: 1em;
             color: $color-1;
           }
           figure {
@@ -996,9 +998,9 @@ span.field-label { /* The inline field label used by the Fences module */
           figcaption {
             background: none !important;
             a {
+              color: #000;
               height: auto;
               @include border-box;
-              color: $color-1;
               background-image: none;
               &:hover {
                 background-image: url('../images/arrow-bg.png');
@@ -1030,8 +1032,8 @@ span.field-label { /* The inline field label used by the Fences module */
     h1{ color: $color-1; }
     figcaption{ background-color: $color-1; }
     @media only screen and (min-width: 768px){
-      h2, a{ color: $color-1; }
-      a:hover{ color: lighten($color-1, 10%); }
+      h2{ color: $color-1; }
+      a:hover h2{ color: lighten($color-1, 10%); }
     }
   }
   blockquote,.pane-simple-toc-simple-toc h2{ background-color: $color-1; }
@@ -1048,8 +1050,8 @@ span.field-label { /* The inline field label used by the Fences module */
     h1{ color: $color-2; }
     blockquote, figcaption{ background-color: $color-2; }
     @media only screen and (min-width: 768px){
-      h2, a{ color: $color-2; }
-      a:hover{ color: lighten($color-2, 10%); }
+      h2{ color: $color-2; }
+      a:hover h2{ color: lighten($color-2, 10%); }
     }
   }
   blockquote,.pane-simple-toc-simple-toc h2{ background-color: $color-2; } 
@@ -1066,8 +1068,8 @@ span.field-label { /* The inline field label used by the Fences module */
     h1{ color: $color-3; }
     blockquote, figcaption{ background-color: $color-3; }
     @media only screen and (min-width: 768px){
-      h2, a{ color: $color-3; }
-      a:hover{ color: lighten($color-3, 10%); }
+      h2{ color: $color-3; }
+      a:hover h2{ color: lighten($color-3, 10%); }
     }
   }
   blockquote, .pane-simple-toc-simple-toc h2{ background-color: $color-3; }
@@ -1085,8 +1087,8 @@ span.field-label { /* The inline field label used by the Fences module */
     h1{ color: $color-4; }
     blockquote, figcaption{ background-color: $color-4; }
     @media only screen and (min-width: 768px){
-      h2, a{ color: $color-4; }
-      a:hover{ color: lighten($color-4, 10%); }
+      h2{ color: $color-4; }
+      a:hover h2{ color: lighten($color-4, 10%); }
     }
   }
   blockquote, .pane-simple-toc-simple-toc h2{ background-color: $color-4; }
@@ -1104,8 +1106,8 @@ span.field-label { /* The inline field label used by the Fences module */
     h1{ color: $color-5; }
     blockquote, figcaption{ background-color: $color-5; }
     @media only screen and (min-width: 768px){
-      h2, a{ color: $color-5; }
-      a:hover{ color: lighten($color-5, 10%); }
+      h2{ color: $color-5; }
+      a:hover h2{ color: lighten($color-5, 10%); }
     }
   }
   blockquote, .pane-simple-toc-simple-toc h2{ background-color: $color-5; }
@@ -1123,8 +1125,8 @@ span.field-label { /* The inline field label used by the Fences module */
     h1{ color: $color-6; }
     blockquote, figcaption{ background-color: $color-6; }
     @media only screen and (min-width: 768px){
-      h2, a{ color: $color-6; }
-      a:hover{ color: lighten($color-6, 10%); }
+      h2{ color: $color-6; }
+      a:hover h2{ color: lighten($color-6, 10%); }
     }
   }
   blockquote, .pane-simple-toc-simple-toc h2{ background-color: $color-6; }
