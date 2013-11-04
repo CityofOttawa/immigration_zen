@@ -726,7 +726,20 @@ span.field-label { /* The inline field label used by the Fences module */
   img{
     @include box-shadow(none);
   }
-  
+   .flex-pauseplay{
+     position: absolute;
+     top: 2.6em;
+     right: 12em;
+     a{
+       @include opacity(0.5);
+     }     
+   }
+  .flex-control-nav{
+    top: 1em;
+    text-align: left;
+    right: 1em;
+    width: auto;
+  }
   .flex-control-paging li a {
     background: rgba(0,0,0,0.2);
     @include box-shadow(none);
