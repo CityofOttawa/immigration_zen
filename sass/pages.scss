@@ -712,7 +712,7 @@ span.field-label { /* The inline field label used by the Fences module */
 
 
 #main .flexslider{
-  margin-top: 2em;
+  margin: 2em 7% 60px;
   border-width: 10px;
   
   .slides img {
@@ -728,17 +728,17 @@ span.field-label { /* The inline field label used by the Fences module */
   }
    .flex-pauseplay{
      position: absolute;
-     top: 2.6em;
-     right: 12em;
+     left: -1em;
+     bottom: -3em;
      a{
        @include opacity(0.5);
      }     
    }
   .flex-control-nav{
-    top: 1em;
     text-align: left;
-    right: 1em;
     width: auto;
+    left: 2em;
+    bottom: -3em;
   }
   .flex-control-paging li a {
     background: rgba(0,0,0,0.2);
