@@ -44,6 +44,53 @@ li a.active {
  * Navigation bar
  */
 
+// Jump to Table of Contents 
+
+.node-type-toc-pan-page #main {
+  position: relative;
+  padding: 4em .5em;
+  @media only screen and (min-width: 767px){
+    padding: 0em 3em 2em;
+  }
+}
+
+
+.simple-toc-jump {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  z-index: 1000; 
+  
+  // Hide text
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  
+  @extend .icons-toc;
+  height: 45px;
+  width: 45px;
+  
+  background-color: $city-green;
+  @include border-radius(3px);
+  
+  @media only screen and (min-width: 767px){
+    display: none;
+  }
+}
+
+.contextual-links-region{
+  .simple-toc-jump {
+    top:-120px;
+  }
+}
+
+.lt-ie9{
+  .simple-toc-jump {
+    @include hide-text;
+  }
+}
+
+
 #navigation {
   /* overflow: hidden; */ /* Sometimes you want to prevent overlapping with main div. */
   background-color: $rich-black;
