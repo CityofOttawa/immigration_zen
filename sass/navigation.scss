@@ -232,7 +232,8 @@ li a.active {
   
   .region-header,
   .header-box{      
-    ul.language-switcher-locale-url {
+    ul.language-switcher-locale-url, 
+    #block-menu-menu-immigration-header-menu ul.menu{
       display: inline-block;
       padding: 0;
       margin: 0;
@@ -278,71 +279,49 @@ li a.active {
         }
       }
     }
-    .btn-fr{
-      display: inline-block;
-      background-color: $city-green;
-      font-family: $century-gothic;
-      @include text-shading;
-      @include border-box;
-      text-decoration: none;
-
-      padding: .5em 1em;
-      width: 100%;
-      font-size: 1em;
-      font-weight: 100;
-
-      &:hover{
-        background-color: lighten($city-green, 5%);
-        }
-
-      }//btn-fr  
-      
-      .btn-contact{
-        display: none;
-        visibility:hidden;
-      }
-          
-      @media only screen and (min-width: 768px){ // header-box media queries
-      
-      .btn-fr{
-        display: inline-block;
-        background-color: transparent;
-        color: $city-blue;
-        font-family: $verdana;
-        @include text-shadow(none); //over-rides @include text-shading
-        padding: .5em 1em 0 0 ;
-
-        width: auto; 
-        font-size: 1.143em;
-        font-weight: normal;
-
-        &:hover{
-          color: lighten($city-blue, 20%);
-          background-color: transparent;
-          }
-        }//btn-fr
-        
-        .btn-contact{
-          display: inline-block;
-          visibility: visible;
-          padding: 0 0 0 1em;
-          border-left: 2px solid $city-blue;
-        }//btn-contact
-        
-      }//  mediaqueries
-    
-
-    
+   
   } // header-box
 
+#block-menu-menu-immigration-header-menu{
+  position: relative;
+  top: -98px;
+  left: 60px;
+  display: inline-block;
+  @media only screen and (min-width: 768px) {
+    top: -92px;
+    left: 0;
+  }
+}
 
-#main-menu {
-  
+.region-header ul.language-switcher-locale-url{
+  margin-right: 200px;
+  @media only screen and (min-width: 768px) {
+  margin-right: 125px;
+  }
+}
+
+header{
+  padding-bottom: 0;
+}
+
+#navigation{
+  position: relative;
+  z-index: 100;
+  top: -40px;
+  @media only screen and (min-width: 768px) {
+  top: 0;
+  }
+}
+
+.search-form{
+  margin-bottom: 0;
 }
 
 #secondary-menu {
   float: right;
 }
+
+
 
 /*
  * Menu blocks

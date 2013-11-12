@@ -21,9 +21,9 @@
       </hgroup><!-- /#name-and-slogan -->
     <?php endif; ?>
 
-
-
     <?php print render($page['header']); ?>
+
+
 
 	</header>
   <div id="navigation">
