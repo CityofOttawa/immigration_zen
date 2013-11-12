@@ -475,13 +475,16 @@ body.toolbar.toolbar-drawer .pane-simple-toc-simple-toc .toc-wrapper.sticky {
 /* Footer menu */
 
 #footer{
-  ul{
+  #boxes-box-city_of_ottawa_footer_right{
+    margin-top: 2em;
+  }
+  ul.menu{
     background-color: $rich-black;
     margin: 2em 0 0 ;
     padding: 1em;
   }
     
-  li{
+  .menu li{
     display: inline-block;
     &:after{
       color: darken($light-grey, 40%);

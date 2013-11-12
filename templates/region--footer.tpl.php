@@ -42,6 +42,17 @@
 
       print l($img, '<front>', array('html' => TRUE));
     ?>
+    
+    <?php 
+      $variables1 = array(
+          'path' =>  "/" .  drupal_get_path('theme', 'immigration_zen') . '/images/ontario-white.png', 
+          'alt' => t('City of Ottawa Logo'),
+          'title' => t('City of Ottawa'),
+          );
+      $img1 = theme('image', $variables1);
+
+      print l($img1, 'http://www.ontario.ca/', array('html' => TRUE, 'attributes' => array('target' => '_blank')));
+    ?>
 
     <p>&copy; 2001-<?php print date("Y");?> <?php print t('City of Ottawa'); ?></p>
 
