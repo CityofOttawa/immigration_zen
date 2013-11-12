@@ -1049,8 +1049,8 @@ span.field-label { /* The inline field label used by the Fences module */
       a:hover h2{ color: lighten($color-1, 10%); }
     }
   }
-  blockquote,.pane-simple-toc-simple-toc h2{ background-color: $color-1; }
-  .toc-wrapper{
+  blockquote,.simple-toc h3{ background-color: $color-1; }
+  .item-list{
     border: 3px solid $color-1; 
     .selected{background-color: lighten($color-1, 5%); 
       &:hover{ background-color: lighten($color-1, 10%); }
@@ -1067,8 +1067,8 @@ span.field-label { /* The inline field label used by the Fences module */
       a:hover h2{ color: lighten($color-2, 10%); }
     }
   }
-  blockquote,.pane-simple-toc-simple-toc h2{ background-color: $color-2; } 
-  .toc-wrapper{
+  blockquote,.simple-toc h3{ background-color: $color-2; } 
+  .item-list{
     border: 3px solid $color-2; 
     .selected{background-color: lighten($color-2, 5%); 
       &:hover{ background-color: lighten($color-2, 10%); }
@@ -1085,8 +1085,8 @@ span.field-label { /* The inline field label used by the Fences module */
       a:hover h2{ color: lighten($color-3, 10%); }
     }
   }
-  blockquote, .pane-simple-toc-simple-toc h2{ background-color: $color-3; }
-  .toc-wrapper{
+  blockquote, .simple-toc h3{ background-color: $color-3; }
+  .item-list{
     border: 3px solid $color-3; 
     .selected{background-color: lighten($color-3, 5%); 
       &:hover{ background-color: lighten($color-3, 10%); }
@@ -1104,8 +1104,8 @@ span.field-label { /* The inline field label used by the Fences module */
       a:hover h2{ color: lighten($color-4, 10%); }
     }
   }
-  blockquote, .pane-simple-toc-simple-toc h2{ background-color: $color-4; }
-  .toc-wrapper{
+  blockquote, .simple-toc h3{ background-color: $color-4; }
+  .item-list{
     border: 3px solid $color-4; 
     .selected{background-color: lighten($color-4, 5%); 
       &:hover{ background-color: lighten($color-4, 10%); }
@@ -1123,8 +1123,8 @@ span.field-label { /* The inline field label used by the Fences module */
       a:hover h2{ color: lighten($color-5, 10%); }
     }
   }
-  blockquote, .pane-simple-toc-simple-toc h2{ background-color: $color-5; }
-  .toc-wrapper{
+  blockquote, .simple-toc h3{ background-color: $color-5; }
+  .item-list{
     border: 3px solid $color-5; 
     .selected{background-color: lighten($color-5, 5%); 
       &:hover{ background-color: lighten($color-5, 10%); }
@@ -1142,8 +1142,8 @@ span.field-label { /* The inline field label used by the Fences module */
       a:hover h2{ color: lighten($color-6, 10%); }
     }
   }
-  blockquote, .pane-simple-toc-simple-toc h2{ background-color: $color-6; }
-  .toc-wrapper{
+  blockquote, .simple-toc h3{ background-color: $color-6; }
+  .item-list{
     border: 3px solid $color-6; 
     .selected{background-color: lighten($color-6, 5%); 
       &:hover{ background-color: lighten($color-6, 10%); }
