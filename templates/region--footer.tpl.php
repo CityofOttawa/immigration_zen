@@ -31,13 +31,24 @@
 <?php if ($content): ?>
 
   <footer id="footer" class="<?php print $classes; ?>" role="contentinfo">
-		<a href="/" title=""><img src="<?php print '/'. drupal_get_path('theme', 'immigration_zen') . '/images/ottawa-white.png'; ?>" alt="<?php print t('City of Ottawa Logo'); ?>"></a>
-			<p>&copy; 2001-<?php print date("Y");?> <?php print t('City of Ottawa'); ?></p>
+    
+    <?php 
+      $variables = array(
+          'path' =>  "/" .  drupal_get_path('theme', 'immigration_zen') . '/images/ottawa-white.png', 
+          'alt' => t('City of Ottawa Logo'),
+          'title' => t('City of Ottawa'),
+          );
+      $img = theme('image', $variables);
 
-			<address>110 Laurier Avenue West <br>
-			Ottawa, Ontario, K1P 1J1
-			</address>
-			
+      print l($img, '<front>', array('html' => TRUE));
+    ?>
+
+    <p>&copy; 2001-<?php print date("Y");?> <?php print t('City of Ottawa'); ?></p>
+
+    <address><?php print t('110 Laurier Avenue West'); ?> <br>
+    <?php print t('Ottawa, Ontario, K1P 1J1'); ?> 
+    </address>
+
     <?php print $content; ?>
 
   </footer><!-- region__footer -->
