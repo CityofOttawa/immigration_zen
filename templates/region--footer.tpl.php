@@ -26,6 +26,10 @@
  * @see template_process()
  */
 ?>
+
+
+<?php if ($content): ?>
+
   <footer id="footer" class="<?php print $classes; ?>" role="contentinfo">
 		<a href="/" title=""><img src="<?php print '/'. drupal_get_path('theme', 'immigration_zen') . '/images/ottawa-white.png'; ?>" alt="<?php print t('City of Ottawa Logo'); ?>"></a>
 			<p>&copy; 2001-<?php print date("Y");?> <?php print t('City of Ottawa'); ?></p>
@@ -34,12 +38,8 @@
 			Ottawa, Ontario, K1P 1J1
 			</address>
 			
-			<ul class="footer-menu" role="navigation">
-				<li><a href="#">Disclaimer</a></li>
-				<li><a href="#">Privacy</a></li>
-				<li><a href="#">Accessibility</a></li>
-			</ul>
-
+    <?php print $content; ?>
 
   </footer><!-- region__footer -->
+<?php endif; ?>
 
