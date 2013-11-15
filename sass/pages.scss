@@ -959,7 +959,6 @@ span.field-label { /* The inline field label used by the Fences module */
            background: transparent url('../images/arrow-bg.png') top right no-repeat;
            @include transition-property(color);
 
-
            &:hover{
              @include opacity(.90);
            }
@@ -1028,6 +1027,11 @@ span.field-label { /* The inline field label used by the Fences module */
 
     }
 }//gateway-items
+
+.lt-ie9 .gateway-items ul li figcaption a:hover {
+  // Fix for http://jszen.blogspot.ca/2005/04/ie-bold-text-opacity-problem.html
+  background-color: #fff;
+}
 
 
 #main {

@@ -17,7 +17,7 @@
         <?php if ($site_slogan): ?>
           <h2 id="site-slogan"><?php print $site_slogan; ?></h2>
         <?php endif; ?>
-					<h2 class="subtitle"><span class="green"><?php print t('Diverse.'); ?></span><span class="red"><?php print t(' Welcoming.'); ?></span><span class="black"><?php print t(' Vibrant.'); ?></span></h2>
+          <h2 class="subtitle"><span class="green"><?php print t('Diverse.'); ?></span><span class="red"><?php print t(' Welcoming.'); ?></span><span class="black"><?php print t(' Vibrant.'); ?></span></h2>
       </hgroup><!-- /#name-and-slogan -->
     <?php endif; ?>
 
