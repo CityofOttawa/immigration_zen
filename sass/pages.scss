@@ -1167,6 +1167,9 @@ span.field-label { /* The inline field label used by the Fences module */
      margin: 0;
      @include box-shadow(none);
    }
+  .caption-text{
+    color: #666;
+  }
 }
 
 
