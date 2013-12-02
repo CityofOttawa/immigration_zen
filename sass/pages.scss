@@ -1156,22 +1156,6 @@ span.field-label { /* The inline field label used by the Fences module */
 }
 
 
-/* Captions */
-
-.caption-inner{
-  background-color: #f5f5f5;
-  @include border-radius(3px);
-  @include box-shadow(rgba(0, 0, 0, 0.3) 0 2px 6px );
-  padding: 1em 1em 1em;
-   img{
-     margin: 0;
-     @include box-shadow(none);
-   }
-  .caption-text{
-    color: #666;
-  }
-}
-
 
 /*
  * Footer
@@ -1196,9 +1180,6 @@ span.field-label { /* The inline field label used by the Fences module */
 
   
 }
-
-
-
 
 /*
  * Page bottom
