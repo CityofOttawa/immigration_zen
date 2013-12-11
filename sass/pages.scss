@@ -772,29 +772,30 @@ span.field-label { /* The inline field label used by the Fences module */
     
     .flex-caption{
       @include border-box;
-      position: relative;
-      bottom: 0;
-      padding: .5em 1em;
+      position: static;
       font-family: $font-heading; //century gothic
       background: rgba(255,255,255, 0.65);
       width: 100%;
-      
       @include ease-all;
       @include transition-property(background-color);
-      
-      height: 70px;
-      margin: -70px 0 0;
+      margin: 1em 0 0;
+      height: auto;
       
       @media only screen and (min-width: 580px){
-        @include rem-fallback(font-size, 1.5); //24px
+        position: relative;
+        bottom: 0;
+        padding: .5em 1em;
+        height: 100px;
+        margin: -100px 0 0;
       }
       
       @media only screen and (min-width: 768px){
-        @include rem-fallback(font-size, 2); 
-        height: 100px;
-        margin: -100px 0 0;
+        @include rem-fallback(font-size, 1.5); 
         padding: .6em 1em;
-        
+      }
+      
+      @media only screen and (min-width: 1200px){
+        @include rem-fallback(font-size, 2); 
       }
     }
     
