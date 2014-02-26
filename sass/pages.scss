@@ -319,6 +319,7 @@ header{
       clear: both;
     }
     #page-title, h1{
+      text-transform: capitalize;
       margin-bottom: .5em;
     }
     
@@ -372,6 +373,7 @@ header{
  */
 
 #content {
+  position: relative;
 }
 
 .region-highlighted {
@@ -771,30 +773,29 @@ span.field-label { /* The inline field label used by the Fences module */
     
     .flex-caption{
       @include border-box;
-      position: static;
+      position: relative;
+      bottom: 0;
+      padding: .5em 1em;
       font-family: $font-heading; //century gothic
       background: rgba(255,255,255, 0.65);
       width: 100%;
+      
       @include ease-all;
       @include transition-property(background-color);
-      margin: 1em 0 0;
-      height: auto;
+      
+      height: 70px;
+      margin: -70px 0 0;
       
       @media only screen and (min-width: 580px){
-        position: relative;
-        bottom: 0;
-        padding: .5em 1em;
-        height: 100px;
-        margin: -100px 0 0;
+        @include rem-fallback(font-size, 1.5); //24px
       }
       
       @media only screen and (min-width: 768px){
-        @include rem-fallback(font-size, 1.5); 
-        padding: .6em 1em;
-      }
-      
-      @media only screen and (min-width: 1200px){
         @include rem-fallback(font-size, 2); 
+        height: 100px;
+        margin: -100px 0 0;
+        padding: .6em 1em;
+        
       }
     }
     
@@ -1053,9 +1054,9 @@ span.field-label { /* The inline field label used by the Fences module */
       a:hover h2{ color: lighten($color-1, 10%); }
     }
   }
-  blockquote,.simple-toc h3{ background-color: $color-1; }
+  blockquote,.simple-toc h3{ background-color: $color-1; border-color: $color-1; }
   .item-list{
-    border: 3px solid $color-1; 
+    border-color: $color-1; 
     .selected{background-color: lighten($color-1, 5%); 
       &:hover{ background-color: lighten($color-1, 10%); }
     }
@@ -1071,9 +1072,9 @@ span.field-label { /* The inline field label used by the Fences module */
       a:hover h2{ color: lighten($color-2, 10%); }
     }
   }
-  blockquote,.simple-toc h3{ background-color: $color-2; } 
+  blockquote,.simple-toc h3{ background-color: $color-2; border-color: $color-2; } 
   .item-list{
-    border: 3px solid $color-2; 
+    border-color: $color-2; 
     .selected{background-color: lighten($color-2, 5%); 
       &:hover{ background-color: lighten($color-2, 10%); }
     }
@@ -1089,9 +1090,9 @@ span.field-label { /* The inline field label used by the Fences module */
       a:hover h2{ color: lighten($color-3, 10%); }
     }
   }
-  blockquote, .simple-toc h3{ background-color: $color-3; }
+  blockquote, .simple-toc h3{ background-color: $color-3; border-color: $color-3; }
   .item-list{
-    border: 3px solid $color-3; 
+    border-color: $color-3; 
     .selected{background-color: lighten($color-3, 5%); 
       &:hover{ background-color: lighten($color-3, 10%); }
     }
@@ -1108,9 +1109,9 @@ span.field-label { /* The inline field label used by the Fences module */
       a:hover h2{ color: lighten($color-4, 10%); }
     }
   }
-  blockquote, .simple-toc h3{ background-color: $color-4; }
+  blockquote, .simple-toc h3{ background-color: $color-4; border-color: $color-4; }
   .item-list{
-    border: 3px solid $color-4; 
+    border-color: $color-4; 
     .selected{background-color: lighten($color-4, 5%); 
       &:hover{ background-color: lighten($color-4, 10%); }
     }
@@ -1127,9 +1128,9 @@ span.field-label { /* The inline field label used by the Fences module */
       a:hover h2{ color: lighten($color-5, 10%); }
     }
   }
-  blockquote, .simple-toc h3{ background-color: $color-5; }
+  blockquote, .simple-toc h3{ background-color: $color-5; border-color: $color-5; }
   .item-list{
-    border: 3px solid $color-5; 
+    border-color: $color-5; 
     .selected{background-color: lighten($color-5, 5%); 
       &:hover{ background-color: lighten($color-5, 10%); }
     }
@@ -1146,9 +1147,9 @@ span.field-label { /* The inline field label used by the Fences module */
       a:hover h2{ color: lighten($color-6, 10%); }
     }
   }
-  blockquote, .simple-toc h3{ background-color: $color-6; }
+  blockquote, .simple-toc h3{ background-color: $color-6; border-color: $color-6; }
   .item-list{
-    border: 3px solid $color-6; 
+    border-color: $color-6; 
     .selected{background-color: lighten($color-6, 5%); 
       &:hover{ background-color: lighten($color-6, 10%); }
     }

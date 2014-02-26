@@ -365,8 +365,13 @@ header{
   }
 }
 
-
-//.pane-simple-toc-simple-toc, 
+.toolbar-drawer .simple-toc .item-list.sticky {
+  top: 145px;
+  &.bottomed {
+    top: auto;
+  }
+}
+//.pane-simple-toc-simple-toc,
 .simple-toc{
   margin-left: 3em;
   margin-top: 50px;
@@ -378,17 +383,18 @@ header{
     padding: .2em .5em;
     margin: 0;
     line-height: 2em !important;
+    border: 3px solid $color-1;
+    border-bottom: none;
   }
   
   //.toc-wrapper, 
   .item-list{
     @include zero;
     display: block;
-    border: 3px solid $color-1; 
     background-color: #fff;
-    
     ol{
       @include zero;
+      border: 3px solid $color-1;
       li{
         display: block;
         border-top: 0;
@@ -421,7 +427,13 @@ header{
   &.sticky {
     position: fixed;
     top: 80px;
-  } 
+  }
+  &.bottomed {
+    position: absolute;
+    top: auto;
+    right: 10px;
+    bottom: 0;
+  }
  }//toc-wrapper
   
   @media only screen and (min-width: 1200px){ // .toc-btn
